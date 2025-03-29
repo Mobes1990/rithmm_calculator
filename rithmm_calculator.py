@@ -7,19 +7,18 @@ import os
 # ============================================================
 # CONFIGURATION & FILE PATHS
 # ============================================================
-# Update these paths to where your raw data files are located.
-PATH_ROZIER = r"C:\Users\sarah\OneDrive\Rithmm - Adam\Python\Scripts\32529 rozier copy.xlsx"     # Terry Rozier raw data
-PATH_BIG_MONEY = r"C:\Users\sarah\OneDrive\Rithmm - Adam\Python\Scripts\32925 big money copy.xlsx"  # BigMoney raw data
-PATH_HEBRON = r"C:\Users\sarah\OneDrive\Rithmm - Adam\Python\Scripts\32925 Hebron lames copy.xlsx"   # Jebron Lames raw data
+# Verify that these files exist exactly at these locations.
+PATH_ROZIER = r"C:\Users\sarah\OneDrive\Rithmm - Adam\Python\Scripts\32529 rozier copy.xlsx"     
+PATH_BIG_MONEY = r"C:\Users\sarah\OneDrive\Rithmm - Adam\Python\Scripts\32925 big money copy.xlsx"  
+PATH_HEBRON = r"C:\Users\sarah\OneDrive\Rithmm - Adam\Python\Scripts\32925 Hebron lames copy.xlsx"   
 
 # ============================================================
 # FUNCTION: LOAD RAW DATA
 # ============================================================
 def load_raw_data():
-    missing_files = []
-    for path in [PATH_ROZIER, PATH_BIG_MONEY, PATH_HEBRON]:
-        if not os.path.exists(path):
-            missing_files.append(path)
+    # Check if files exist
+    file_paths = [PATH_ROZIER, PATH_BIG_MONEY, PATH_HEBRON]
+    missing_files = [path for path in file_paths if not os.path.exists(path)]
     if missing_files:
         st.error("The following file(s) were not found:\n" + "\n".join(missing_files))
         st.stop()
@@ -37,11 +36,13 @@ def load_raw_data():
         except Exception as e:
             st.error(f"Error loading file for {model} from {path}:\n{e}")
             continue
+        # Force the model name to be exactly the model string
         df["model name"] = model
         frames.append(df)
     
     if frames:
-        return pd.concat(frames, ignore_index=True)
+        combined = pd.concat(frames, ignore_index=True)
+        return combined
     else:
         st.error("No raw data could be loaded.")
         st.stop()
@@ -52,16 +53,16 @@ def load_raw_data():
 def preprocess_data(df):
     """
     Preprocess the data:
-      - If "bet type" is missing, uses "spread_type" if available; otherwise defaults to "Favorite Spreads".
-      - Creates a "home/away" column if missing:
-            * If the "bet" column exists, it infers "Home" if "HOME" is in the text,
-              "Away" if "AWAY" is in the text, otherwise "Both".
-            * Otherwise, if "home team" exists, defaults to "Home", else "Both".
-      - Auto-detects a spread column among ["spread value", "rounded_spread", "pred_spread", "spread"].
-        If found, its values are stored in "auto_spread". If not, attempts to extract a numeric value from "bet".
-        Rows with auto_spread == 0 are assumed not to be spread bets.
-      - Ensures numeric columns "dtm" and "roi (%)" exist (defaulting to 0).
-      - Converts "win probability" to numeric and "bet result" to string.
+      - If "bet type" is missing, use "spread_type" if available; else default to "Favorite Spreads".
+      - Create "home/away" column if missing:
+            * If "bet" column exists, infer "Home" if "HOME" is in the text,
+              "Away" if "AWAY" is in the text, else "Both".
+            * Otherwise, if "home team" exists, default to "Home"; else "Both".
+      - Auto-detect a spread column among: "spread value", "rounded_spread", "pred_spread", "spread".
+        Use that column (if found) to create a new column "auto_spread". If none is found, try to extract a numeric value from the "bet" column.
+        Rows with auto_spread == 0 are considered non-spread bets.
+      - Ensure that "dtm" and "roi (%)" exist (defaulting to 0).
+      - Convert "win probability" to numeric and "bet result" to string.
     """
     if "bet type" not in df.columns:
         if "spread_type" in df.columns:
@@ -136,14 +137,12 @@ include_spread = st.checkbox("Include Spread in Calculation", value=True)
 # Model filter.
 model = st.selectbox("Model Name", options=sorted(data["model name"].unique()))
 
-# Bet Type filter: available options are:
-#   - OutcomeSpreadWin (for spread bets)
-#   - OutcomeMoneylineWin (for moneyline bets)
-#   - OutcomeOverWin (for totals bets)
+# Bet Type filter.
+# Options: OutcomeSpreadWin, OutcomeMoneylineWin, OutcomeOverWin.
 bet_type_options = [
-    "OutcomeSpreadWin",
-    "OutcomeMoneylineWin",
-    "OutcomeOverWin",
+    "OutcomeSpreadWin",      # For spread bets.
+    "OutcomeMoneylineWin",   # For moneyline bets.
+    "OutcomeOverWin",        # For totals bets.
 ]
 bet_type = st.selectbox("Bet Type", options=bet_type_options)
 
@@ -152,25 +151,23 @@ spread_outcome = None
 if bet_type == "OutcomeSpreadWin":
     spread_outcome = st.selectbox("Spread Outcome", options=["Favorite", "Underdog", "Both"])
 
+# For OutcomeOverWin bets, add a dropdown for Totals Outcome.
+totals_outcome = None
+if bet_type == "OutcomeOverWin":
+    totals_outcome = st.selectbox("Totals Outcome", options=["Over", "Under"])
+
 # For OutcomeMoneylineWin bets, add a dropdown for Favorite/Underdog.
 fav_underdog = None
 if bet_type == "OutcomeMoneylineWin":
     fav_underdog = st.selectbox("Favorite/Underdog", options=["Favorite", "Underdog"])
 
-# For OutcomeOverWin bets (totals), add a dropdown for Totals Outcome.
-totals_outcome = None
-if bet_type == "OutcomeOverWin":
-    totals_outcome = st.selectbox("Totals Outcome", options=["Over", "Under"])
-
-# Home/Away filter is applied for all bet types except OutcomeOverWin.
-home_away = "Both"
+# Home/Away filter (applies to all but totals bets).
 if bet_type != "OutcomeOverWin":
     home_away = st.selectbox("Home/Away/Both", options=["Home", "Away", "Both"])
+else:
+    home_away = "Both"
 
-# Win Probability Range slider.
 win_prob_range = st.slider("Win Probability Range (%)", 0, 100, (0, 100), step=1)
-
-# DTM Range slider (allowing negatives).
 dtm_range = st.slider("DTM Range (%)", -100, 100, (-100, 100), step=1)
 
 st.markdown("---")
@@ -185,14 +182,16 @@ filtered_data = filtered_data[filtered_data["model name"] == model]
 
 # 2) Filter by Bet Type.
 if bet_type == "OutcomeSpreadWin":
-    # Include only rows with nonzero auto_spread.
+    # Include only rows where auto_spread is nonzero.
     filtered_data = filtered_data[filtered_data["auto_spread"] != 0]
 elif bet_type == "OutcomeOverWin":
-    # For totals bets, we don't filter by bet type.
+    # For totals bets, we don't filter by bet type directly.
     pass
 elif bet_type == "OutcomeMoneylineWin":
-    # We'll handle moneyline filtering later.
+    # We'll handle moneyline filtering below.
     pass
+else:
+    filtered_data = filtered_data[filtered_data["bet type"] == bet_type]
 
 # 3) Filter by Home/Away (if applicable).
 if bet_type != "OutcomeOverWin" and home_away != "Both":
@@ -204,11 +203,10 @@ if bet_type == "OutcomeSpreadWin" and spread_outcome is not None:
         filtered_data = filtered_data[filtered_data["auto_spread"] < 0]
     elif spread_outcome == "Underdog":
         filtered_data = filtered_data[filtered_data["auto_spread"] > 0]
-    # "Both" means no additional filtering by spread sign.
+    # "Both" means no additional filtering.
 
 # 5) For OutcomeOverWin, apply Totals Outcome filter.
 if bet_type == "OutcomeOverWin" and totals_outcome is not None:
-    # First, try using "pred_total_winner"; if not available, use "bet".
     if "pred_total_winner" in filtered_data.columns:
         filtered_data = filtered_data[filtered_data["pred_total_winner"].str.contains(totals_outcome, case=False, na=False)]
     elif "bet" in filtered_data.columns:
@@ -284,8 +282,8 @@ if st.checkbox("Show Filtered Data"):
 st.markdown("---")
 st.info("""
 Note:
-- For OutcomeSpreadWin bets, 'Favorite' filters for negative spreads and 'Underdog' for positive spreads. 'Both' includes all nonzero spread bets.
-- For OutcomeOverWin bets, the Totals Outcome dropdown filters totals bets accordingly.
-- OutcomeMoneylineWin bets are filtered by win probability (Favorite > 50%, Underdog ≤ 50%).
-- If you see no spread bets, verify that your raw data's "spread value" column (or an equivalent) has nonzero values.
+- For OutcomeSpreadWin bets, 'Favorite' filters for negative spreads and 'Underdog' for positive spreads.
+- Rows with auto_spread == 0 are assumed not to be spread bets.
+- OutcomeOverWin bets are filtered using the Totals Outcome dropdown.
+- OutcomeMoneylineWin bets: 'Favorite' means win probability > 50%; 'Underdog' means ≤ 50%.
 """)
