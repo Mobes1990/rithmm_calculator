@@ -5,13 +5,16 @@ from ESPN's public scoreboard feed and works out situational factors: rest days,
 back-to-backs, games and home/away split over the last 7 and 14 days, miles
 travelled, time-zone shifts, road-trip / homestand position, schedule density
 (3-in-4, 4-in-6), altitude, streaks, the next game (look-ahead spots) and
-overtime minutes / extra innings. For NHL teams it also reads the NHL's own feed
+overtime minutes / extra innings. College football (FBS) and men's college
+basketball (Division I) are covered too: teams can be written as ESPN
+abbreviations, school names or full names, and venues are located with
+Open-Meteo's geocoder (cached in si_daily/geo_cache.json). For NHL teams it also reads the NHL's own feed
 (api-web.nhle.com) for starting-goalie workload and exact OT minutes; goalie
 streaks count starts within the last 21 days.
 
 Usage (needs only the Python standard library):
     python si_daily/si_schedule.py --games si_games_20261019.json
-    python si_daily/si_schedule.py --matchups "NHL:ANA@NYR,NFL:WSH@SF,MLB:CLE@TB"
+    python si_daily/si_schedule.py --matchups "NHL:ANA@NYR,NFL:WSH@SF,MLB:CLE@TB,NCAAF:Texas@Georgia"
 
 Writes si_daily/out/si_schedule_YYYYMMDD.json (one row per team per game).
 """
@@ -23,6 +26,7 @@ import math
 import os
 import sys
 import unicodedata
+import urllib.parse
 import urllib.request
 
 LEAGUES = {
@@ -30,7 +34,15 @@ LEAGUES = {
     "NHL": "hockey/nhl",
     "NBA": "basketball/nba",
     "MLB": "baseball/mlb",
+    "CFB": "football/college-football",
+    "CBB": "basketball/mens-college-basketball",
 }
+# How Sports Insights (or a person) may label the college sports
+SPORT_ALIASES = {"NCAAF": "CFB", "NCAA FOOTBALL": "CFB", "COLLEGE FOOTBALL": "CFB", "CFB": "CFB",
+                 "NCAAB": "CBB", "NCAAM": "CBB", "NCAA BASKETBALL": "CBB", "COLLEGE BASKETBALL": "CBB", "CBB": "CBB"}
+COLLEGE = {"CFB", "CBB"}
+GROUPS = {"CFB": 80, "CBB": 50}  # ESPN groups: all FBS / all Division I (default is only ranked or featured games)
+RETURNS_HOME = {"NFL", "CFB", "CBB"}  # teams fly home between games instead of hopping city to city
 
 # Sports Insights / common abbreviations -> ESPN abbreviations
 ALIASES = {
@@ -149,8 +161,104 @@ def local(loc, utc):
 
 
 def fetch(league, start, end):
-    return get_json(f"https://site.api.espn.com/apis/site/v2/sports/{LEAGUES[league]}/scoreboard"
-                    f"?dates={start:%Y%m%d}-{end:%Y%m%d}&limit=1000").get("events", [])
+    base = f"https://site.api.espn.com/apis/site/v2/sports/{LEAGUES[league]}/scoreboard?limit=1000"
+    if league in GROUPS:
+        base += f"&groups={GROUPS[league]}"
+    if league == "CBB":  # too many games a day for one date-range request
+        events, d = [], start
+        while d <= end:
+            events += get_json(f"{base}&dates={d:%Y%m%d}").get("events", [])
+            d += dt.timedelta(days=1)
+        return events
+    return get_json(f"{base}&dates={start:%Y%m%d}-{end:%Y%m%d}").get("events", [])
+
+
+STATES = {"AL": "Alabama", "AK": "Alaska", "AZ": "Arizona", "AR": "Arkansas", "CA": "California", "CO": "Colorado",
+          "CT": "Connecticut", "DE": "Delaware", "DC": "District of Columbia", "FL": "Florida", "GA": "Georgia",
+          "HI": "Hawaii", "ID": "Idaho", "IL": "Illinois", "IN": "Indiana", "IA": "Iowa", "KS": "Kansas",
+          "KY": "Kentucky", "LA": "Louisiana", "ME": "Maine", "MD": "Maryland", "MA": "Massachusetts",
+          "MI": "Michigan", "MN": "Minnesota", "MS": "Mississippi", "MO": "Missouri", "MT": "Montana",
+          "NE": "Nebraska", "NV": "Nevada", "NH": "New Hampshire", "NJ": "New Jersey", "NM": "New Mexico",
+          "NY": "New York", "NC": "North Carolina", "ND": "North Dakota", "OH": "Ohio", "OK": "Oklahoma",
+          "OR": "Oregon", "PA": "Pennsylvania", "RI": "Rhode Island", "SC": "South Carolina", "SD": "South Dakota",
+          "TN": "Tennessee", "TX": "Texas", "UT": "Utah", "VT": "Vermont", "VA": "Virginia", "WA": "Washington",
+          "WV": "West Virginia", "WI": "Wisconsin", "WY": "Wyoming"}
+# IANA zone -> (standard UTC offset, observes DST); prefixes cover e.g. America/Indiana/*, America/Kentucky/*
+IANA = [("America/Phoenix", -7, 0), ("Pacific/Honolulu", -10, 0), ("America/Puerto_Rico", -4, 0),
+        ("America/Anchorage", -9, 1), ("America/Los_Angeles", P, 1), ("America/Boise", M, 1), ("America/Denver", M, 1),
+        ("America/Chicago", C, 1), ("America/Indiana/Knox", C, 1), ("America/Indiana/Tell_City", C, 1),
+        ("America/North_Dakota", C, 1), ("America/Menominee", C, 1), ("America/New_York", E, 1),
+        ("America/Detroit", E, 1), ("America/Indiana", E, 1), ("America/Kentucky", E, 1)]
+GEO_CACHE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "geo_cache.json")
+_geo = None
+
+
+def tz_of(zone, city):
+    for prefix, off, dst in IANA:
+        if (zone or "").startswith(prefix):
+            return off, dst
+    if city in NEUTRAL:
+        return NEUTRAL[city][2], NEUTRAL[city][3]
+    try:  # other countries: needs the tzdata package on Windows
+        import zoneinfo
+        z = zoneinfo.ZoneInfo(zone)
+        jan, jul = (dt.datetime(2026, m, 1, tzinfo=z).utcoffset().total_seconds() / 3600 for m in (1, 7))
+        return jan, int(jan != jul and dt.date.today().month in range(3, 11))
+    except Exception:
+        return None, 0
+
+
+def geocode(city, state):
+    """Venue city/state -> (lat, lon, standard UTC offset, DST, altitude ft) via Open-Meteo, cached in geo_cache.json."""
+    global _geo
+    if _geo is None:
+        try:
+            with open(GEO_CACHE, encoding="utf-8") as f:
+                _geo = json.load(f)
+        except (OSError, ValueError):
+            _geo = {}
+    key = f"{city}, {state}" if state else city
+    if not city:
+        return None
+    if key not in _geo:
+        q = urllib.parse.quote(city)
+        url = f"https://geocoding-api.open-meteo.com/v1/search?name={q}&count=20" + ("&countryCode=US" if state in STATES else "")
+        try:
+            res = get_json(url).get("results") or []
+        except Exception:
+            res = []
+        hit = next((x for x in res if x.get("admin1") == STATES.get(state)), None) or (res[0] if res and state not in STATES else None)
+        if hit:
+            off, dst = tz_of(hit.get("timezone"), city)
+            _geo[key] = [hit["latitude"], hit["longitude"], off, dst, round((hit.get("elevation") or 0) * 3.281)]
+        else:
+            _geo[key] = None
+        with open(GEO_CACHE, "w", encoding="utf-8") as f:
+            json.dump(_geo, f, indent=0, sort_keys=True)
+    loc = _geo[key]
+    return tuple(loc) if loc and loc[2] is not None else None
+
+
+def norm(name):
+    s = unicodedata.normalize("NFKD", name or "").encode("ascii", "ignore").decode().lower()
+    s = s.replace("&", " and ").replace("'", "").replace(".", " ").replace("-", " ").replace("(", " ").replace(")", " ")
+    words = s.split()
+    words = [("saint" if i == 0 else "state") if w == "st" else w for i, w in enumerate(words)]
+    return " ".join(words)
+
+
+def resolve(token, games, today):
+    """A college team as Sports Insights writes it (abbreviation, school or full name) -> ESPN abbreviation.
+    Ties go to a team playing on `today`."""
+    want, found = norm(token), {}
+    for g in games:
+        for abbr, names in g["names"].items():
+            if want in {norm(n) for n in names if n}:
+                found.setdefault(abbr, False)
+                found[abbr] |= abs((g["utc"].date() - today).days) <= 1
+    if not found:
+        return None
+    return sorted(found, key=lambda a: not found[a])[0]
 
 
 def get_json(url):
@@ -172,11 +280,11 @@ def extra_time(detail, league):
     n = int(suf[:-2]) if suf.endswith("OT") and suf[:-2].isdigit() else 1
     if league == "MLB":
         return True, None, max(0, int(suf) - 9) if suf.isdigit() else None
-    if league == "NBA":
+    if league in ("NBA", "CBB"):
         return True, 5 * n, 0
     if league == "NHL" and suf == "SO":
         return True, 5, 0
-    return True, None, 0  # NHL OT length comes from the NHL feed; NFL OT length isn't in ESPN's summary
+    return True, None, 0  # NHL OT length comes from the NHL feed; football OT length isn't in ESPN's summary
 
 
 def nhl_workload(code, today):
@@ -269,10 +377,14 @@ def parse(events, league):
         if "home" not in teams or "away" not in teams:
             continue
         home, away = teams["home"]["team"]["abbreviation"], teams["away"]["team"]["abbreviation"]
-        loc, label = HOME[league].get(home), home
-        if comp.get("neutralSite"):
-            city = ((comp.get("venue") or {}).get("address") or {}).get("city", "")
-            loc, label = NEUTRAL.get(city, loc), city or "neutral site"
+        addr = (comp.get("venue") or {}).get("address") or {}
+        city = addr.get("city", "")
+        if league in COLLEGE:  # hundreds of campuses: locate each venue from its city
+            loc, label = geocode(city, addr.get("state", "")), city or home
+        else:
+            loc, label = HOME[league].get(home), home
+            if comp.get("neutralSite"):
+                loc, label = NEUTRAL.get(city, loc), city or "neutral site"
         status = ((comp.get("status") or ev.get("status") or {}).get("type") or {})
         games.append({
             "utc": dt.datetime.strptime(ev["date"][:16], "%Y-%m-%dT%H:%M").replace(tzinfo=dt.timezone.utc),
@@ -281,6 +393,8 @@ def parse(events, league):
             "done": bool(status.get("completed")), "detail": status.get("shortDetail", ""),
             "score": {k: teams[k].get("score") for k in ("home", "away")},
             "winner": next((teams[k]["team"]["abbreviation"] for k in teams if teams[k].get("winner")), None),
+            "names": {teams[k]["team"]["abbreviation"]: [teams[k]["team"].get(f) for f in
+                      ("abbreviation", "location", "shortDisplayName", "displayName", "name")] for k in ("home", "away")},
         })
     games.sort(key=lambda g: g["utc"])
     return games
@@ -311,8 +425,9 @@ def factors(league, team, opp, today, games, goalie=None):
     if idx is None:
         return dict.fromkeys(COLUMNS, "") | {"note": f"{team} vs {opp} not found in ESPN schedule"}
     cur, prev, nxt = tg[idx], tg[:idx], tg[idx + 1:]
-    home_loc = HOME[league].get(team)
-    nfl = league == "NFL"
+    home_loc = HOME.get(league, {}).get(team) or next(
+        (g["loc"] for g in tg if g["side"] == "home" and not g["neutral"] and g["loc"]), None)
+    nfl = league in RETURNS_HOME
     r = {}
 
     # Rest
@@ -320,7 +435,7 @@ def factors(league, team, opp, today, games, goalie=None):
     r["rest_days"] = (cur["day"] - last["day"]).days - 1 if last else None
     r["b2b"] = "Yes" if r["rest_days"] == 0 else "No"
 
-    # Where the team is coming from: NFL teams fly home between games, others hop city to city
+    # Where the team is coming from: NFL and college teams fly home between games, others hop city to city
     def origin(i):
         if nfl or i == 0:
             return home_loc
@@ -330,7 +445,7 @@ def factors(league, team, opp, today, games, goalie=None):
         g = tg[i]
         d = miles(origin(i), g["loc"]) or 0
         if nfl and g["side"] == "away":
-            d *= 2 if i != idx else 1  # past NFL road games are round trips
+            d *= 2 if i != idx else 1  # past road games are round trips
         return d
 
     r["mi_in"] = round(leg(idx))
@@ -369,7 +484,7 @@ def factors(league, team, opp, today, games, goalie=None):
     # Density (hockey / basketball)
     in_n = lambda n: sum(1 for g in tg[:idx + 1] if (today - g["day"]).days < n)
     dense = []
-    if league in ("NHL", "NBA"):
+    if league in ("NHL", "NBA", "CBB"):
         if in_n(4) >= 3:
             dense.append(f"{in_n(4)} in 4 nights")
         if in_n(6) >= 4:
@@ -399,7 +514,7 @@ def factors(league, team, opp, today, games, goalie=None):
         ex = [(g, *extra_time(g["detail"], league)) for g in window]
         ex = [e for e in ex if e[1]]
         r[f"ot{n}"] = len(ex)
-        if league in ("NHL", "NBA"):
+        if league in ("NHL", "NBA", "CBB"):
             mins = [(nhl["ot"].get(g["day"]) if nhl and nhl["ot"].get(g["day"]) is not None else m) for g, _, m, _ in ex]
             r[f"ot_min{n}"] = round(sum(m for m in mins if m is not None), 1) if all(m is not None for m in mins) else ""
         else:
@@ -408,7 +523,7 @@ def factors(league, team, opp, today, games, goalie=None):
             if league == "MLB":
                 inn = sum(i or 0 for *_, i in ex)
                 r["extra14"] = f"{len(ex)} extra-inning game{plural(ex)}, {inn} extra inning{plural(inn)}" if ex else "None"
-            elif league == "NFL":
+            elif league in ("NFL", "CFB"):
                 r["extra14"] = f"{len(ex)} OT game{plural(ex)}" if ex else "None"
             else:
                 r["extra14"] = (f"{len(ex)} OT game{plural(ex)}" + (f", {r['ot_min14']} OT min" if r["ot_min14"] != "" else "")) if ex else "None"
@@ -441,7 +556,7 @@ def factors(league, team, opp, today, games, goalie=None):
         flags.append("Back-to-back")
     if r["density"]:
         flags.append(r["density"])
-    if nfl and r["rest_days"] is not None:
+    if league in ("NFL", "CFB") and r["rest_days"] is not None:
         if r["rest_days"] <= 4:
             flags.append("Short week")
         elif r["rest_days"] >= 12:
@@ -461,7 +576,7 @@ def factors(league, team, opp, today, games, goalie=None):
         flags.append(r["altitude"])
     if last and "/" in (last.get("detail") or ""):
         flags.append("Went to extras last game")
-    if nxt and r["next"] and (nxt[0]["day"] - cur["day"]).days <= 1 and league in ("NHL", "NBA"):
+    if nxt and r["next"] and (nxt[0]["day"] - cur["day"]).days <= 1 and league in ("NHL", "NBA", "CBB"):
         flags.append("Back-to-back tomorrow")
     if cur["neutral"]:
         flags.append(f"Neutral site ({cur['where']})")
@@ -501,7 +616,8 @@ def load_matchups(args):
         away, home = r["game"].split("@")
         g = {away: (r.get("away_goalie"), r.get("away_goalie_status")), home: (r.get("home_goalie"), r.get("home_goalie_status"))}
         g.update({t: v for t, v in cli.items() if t in g})
-        out.append((r["sport"].upper(), r["game"], g))
+        sport = r["sport"].strip().upper()
+        out.append((SPORT_ALIASES.get(sport, sport), r["game"], g))
     return out
 
 
@@ -524,9 +640,12 @@ def main():
             continue
         if sport not in cache:
             cache[sport] = parse(fetch(sport, today - dt.timedelta(days=21), today + dt.timedelta(days=10)), sport)
-        away_si, home_si = game.split("@")
-        alias = ALIASES.get(sport, {})
-        away, home = alias.get(away_si, away_si), alias.get(home_si, home_si)
+        away_si, home_si = (t.strip() for t in game.split("@"))
+        if sport in COLLEGE:
+            away, home = (resolve(t, cache[sport], today) or t for t in (away_si, home_si))
+        else:
+            alias = ALIASES.get(sport, {})
+            away, home = alias.get(away_si, away_si), alias.get(home_si, home_si)
         for team_si, team, opp, side in ((away_si, away, home, "away"), (home_si, home, away, "home")):
             f = factors(sport, team, opp, today, cache[sport], goalies.get(team_si))
             rows.append(dict({"id": f"{game}|{team_si}", "game": game, "sport": sport,

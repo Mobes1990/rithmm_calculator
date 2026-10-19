@@ -32,10 +32,19 @@ Dashboard: https://claude.ai/artifact/1MGzSYaPZRpFs3vSTP1aRD
    Goalies are often confirmed only an hour or two before puck drop, so re-run
    then if Sports Insights updates them.
 
+   College games: use sport `NCAAF` (or `CFB`) and `NCAAB` (or `CBB`, men's).
+   Teams can be written as Sports Insights shows them: ESPN abbreviation, school
+   name (`Ohio State`, `Colorado St`) or full name. Coverage is all FBS football
+   and all Division I men's basketball. The first college run looks up each
+   venue city once (Open-Meteo geocoder, free, no key) and saves it in
+   `si_daily/geo_cache.json`; commit that file too so later runs are faster.
+   College basketball pulls one ESPN request per day for 31 days, so it takes
+   a little longer.
+
 3. Read the printed flags for anything that looks wrong (for example a "not
    found in ESPN schedule" note, which means a team abbreviation needs adding to
    `ALIASES` in the script).
-4. `git add si_daily/out && git commit -m "Schedule data YYYYMMDD" && git push`.
+4. `git add si_daily/out si_daily/geo_cache.json && git commit -m "Schedule data YYYYMMDD" && git push`.
    The cloud session then uploads it and turns on the new page sections.
    (If this session has the Artifact tools, it can instead upload the file to the
    dashboard and create the `datasets/schedule` source itself. If so, leave the
@@ -43,8 +52,8 @@ Dashboard: https://claude.ai/artifact/1MGzSYaPZRpFs3vSTP1aRD
 
 Data sources: ESPN's public scoreboard feed (site.api.espn.com) for schedules,
 results and extra time; the NHL's own feed (api-web.nhle.com) for starting-goalie
-workload and exact OT minutes. Pro leagues only (NFL, NHL, NBA, MLB); college
-isn't covered yet.
+workload and exact OT minutes. NFL, NHL, NBA, MLB, college football (FBS) and men's
+college basketball (D-I). College venues are located via Open-Meteo's geocoder.
 
 If the NHL feed fails, NHL rows still come out with a note saying goalie and OT
 minutes are missing. Check that the goalie names look right. Past starts come from
