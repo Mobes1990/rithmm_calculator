@@ -20,6 +20,18 @@ Dashboard: https://claude.ai/artifact/1MGzSYaPZRpFs3vSTP1aRD
 
        python si_daily/si_schedule.py --matchups "NFL:WSH@SF,NHL:ANA@NYR,NHL:COL@PHI,NHL:SJS@TOR,NHL:PIT@UTA,MLB:CLE@TB"
 
+   For NHL games, include the goalie Sports Insights lists for each team (and
+   its status, e.g. Confirmed / Expected). Either add `away_goalie`,
+   `home_goalie`, `away_goalie_status`, `home_goalie_status` to each NHL row of
+   the games file, or pass them:
+
+       --goalies "ANA=Lukas Dostal:Confirmed,NYR=Igor Shesterkin:Expected"
+
+   Workload is then measured for that goalie, and a change from the last
+   starter is flagged. With no listed goalie it falls back to the last starter.
+   Goalies are often confirmed only an hour or two before puck drop, so re-run
+   then if Sports Insights updates them.
+
 3. Read the printed flags for anything that looks wrong (for example a "not
    found in ESPN schedule" note, which means a team abbreviation needs adding to
    `ALIASES` in the script).
@@ -35,5 +47,6 @@ workload and exact OT minutes. Pro leagues only (NFL, NHL, NBA, MLB); college
 isn't covered yet.
 
 If the NHL feed fails, NHL rows still come out with a note saying goalie and OT
-minutes are missing. Check that the goalie names look right (the starter is the
-goalie the NHL marks `starter`, otherwise the first goalie who played).
+minutes are missing. Check that the goalie names look right. Past starts come from
+the NHL's `starter` mark (otherwise the first goalie who played); names are matched
+to Sports Insights' by last name and first initial.

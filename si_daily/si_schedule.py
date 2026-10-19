@@ -22,6 +22,7 @@ import json
 import math
 import os
 import sys
+import unicodedata
 import urllib.request
 
 LEAGUES = {
@@ -116,7 +117,7 @@ SPANS = (7, 14)
 COLUMNS = ["rest_days", "b2b", *[f"{k}{n}" for n in SPANS for k in ("g", "home", "away", "mi")], "mi_in",
            "tz_shift", "start_local", "body_clock", "trip", "density", "streak", "last5", "prev", "next",
            "altitude", "ot7", "ot14", "ot_min7", "ot_min14", "extra14",
-           "goalie_last", "goalie_starts7", "goalie_starts14", "goalie_streak", "goalie_sa7", "goalie_b2b", "goalies",
+           "goalie", "goalie_src", "goalie_last", "goalie_starts7", "goalie_starts14", "goalie_streak", "goalie_sa7", "goalie_b2b", "goalies",
            "flags", "note"]
 
 # ESPN -> NHL API team codes where they differ
@@ -212,26 +213,49 @@ def nhl_workload(code, today):
     return out
 
 
-def goalie_fields(w, today):
+GOALIE_COLS = ["goalie", "goalie_src", "goalie_last", "goalie_starts7", "goalie_starts14", "goalie_streak",
+               "goalie_sa7", "goalie_b2b", "goalies"]
+
+
+def name_key(name):
+    """'Lukas Dostal', 'L. Dostal' and 'Dostal' all match: last name plus first initial when both sides have one."""
+    parts = unicodedata.normalize("NFKD", name or "").encode("ascii", "ignore").decode().lower().replace(".", " ").split()
+    return (parts[-1], parts[0][0] if len(parts) > 1 else "") if parts else ("", "")
+
+
+def same_goalie(a, b):
+    (la, ia), (lb, ib) = name_key(a), name_key(b)
+    return la == lb and (not ia or not ib or ia == ib)
+
+
+def goalie_fields(w, today, listed=None):
+    """Workload of the goalie Sports Insights lists for today (`listed` = (name, status)); else of the last starter."""
     starts = w["starts"]
-    r = dict.fromkeys(["goalie_last", "goalie_starts7", "goalie_starts14", "goalie_streak", "goalie_sa7", "goalie_b2b", "goalies"], "")
-    if not starts:
+    r = dict.fromkeys(GOALIE_COLS, "")
+    in_days = lambda n, name=None: [s for s in starts if (today - s[0]).days <= n and (name is None or same_goalie(s[1], name))]
+    r["goalie_last"] = starts[-1][1] if starts else ""
+    if listed and listed[0]:
+        who, r["goalie_src"] = listed[0], "Sports Insights" + (f" ({listed[1]})" if listed[1] else "")
+    elif starts:
+        who, r["goalie_src"] = starts[-1][1], "Last starter (Sports Insights listed none)"
+    else:
         return r
-    in_days = lambda n, name=None: [s for s in starts if (today - s[0]).days <= n and (name is None or s[1] == name)]
-    last = starts[-1][1]
     k = 0
     for s in reversed(starts):
-        if s[1] != last:
+        if not same_goalie(s[1], who):
             break
         k += 1
-    r.update(goalie_last=last, goalie_starts7=len(in_days(7, last)), goalie_starts14=len(in_days(14, last)),
-             goalie_streak=k, goalie_sa7=sum(s[3] for s in in_days(7, last)),
-             goalie_b2b="Yes" if (today - starts[-1][0]).days == 1 else "No")
+    mine = in_days(21, who)
+    r.update(goalie=who, goalie_starts7=len(in_days(7, who)), goalie_starts14=len(in_days(14, who)),
+             goalie_streak=k, goalie_sa7=sum(s[3] for s in in_days(7, who)),
+             goalie_b2b="Yes" if mine and (today - mine[-1][0]).days == 1 else "No")
     parts = []
     for name in sorted({s[1] for s in in_days(14)}, key=lambda n: -len(in_days(14, n))):
         g14 = in_days(14, name)
         parts.append(f"{name}: {len(in_days(7, name))} start{plural(in_days(7, name))} 7d / {len(g14)} in 14d, "
                      f"{sum(s[3] for s in g14)} shots, {round(sum(s[2] for s in g14))} min in 14d")
+    if not mine:
+        parts.insert(0, f"{who}: no starts in the last 21 days")
     r["goalies"] = "; ".join(parts)
     return r
 
@@ -280,7 +304,7 @@ def fmt_day(d):
     return f"{d:%b} {d.day}"
 
 
-def factors(league, team, opp, today, games):
+def factors(league, team, opp, today, games, goalie=None):
     """All situational factors for `team` in its game against `opp` on `today`."""
     tg = team_games(games, team)
     idx = next((i for i, g in enumerate(tg) if g["opp"] == opp and abs((g["day"] - today).days) <= 1), None)
@@ -388,7 +412,9 @@ def factors(league, team, opp, today, games):
                 r["extra14"] = f"{len(ex)} OT game{plural(ex)}" if ex else "None"
             else:
                 r["extra14"] = (f"{len(ex)} OT game{plural(ex)}" + (f", {r['ot_min14']} OT min" if r["ot_min14"] != "" else "")) if ex else "None"
-    r.update(goalie_fields(nhl, today) if nhl else dict.fromkeys(COLUMNS[COLUMNS.index("goalie_last"):COLUMNS.index("flags")], ""))
+    r.update(goalie_fields(nhl, today, goalie) if nhl else dict.fromkeys(GOALIE_COLS, ""))
+    if league == "NHL" and nhl is None and goalie and goalie[0]:
+        r.update(goalie=goalie[0], goalie_src="Sports Insights" + (f" ({goalie[1]})" if goalie[1] else ""))
     r["last5"] = f"{res[-5:].count('W')}-{res[-5:].count('L')}" if res else ""
     if last:
         sc = last["score"]
@@ -442,32 +468,48 @@ def factors(league, team, opp, today, games):
     if r["ot_min7"] not in ("", 0) and r["ot_min7"] >= 10:
         flags.append(f"{r['ot_min7']} OT min in last 7 days")
     if r["goalie_b2b"] == "Yes":
-        flags.append(f"Goalie {r['goalie_last']} started last night")
+        flags.append(f"Goalie {r['goalie']} started last night")
     if r["goalie_streak"] != "" and r["goalie_streak"] >= 5:
-        flags.append(f"Goalie {r['goalie_last']} {r['goalie_streak']} straight starts")
+        flags.append(f"Goalie {r['goalie']} {r['goalie_streak']} straight starts")
+    if r["goalie"] and r["goalie_last"] and r["goalie_src"].startswith("Sports") and not same_goalie(r["goalie"], r["goalie_last"]):
+        flags.append(f"Goalie change: {r['goalie']} in for {r['goalie_last']}")
     r["flags"] = "; ".join(flags)
     r["note"] = "; ".join(x for x in ("" if cur["loc"] else "Venue location unknown; travel not counted", r_nhl or "") if x)
     return r
 
 
 def load_matchups(args):
+    """[(sport, game, {team: (goalie, status)})]. Goalies come from the games file's away_goalie / home_goalie
+    (+ away_goalie_status / home_goalie_status) or from --goalies "ANA=Lukas Dostal:Confirmed,NYR=Igor Shesterkin"."""
+    cli = {}
+    for item in filter(None, (args.goalies or "").split(",")):
+        team, rest = item.split("=", 1)
+        name, _, status = rest.partition(":")
+        cli[team.strip()] = (name.strip(), status.strip())
     if args.matchups:
-        out = []
+        rows = []
         for m in args.matchups.split(","):
             sport, game = m.strip().split(":")
-            out.append((sport.upper(), game.strip()))
-        return out
-    with open(args.games, encoding="utf-8") as f:
-        rows = json.load(f)
-    if isinstance(rows, dict):
-        rows = rows.get("rows") or rows.get("data") or rows.get("results") or []
-    return [(r["sport"].upper(), r["game"]) for r in rows]
+            rows.append({"sport": sport, "game": game.strip()})
+    else:
+        with open(args.games, encoding="utf-8") as f:
+            rows = json.load(f)
+        if isinstance(rows, dict):
+            rows = rows.get("rows") or rows.get("data") or rows.get("results") or []
+    out = []
+    for r in rows:
+        away, home = r["game"].split("@")
+        g = {away: (r.get("away_goalie"), r.get("away_goalie_status")), home: (r.get("home_goalie"), r.get("home_goalie_status"))}
+        g.update({t: v for t, v in cli.items() if t in g})
+        out.append((r["sport"].upper(), r["game"], g))
+    return out
 
 
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--games", help="today's games JSON (rows with sport and game like ANA@NYR)")
     ap.add_argument("--matchups", help='e.g. "NHL:ANA@NYR,NFL:WSH@SF"')
+    ap.add_argument("--goalies", help='Sports Insights listed goalies, e.g. "ANA=Lukas Dostal:Confirmed,NYR=Igor Shesterkin:Expected"')
     ap.add_argument("--date", help="slate date YYYY-MM-DD (default today)")
     ap.add_argument("--out", help="output path (default si_daily/out/si_schedule_YYYYMMDD.json)")
     args = ap.parse_args()
@@ -476,7 +518,7 @@ def main():
     today = dt.date.fromisoformat(args.date) if args.date else dt.date.today()
 
     rows, cache = [], {}
-    for sport, game in load_matchups(args):
+    for sport, game, goalies in load_matchups(args):
         if sport not in LEAGUES:
             print(f"skip {sport} {game}: league not supported yet", file=sys.stderr)
             continue
@@ -486,7 +528,7 @@ def main():
         alias = ALIASES.get(sport, {})
         away, home = alias.get(away_si, away_si), alias.get(home_si, home_si)
         for team_si, team, opp, side in ((away_si, away, home, "away"), (home_si, home, away, "home")):
-            f = factors(sport, team, opp, today, cache[sport])
+            f = factors(sport, team, opp, today, cache[sport], goalies.get(team_si))
             rows.append(dict({"id": f"{game}|{team_si}", "game": game, "sport": sport,
                               "team": team_si, "side": side}, **f))
             print(f"{game:10} {team_si:5} {f.get('flags') or f.get('note') or '-'}")
