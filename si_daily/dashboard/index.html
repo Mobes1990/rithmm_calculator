@@ -1,0 +1,234 @@
+<style>
+.si { display: grid; gap: var(--cds-gap-lg); font-family: var(--font-anthropic-sans); }
+.si-head h1 { font-family: var(--font-anthropic-serif); font-weight: 400; font-size: var(--cds-font-size-title); margin: 0; }
+.si-head p { margin: var(--cds-gap-xs) 0 0; color: var(--color-fg-muted); max-width: 72ch; }
+.si-head p.take { color: var(--color-fg); }
+.si-tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 10rem), 1fr)); gap: var(--cds-gap-md); }
+.si-tile { background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-md) var(--cds-pad-lg); }
+.si-tile .v { font-family: var(--font-anthropic-serif); font-size: var(--cds-font-size-title); font-variant-numeric: tabular-nums; }
+.si-tile .k { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+.si-sec h2 { font-size: var(--cds-font-size-heading); font-weight: var(--cds-font-weight-medium); margin: 0 0 var(--cds-gap-xs); }
+.si-sec .note { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); margin: 0 0 var(--cds-gap-md); max-width: 78ch; }
+.si-games { display: grid; gap: var(--cds-gap-md); }
+.si-card { background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); min-width: 0; }
+.si-card.hot { border-color: var(--color-warn); }
+.si-sum { display: grid; gap: var(--cds-gap-sm); padding: var(--cds-pad-lg); cursor: pointer; width: 100%; text-align: left; background: none; border: 0; color: inherit; font: inherit; }
+.si-sum:focus-visible { outline: 2px solid var(--color-fg); outline-offset: -2px; border-radius: var(--cds-radius); }
+.si-top { display: flex; justify-content: space-between; align-items: baseline; gap: var(--cds-gap-sm); flex-wrap: wrap; }
+.si-top b { font-size: var(--cds-font-size-heading); font-weight: var(--cds-font-weight-medium); }
+.si-meta { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+.si-flag { font-size: var(--cds-font-size-caption); border: 1px solid currentColor; border-radius: var(--cds-radius); padding: 0 var(--cds-pad-xs); color: var(--color-fg-muted); }
+.si-card.hot .si-flag { color: var(--color-warn); }
+.si-cols { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr)); gap: var(--cds-gap-md); }
+.si-line { display: flex; gap: var(--cds-gap-md); flex-wrap: wrap; font-variant-numeric: tabular-nums; }
+.si-bars { display: grid; gap: var(--cds-gap-xs); }
+.si-bar { display: grid; grid-template-columns: 5rem 1fr 2.5rem; align-items: center; gap: var(--cds-gap-sm); font-size: var(--cds-font-size-caption); }
+.si-track { height: 8px; background: var(--cds-chart-grid); border-radius: 4px; overflow: hidden; }
+.si-fill { height: 100%; border-radius: 4px; }
+.si-bar .pct { text-align: right; font-variant-numeric: tabular-nums; }
+.si-proj { display: flex; gap: var(--cds-gap-lg); flex-wrap: wrap; align-items: baseline; }
+.si-proj .big { font-family: var(--font-anthropic-serif); font-size: var(--cds-font-size-title); font-variant-numeric: tabular-nums; }
+.si-call { font-weight: var(--cds-font-weight-medium); }
+.si-more { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+.si-det { border-top: 1px solid var(--color-border-line); padding: var(--cds-pad-lg); display: grid; gap: var(--cds-gap-lg); }
+.si-det h3 { font-size: var(--cds-font-size-body); font-weight: var(--cds-font-weight-medium); margin: 0 0 var(--cds-gap-xs); }
+.si-det p { margin: 0; max-width: 80ch; }
+.si-tblwrap { overflow-x: auto; }
+.si-tbl { width: 100%; border-collapse: collapse; font-variant-numeric: tabular-nums; font-size: var(--cds-font-size-body); }
+.si-tbl th { text-align: left; font-weight: var(--cds-font-weight-medium); color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); padding: var(--cds-pad-xs) var(--cds-pad-sm); border-bottom: 1px solid var(--color-border-line); }
+.si-tbl td { padding: var(--cds-pad-xs) var(--cds-pad-sm); border-bottom: 1px solid var(--color-border-line); vertical-align: top; }
+.si-tbl tr.nw td { color: var(--color-warn); }
+.si-tbl td.n, .si-tbl th.n { text-align: right; }
+.si-box { background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-md); overflow-x: auto; }
+.si-lc { position: relative; min-height: 96px; }
+.si-lc svg { display: block; }
+.si-lc .tip { position: absolute; pointer-events: none; background: var(--cds-surface-popover); border: 1px solid var(--cds-border); border-radius: var(--cds-radius); box-shadow: var(--cds-shadow-popover); padding: var(--cds-pad-xs) var(--cds-pad-sm); font-size: var(--cds-font-size-caption); white-space: nowrap; }
+.si-lc .tip span { color: var(--cds-text-secondary); }
+.si-sched { display: grid; gap: 2px; font-size: var(--cds-font-size-caption); }
+.si-sched .t { font-weight: var(--cds-font-weight-medium); }
+.si-sched .f { color: var(--color-warn); }
+.si-sched .q { color: var(--color-fg-muted); }
+[data-dash-source-state=empty] { color: transparent; }
+[data-dash-source-state=refreshing] { opacity: .5; transition: opacity var(--cds-dur-slow); }
+</style>
+<div class="si">
+  <header class="si-head" id="top">
+    <h1>Sports Insights Daily</h1>
+    <p><span data-source="summary" data-field="date" data-row="0">—</span> · pulled <span data-source="summary" data-field="pulled" data-row="0">—</span> · times Central · Sports Insights splits are primary; Pikkit's are shown for reference</p>
+    <p class="take" data-source="summary" data-field="takeaway" data-row="0">—</p>
+  </header>
+  <div class="si-tiles">
+    <div class="si-tile"><div class="v" data-source="summary" data-field="games" data-row="0">—</div><div class="k">Games on today's slates</div></div>
+    <div class="si-tile"><div class="v" data-source="summary" data-field="flagged" data-row="0">—</div><div class="k">With a money gap of 10+ or a reverse line move</div></div>
+  </div>
+  <section class="si-sec" id="games">
+    <h2>Today's games</h2>
+    <p class="note">Each card shows the line move, Sports Insights' ticket and money split on the public side, our projection, and the closing call. Click a card for beat-writer notes (noteworthy items highlighted), signals, Pikkit props, matchup metrics, our method and the full overview.</p>
+    <div class="si-games" id="si-games" data-source="games projection overview line_history schedule"></div>
+  </section>
+  <section class="si-sec" id="schedule">
+    <h2>Schedule and travel, every team</h2>
+    <p class="note">Rest is full days off since the last game (0 = back-to-back). Games and miles cover the previous 7 and 14 days; miles include the trip into today's game, measured arena to arena (NFL teams counted as flying home between games). Flags call out back-to-backs, 3-in-4s, long road trips, time-zone jumps, altitude, short weeks and byes.</p>
+    <div class="si-box"><table class="si-tbl" data-source="schedule" data-row-key="id">
+      <thead><tr><th data-field="team">Team</th><th data-field="game">Game</th><th class="n" data-field="rest_days">Rest</th><th class="n" data-field="g7">Games 7d</th><th class="n" data-field="mi7">Miles 7d</th><th class="n" data-field="g14">Games 14d</th><th class="n" data-field="mi14">Miles 14d</th><th data-field="trip">Trip</th><th data-field="flags">Flags</th></tr></thead>
+      <tbody id="si-schedule"></tbody></table></div>
+  </section>
+  <section class="si-sec" id="record">
+    <h2>Results record</h2>
+    <p class="note">Every play the overviews call, graded win or loss after the games. Today's are pending.</p>
+    <div class="si-box"><table class="si-tbl" data-source="record" data-row-key="id">
+      <thead><tr><th data-field="id">Id</th><th data-field="game">Game</th><th data-field="market">Market</th><th data-field="bet">Bet</th><th data-field="size">Size</th><th data-field="result">Result</th></tr></thead>
+      <tbody id="si-record"></tbody></table></div>
+  </section>
+  <section class="si-sec" id="ours">
+    <h2>Our DFS and round-robin exposure</h2>
+    <p class="note">Flags appear on a game's card when our entered DFS stacks or round-robin legs sit on the other side of the sharp money.</p>
+    <div class="si-box"><table class="si-tbl" data-source="flags" data-row-key="id">
+      <thead><tr><th data-field="id">Id</th><th data-field="item">Item</th><th data-field="status">Status</th></tr></thead>
+      <tbody id="si-flags"></tbody></table></div>
+  </section>
+  <section class="si-sec" id="sharp">
+    <h2>Sports Insights sharp-money plays, upcoming</h2>
+    <p class="note">From the Sharp Action Report. Units are Sports Insights' own rating of how strongly sharp money backs the side.</p>
+    <div class="si-box"><table class="si-tbl" data-source="sharp_plays" data-row-key="play">
+      <thead><tr><th data-field="sport">Sport</th><th data-field="play">Play</th><th data-field="game">Game</th><th class="n" data-field="units">Units</th></tr></thead>
+      <tbody id="si-sharp"></tbody></table></div>
+  </section>
+</div>
+<script>
+(function () {
+  const open = new Set();
+  const pct = (v) => (v == null || v === '') ? '—' : v + '%';
+  const el = (tag, cls, text) => { const e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; };
+  const mk = (e, src, field, game) => { e.setAttribute('data-source', src); e.setAttribute('data-field', field); e.setAttribute('data-where', 'game=' + encodeURIComponent(game)); return e; };
+  const num = (v, f) => (v == null || v === '') ? '—' : d3.format(f)(Number(v));
+  const mks = (e, id, field) => { e.setAttribute('data-source', 'schedule'); e.setAttribute('data-field', field); e.setAttribute('data-where', 'id=' + encodeURIComponent(id)); return e; };
+  const SCHED = [['rest_days', 'Days of rest'], ['b2b', 'Back-to-back'], ['density', 'Schedule density'], ['g7', 'Games, last 7 days'], ['home7', '  at home'], ['away7', '  on the road'], ['mi7', 'Miles, last 7 days'],
+    ['g14', 'Games, last 14 days'], ['home14', '  at home'], ['away14', '  on the road'], ['mi14', 'Miles, last 14 days'], ['mi_in', 'Miles into this game'], ['tz_shift', 'Time zones moved (+ east)'],
+    ['start_local', 'Local start'], ['body_clock', 'Start on body clock'], ['trip', 'Trip / homestand'], ['altitude', 'Altitude'], ['streak', 'Streak'], ['last5', 'Last 5'], ['prev', 'Last game'], ['next', 'Next game'], ['flags', 'Flags']];
+  const schedVal = (r, f) => (r[f] == null || r[f] === '') ? '—' : /^mi/.test(f) ? d3.format(',')(Number(r[f])) : String(r[f]);
+  function schedLine(g, S) {
+    const box = el('div', 'si-sched'); const [a, h] = g.game.split('@');
+    [a, h].forEach((t) => { const r = S[g.game + '|' + t]; if (!r) return; const p = el('div'); p.appendChild(el('span', 't', t + ' ')); p.appendChild(el('span', 'q', 'rest ' + schedVal(r, 'rest_days') + ' · ' + schedVal(r, 'g7') + ' games / ' + schedVal(r, 'mi7') + ' mi in 7d · '));
+      p.appendChild(mks(el('span', r.flags ? 'f' : 'q', r.flags || 'no schedule flags'), r.id, 'flags')); box.appendChild(p); });
+    return box;
+  }
+  function schedTable(g, S) {
+    const [a, h] = g.game.split('@'); const ra = S[g.game + '|' + a], rh = S[g.game + '|' + h]; if (!ra && !rh) return null;
+    const wrap = el('div', 'si-tblwrap'); const t = el('table', 'si-tbl'); const hr = el('tr'); ['Factor', a, h].forEach((x) => hr.appendChild(el('th', null, x))); const th = el('thead'); th.appendChild(hr); t.appendChild(th);
+    const tb = el('tbody'); SCHED.forEach(([f, lab]) => { const tr = el('tr'); tr.appendChild(el('td', null, lab)); [ra, rh].forEach((r) => tr.appendChild(r ? mks(el('td', null, schedVal(r, f)), r.id, f) : el('td', null, '—'))); tb.appendChild(tr); });
+    t.appendChild(tb); wrap.appendChild(t); return wrap;
+  }
+  function bar(label, value, color, game) {
+    const row = el('div', 'si-bar'); row.appendChild(el('span', null, label));
+    const t = el('div', 'si-track'); const f = el('div', 'si-fill'); f.style.width = Math.max(0, Math.min(100, Number(value))) + '%'; f.style.background = color; t.appendChild(f); row.appendChild(t);
+    row.appendChild(mk(el('span', 'pct', pct(value)), 'games', label.startsWith('Tickets') ? 'tix_pct' : 'money_pct', game)); return row;
+  }
+  function table(src, rows, cols, opts) {
+    const wrap = el('div', 'si-tblwrap'); const t = el('table', 'si-tbl'); t.setAttribute('data-source', src); t.setAttribute('data-row-key', 'id');
+    const hr = el('tr'); cols.forEach(([f, lab]) => { const th = el('th', null, lab); th.setAttribute('data-field', f); hr.appendChild(th); }); const th = el('thead'); th.appendChild(hr); t.appendChild(th);
+    const tb = el('tbody'); rows.forEach((r) => { const tr = el('tr', opts && opts.hl && opts.hl(r) ? 'nw' : null); tr.setAttribute('data-key', r.id); cols.forEach(([f]) => tr.appendChild(el('td', null, r[f] == null ? '' : String(r[f])))); tb.appendChild(tr); });
+    t.appendChild(tb); wrap.appendChild(t); return wrap;
+  }
+  function lineChart(g, hist) {
+    const pts = hist.filter((r) => r.game === g.game);
+    const box = el('div', 'si-lc'); box.setAttribute('data-source', 'line_history');
+    if (!pts.length) return box;
+    const cap = el('div', 'si-meta', pts[0].series + (pts[0].kind === 'ml' ? ' (implied win chance)' : ' (points)') + ', snapshots so far'); box.appendChild(cap);
+    const W = Math.max(220, box.clientWidth || 300), H = 70, m = { l: 8, r: 64, t: 10, b: 18 };
+    const svg = d3.create('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${H + m.t + m.b}`);
+    const x = d3.scalePoint(pts.map((r) => r.id), [m.l, W - m.r]);
+    const ys = pts.map((r) => Number(r.value)); const lo = d3.min(ys), hi = d3.max(ys), pad = Math.max(0.5, (hi - lo) * 0.25);
+    const y = d3.scaleLinear([lo - pad, hi + pad], [m.t + H, m.t]);
+    svg.append('line').attr('x1', m.l).attr('x2', W - m.r).attr('y1', m.t + H).attr('y2', m.t + H).attr('stroke', 'var(--cds-chart-grid)');
+    svg.append('path').attr('d', d3.line((r) => x(r.id), (r) => y(Number(r.value)))(pts)).attr('fill', 'none').attr('stroke', dash.colors[0]).attr('stroke-width', 2).attr('stroke-linecap', 'round').attr('stroke-linejoin', 'round');
+    svg.selectAll('circle').data(pts).join('circle').attr('cx', (r) => x(r.id)).attr('cy', (r) => y(Number(r.value))).attr('r', 3).attr('fill', dash.colors[0]);
+    svg.selectAll('text.xl').data(pts).join('text').attr('class', 'xl').attr('x', (r) => x(r.id)).attr('y', m.t + H + 14).attr('text-anchor', (r, i) => i === 0 ? 'start' : i === pts.length - 1 ? 'end' : 'middle').attr('fill', 'var(--color-fg-muted)').attr('font-size', 10).text((r) => r.label);
+    const last = pts[pts.length - 1];
+    svg.append('text').attr('x', x(last.id) + 6).attr('y', y(Number(last.value)) + 4).attr('fill', 'var(--color-fg)').attr('font-size', 11).text(last.line + (last.kind === 'ml' ? ' (' + d3.format('.1f')(Number(last.value)) + '%)' : ''));
+    const tip = el('div', 'tip'); tip.hidden = true;
+    svg.selectAll('rect.hit').data(pts).join('rect').attr('class', 'hit').attr('x', (r) => x(r.id) - 14).attr('y', m.t).attr('width', 28).attr('height', H).attr('fill', 'transparent')
+      .on('mouseenter', (ev, r) => { tip.textContent = ''; tip.appendChild(el('span', null, r.label + ' · ' + r.source)); tip.appendChild(el('div', null, r.line + (r.kind === 'ml' ? ' = ' + d3.format('.1f')(Number(r.value)) + '% implied' : ' points'))); tip.hidden = false;
+        const px = x(r.id) / W * (box.clientWidth || W); tip.style.left = Math.min(Math.max(0, px - 60), (box.clientWidth || W) - 170) + 'px'; tip.style.top = '18px'; })
+      .on('mouseleave', () => { tip.hidden = true; });
+    box.appendChild(svg.node()); box.appendChild(tip); return box;
+  }
+  function detail(g, D) {
+    const det = el('div', 'si-det');
+    const ov = D.ov[g.game] || {};
+    const s1 = el('div'); s1.appendChild(el('h3', null, 'How to bet it')); s1.appendChild(mk(el('p', 'si-call', ov.call || '—'), 'overview', 'call', g.game)); s1.appendChild(mk(el('p', null, ov.why || ''), 'overview', 'why', g.game));
+    const w = el('p', 'si-meta'); w.appendChild(document.createTextNode('Watch before lock: ')); w.appendChild(mk(el('span', null, ov.watch || ''), 'overview', 'watch', g.game)); s1.appendChild(w); det.appendChild(s1);
+    const s2 = el('div'); s2.appendChild(el('h3', null, 'Sports Insights read')); s2.appendChild(mk(el('p', null, g.read), 'games', 'read', g.game));
+    const sig = D.sig.filter((r) => r.game === g.game);
+    if (sig.length) { s2.appendChild(el('p', 'si-meta', 'Bet signals')); s2.appendChild(table('signals', sig, [['id', 'Id'], ['signal', 'Signal'], ['play', 'Play'], ['book', 'Trigger book (record)'], ['units', 'Units'], ['trigger', 'Triggered']])); }
+    else s2.appendChild(el('p', 'si-meta', 'No Sports Insights bet signals on this game.'));
+    det.appendChild(s2);
+    const pk = D.pk[g.game];
+    if (pk) { const s3 = el('div'); s3.appendChild(el('h3', null, 'Pikkit: lines, splits and the most-picked props'));
+      [['lines', 'Lines'], ['move', 'Since this morning'], ['splits', 'Pikkit splits (reference)'], ['props', 'Popular props']].forEach(([f, lab]) => { if (pk[f]) { const p = el('p'); p.appendChild(el('span', 'si-meta', lab + ': ')); p.appendChild(mk(el('span', null, pk[f]), 'pikkit', f, g.game)); s3.appendChild(p); } });
+      det.appendChild(s3); }
+    const pr = D.pr[g.game];
+    if (pr) { const s4 = el('div'); s4.appendChild(el('h3', null, 'Our projection and method'));
+      const p = el('p'); p.appendChild(document.createTextNode('Confidence: ')); p.appendChild(mk(el('b', null, pr.confidence), 'projection', 'confidence', g.game)); s4.appendChild(p);
+      s4.appendChild(mk(el('p', 'si-meta', pr.method), 'projection', 'method', g.game)); det.appendChild(s4); }
+    const lean = D.leans.filter((r) => r.game === g.game);
+    if (lean.length) { const s5 = el('div'); s5.appendChild(el('h3', null, 'Market by market')); s5.appendChild(table('leans', lean, [['id', 'Id'], ['market', 'Market'], ['read', 'Read']])); det.appendChild(s5); }
+    const beat = D.beat.filter((r) => r.game === g.game);
+    if (beat.length) { const s6 = el('div'); s6.appendChild(el('h3', null, 'Beat-writer notes (noteworthy in color)')); s6.appendChild(table('beat', beat, [['id', 'Id'], ['noteworthy', 'Noteworthy'], ['note', 'Note'], ['source', 'Source']], { hl: (r) => r.noteworthy === 'Yes' })); det.appendChild(s6); }
+    const st = schedTable(g, D.sched);
+    if (st) { const s8 = el('div'); s8.appendChild(el('h3', null, 'Schedule and travel')); s8.appendChild(st); det.appendChild(s8); }
+    const met = D.met.filter((r) => r.game === g.game);
+    if (met.length) { const s7 = el('div'); s7.appendChild(el('h3', null, 'Matchup metrics')); s7.appendChild(table('metrics', met, [['id', 'Id'], ['label', 'Metric'], ['away', g.game.split('@')[0]], ['home', g.game.split('@')[1]], ['source', 'Source']])); det.appendChild(s7); }
+    return det;
+  }
+  function draw() {
+    const G = dash.data('games'), P = dash.data('projection'), O = dash.data('overview');
+    const rows = (id) => { const d = dash.data(id); return d.status === 'ok' ? d.data : []; };
+    const byGame = (arr) => Object.fromEntries(arr.map((r) => [r.game, r]));
+    const D = { ov: byGame(rows('overview')), pr: byGame(rows('projection')), pk: byGame(rows('pikkit')), sig: rows('signals'), leans: rows('leans'), beat: rows('beat'), met: rows('metrics'), sched: Object.fromEntries(rows('schedule').map((r) => [r.id, r])) };
+    const box = document.getElementById('si-games'); box.textContent = '';
+    if (G.status === 'ok') {
+      G.data.forEach((g) => {
+        const hot = /gap 10\+|reverse/i.test(g.flag || '') || /reverse/i.test((D.pk[g.game] || {}).move || '');
+        const card = el('article', 'si-card' + (hot ? ' hot' : '')); card.id = 'g-' + g.game.replace('@', '-');
+        const sum = el('button', 'si-sum'); sum.type = 'button'; sum.setAttribute('aria-expanded', open.has(g.game) ? 'true' : 'false');
+        const top = el('div', 'si-top'); const left = el('div'); left.appendChild(mk(el('b', null, g.game), 'games', 'game', g.game));
+        const meta = el('div', 'si-meta'); [['sport'], ['time_ct'], ['market']].forEach(([f], i) => { if (i) meta.appendChild(document.createTextNode(' · ')); meta.appendChild(mk(el('span', null, g[f]), 'games', f, g.game)); });
+        left.appendChild(meta); top.appendChild(left); top.appendChild(mk(el('span', 'si-flag', g.flag), 'games', 'flag', g.game)); sum.appendChild(top);
+        const cols = el('div', 'si-cols');
+        const c1 = el('div'); const line = el('div', 'si-line');
+        [['open', 'Open '], ['now', 'Now ']].forEach(([f, lab]) => { const s = el('span'); s.appendChild(document.createTextNode(lab)); s.appendChild(mk(el('b', null, g[f]), 'games', f, g.game)); line.appendChild(s); });
+        line.appendChild(mk(el('span', 'si-meta', g.move), 'games', 'move', g.game)); c1.appendChild(line);
+        const bars = el('div', 'si-bars'); bars.appendChild(bar('Tickets ' + g.public_side, g.tix_pct, dash.colors[0], g.game)); bars.appendChild(bar('Money ' + g.public_side, g.money_pct, dash.colors[1], g.game)); c1.appendChild(bars);
+        const gap = el('div', 'si-meta'); gap.appendChild(document.createTextNode('Money minus tickets ')); gap.appendChild(mk(el('span', null, g.gap), 'games', 'gap', g.game)); c1.appendChild(gap);
+        c1.appendChild(lineChart(g, rows('line_history')));
+        cols.appendChild(c1);
+        const pr = D.pr[g.game]; const c2 = el('div');
+        if (pr) { const pj = el('div', 'si-proj');
+          const sc = el('span', 'big'); sc.appendChild(mk(el('span', null, num(pr.away_pts, '.1f')), 'projection', 'away_pts', g.game)); sc.appendChild(document.createTextNode('–')); sc.appendChild(mk(el('span', null, num(pr.home_pts, '.1f')), 'projection', 'home_pts', g.game)); pj.appendChild(sc);
+          const t = el('span', 'si-meta'); t.appendChild(document.createTextNode('our total ')); t.appendChild(mk(el('span', null, num(pr.total, '.1f')), 'projection', 'total', g.game)); t.appendChild(document.createTextNode(' · ' + pr.home + ' win ')); t.appendChild(mk(el('span', null, num(pr.home_win_prob, '.0%')), 'projection', 'home_win_prob', g.game)); pj.appendChild(t);
+          c2.appendChild(el('div', 'si-meta', 'Our projection (' + pr.away + '–' + pr.home + ')')); c2.appendChild(pj); }
+        const ov = D.ov[g.game]; if (ov) c2.appendChild(mk(el('p', 'si-call', ov.call), 'overview', 'call', g.game));
+        cols.appendChild(c2); sum.appendChild(cols);
+        sum.appendChild(schedLine(g, D.sched));
+        sum.appendChild(el('span', 'si-more', open.has(g.game) ? 'Hide details' : 'Show beat notes, signals, props, metrics and the full overview'));
+        card.appendChild(sum);
+        if (open.has(g.game)) card.appendChild(detail(g, D));
+        sum.addEventListener('click', () => { if (open.has(g.game)) open.delete(g.game); else open.add(g.game); dash.setLink(card.id); draw(); });
+        box.appendChild(card);
+      });
+    } else if (G.status === 'error') { box.appendChild(el('p', 'si-meta', 'Failed to load')); }
+    const fill = (id, tbodyId, cols, fmt) => { const tb = document.getElementById(tbodyId); tb.textContent = ''; rows(id).forEach((r) => { const tr = el('tr'); cols.forEach((c) => tr.appendChild(el('td', c === 'units' ? 'n' : null, c === 'units' ? d3.format('.1f')(Number(r[c])) : String(r[c] == null ? '' : r[c])))); tb.appendChild(tr); }); };
+    fill('record', 'si-record', ['id', 'game', 'market', 'bet', 'size', 'result']);
+    fill('flags', 'si-flags', ['id', 'item', 'status']);
+    fill('sharp_plays', 'si-sharp', ['sport', 'play', 'game', 'units']);
+    const stb = document.getElementById('si-schedule'); stb.textContent = '';
+    rows('schedule').forEach((r) => { const tr = el('tr'); tr.setAttribute('data-key', r.id);
+      ['team', 'game', 'rest_days', 'g7', 'mi7', 'g14', 'mi14', 'trip', 'flags'].forEach((f) => tr.appendChild(el('td', /^(rest|g\d|mi)/.test(f) ? 'n' : null, schedVal(r, f)))); stb.appendChild(tr); });
+  }
+  dash.onData(draw);
+  const named = document.getElementById(location.hash.slice(1));
+  if (named && named.id.startsWith('g-')) { open.add(named.id.slice(2).replace('-', '@')); draw(); named.scrollIntoView(); }
+})();
+</script>
+
