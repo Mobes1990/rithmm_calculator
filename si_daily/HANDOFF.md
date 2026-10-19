@@ -29,5 +29,11 @@ Dashboard: https://claude.ai/artifact/1MGzSYaPZRpFs3vSTP1aRD
    dashboard and create the `datasets/schedule` source itself. If so, leave the
    page to the cloud session so the two don't overwrite each other's edits.)
 
-Data source: ESPN's public scoreboard feed (site.api.espn.com). Pro leagues
-only (NFL, NHL, NBA, MLB); college isn't covered yet.
+Data sources: ESPN's public scoreboard feed (site.api.espn.com) for schedules,
+results and extra time; the NHL's own feed (api-web.nhle.com) for starting-goalie
+workload and exact OT minutes. Pro leagues only (NFL, NHL, NBA, MLB); college
+isn't covered yet.
+
+If the NHL feed fails, NHL rows still come out with a note saying goalie and OT
+minutes are missing. Check that the goalie names look right (the starter is the
+goalie the NHL marks `starter`, otherwise the first goalie who played).

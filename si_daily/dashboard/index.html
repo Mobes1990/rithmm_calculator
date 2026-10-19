@@ -68,7 +68,7 @@
   </section>
   <section class="si-sec" id="schedule">
     <h2>Schedule and travel, every team</h2>
-    <p class="note">Rest is full days off since the last game (0 = back-to-back). Games and miles cover the previous 7 and 14 days; miles include the trip into today's game, measured arena to arena (NFL teams counted as flying home between games). Flags call out back-to-backs, 3-in-4s, long road trips, time-zone jumps, altitude, short weeks and byes.</p>
+    <p class="note">Rest is full days off since the last game (0 = back-to-back). Games and miles cover the previous 7 and 14 days; miles include the trip into today's game, measured arena to arena (NFL teams counted as flying home between games). Flags call out back-to-backs, 3-in-4s, long road trips, time-zone jumps, altitude, short weeks, byes, heavy overtime and a goalie who started last night or has 5+ straight starts. Open a game card for overtime minutes (NHL, NBA), extra innings (MLB) and NHL starting-goalie workload from the NHL's own game data.</p>
     <div class="si-box"><table class="si-tbl" data-source="schedule" data-row-key="id">
       <thead><tr><th data-field="team">Team</th><th data-field="game">Game</th><th class="n" data-field="rest_days">Rest</th><th class="n" data-field="g7">Games 7d</th><th class="n" data-field="mi7">Miles 7d</th><th class="n" data-field="g14">Games 14d</th><th class="n" data-field="mi14">Miles 14d</th><th data-field="trip">Trip</th><th data-field="flags">Flags</th></tr></thead>
       <tbody id="si-schedule"></tbody></table></div>
@@ -105,18 +105,22 @@
   const mks = (e, id, field) => { e.setAttribute('data-source', 'schedule'); e.setAttribute('data-field', field); e.setAttribute('data-where', 'id=' + encodeURIComponent(id)); return e; };
   const SCHED = [['rest_days', 'Days of rest'], ['b2b', 'Back-to-back'], ['density', 'Schedule density'], ['g7', 'Games, last 7 days'], ['home7', '  at home'], ['away7', '  on the road'], ['mi7', 'Miles, last 7 days'],
     ['g14', 'Games, last 14 days'], ['home14', '  at home'], ['away14', '  on the road'], ['mi14', 'Miles, last 14 days'], ['mi_in', 'Miles into this game'], ['tz_shift', 'Time zones moved (+ east)'],
-    ['start_local', 'Local start'], ['body_clock', 'Start on body clock'], ['trip', 'Trip / homestand'], ['altitude', 'Altitude'], ['streak', 'Streak'], ['last5', 'Last 5'], ['prev', 'Last game'], ['next', 'Next game'], ['flags', 'Flags']];
+    ['start_local', 'Local start'], ['body_clock', 'Start on body clock'], ['trip', 'Trip / homestand'], ['altitude', 'Altitude'],
+    ['ot7', 'Past regulation, last 7 days'], ['ot_min7', 'OT minutes, last 7 days'], ['ot14', 'Past regulation, last 14 days'], ['ot_min14', 'OT minutes, last 14 days'], ['extra14', 'Extra time, 14 days'],
+    ['goalie_last', 'Last starting goalie', 'NHL'], ['goalie_starts7', '  starts, last 7 days', 'NHL'], ['goalie_starts14', '  starts, last 14 days', 'NHL'], ['goalie_streak', '  straight starts', 'NHL'],
+    ['goalie_sa7', '  shots faced, last 7 days', 'NHL'], ['goalie_b2b', '  started last night', 'NHL'], ['goalies', 'Goalie workload, 14 days', 'NHL'], ['streak', 'Streak'], ['last5', 'Last 5'], ['prev', 'Last game'], ['next', 'Next game'], ['flags', 'Flags']];
   const schedVal = (r, f) => (r[f] == null || r[f] === '') ? '—' : /^mi/.test(f) ? d3.format(',')(Number(r[f])) : String(r[f]);
   function schedLine(g, S) {
     const box = el('div', 'si-sched'); const [a, h] = g.game.split('@');
     [a, h].forEach((t) => { const r = S[g.game + '|' + t]; if (!r) return; const p = el('div'); p.appendChild(el('span', 't', t + ' ')); p.appendChild(el('span', 'q', 'rest ' + schedVal(r, 'rest_days') + ' · ' + schedVal(r, 'g7') + ' games / ' + schedVal(r, 'mi7') + ' mi in 7d · '));
+      if (g.sport === 'NHL' && r.goalie_last) p.appendChild(mks(el('span', 'q', 'G ' + r.goalie_last + ' ' + schedVal(r, 'goalie_starts7') + ' starts/7d · '), r.id, 'goalie_last'));
       p.appendChild(mks(el('span', r.flags ? 'f' : 'q', r.flags || 'no schedule flags'), r.id, 'flags')); box.appendChild(p); });
     return box;
   }
   function schedTable(g, S) {
     const [a, h] = g.game.split('@'); const ra = S[g.game + '|' + a], rh = S[g.game + '|' + h]; if (!ra && !rh) return null;
     const wrap = el('div', 'si-tblwrap'); const t = el('table', 'si-tbl'); const hr = el('tr'); ['Factor', a, h].forEach((x) => hr.appendChild(el('th', null, x))); const th = el('thead'); th.appendChild(hr); t.appendChild(th);
-    const tb = el('tbody'); SCHED.forEach(([f, lab]) => { const tr = el('tr'); tr.appendChild(el('td', null, lab)); [ra, rh].forEach((r) => tr.appendChild(r ? mks(el('td', null, schedVal(r, f)), r.id, f) : el('td', null, '—'))); tb.appendChild(tr); });
+    const tb = el('tbody'); SCHED.filter(([, , only]) => !only || only === g.sport).forEach(([f, lab]) => { const tr = el('tr'); tr.appendChild(el('td', null, lab)); [ra, rh].forEach((r) => tr.appendChild(r ? mks(el('td', null, schedVal(r, f)), r.id, f) : el('td', null, '—'))); tb.appendChild(tr); });
     t.appendChild(tb); wrap.appendChild(t); return wrap;
   }
   function bar(label, value, color, game) {

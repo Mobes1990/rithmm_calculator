@@ -4,7 +4,10 @@ For every team on today's slate this pulls the team's recent and upcoming games
 from ESPN's public scoreboard feed and works out situational factors: rest days,
 back-to-backs, games and home/away split over the last 7 and 14 days, miles
 travelled, time-zone shifts, road-trip / homestand position, schedule density
-(3-in-4, 4-in-6), altitude, streaks and the next game (look-ahead spots).
+(3-in-4, 4-in-6), altitude, streaks, the next game (look-ahead spots) and
+overtime minutes / extra innings. For NHL teams it also reads the NHL's own feed
+(api-web.nhle.com) for starting-goalie workload and exact OT minutes; goalie
+streaks count starts within the last 21 days.
 
 Usage (needs only the Python standard library):
     python si_daily/si_schedule.py --games si_games_20261019.json
@@ -112,7 +115,12 @@ TZ_NAME = {-5: "ET", -6: "CT", -7: "MT", -8: "PT"}
 SPANS = (7, 14)
 COLUMNS = ["rest_days", "b2b", *[f"{k}{n}" for n in SPANS for k in ("g", "home", "away", "mi")], "mi_in",
            "tz_shift", "start_local", "body_clock", "trip", "density", "streak", "last5", "prev", "next",
-           "altitude", "flags", "note"]
+           "altitude", "ot7", "ot14", "ot_min7", "ot_min14", "extra14",
+           "goalie_last", "goalie_starts7", "goalie_starts14", "goalie_streak", "goalie_sa7", "goalie_b2b", "goalies",
+           "flags", "note"]
+
+# ESPN -> NHL API team codes where they differ
+NHL_CODE = {"SJ": "SJS", "UTAH": "UTA", "LA": "LAK", "NJ": "NJD", "TB": "TBL"}
 
 
 def miles(a, b):
@@ -140,11 +148,92 @@ def local(loc, utc):
 
 
 def fetch(league, start, end):
-    url = (f"https://site.api.espn.com/apis/site/v2/sports/{LEAGUES[league]}/scoreboard"
-           f"?dates={start:%Y%m%d}-{end:%Y%m%d}&limit=1000")
+    return get_json(f"https://site.api.espn.com/apis/site/v2/sports/{LEAGUES[league]}/scoreboard"
+                    f"?dates={start:%Y%m%d}-{end:%Y%m%d}&limit=1000").get("events", [])
+
+
+def get_json(url):
     req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
     with urllib.request.urlopen(req, timeout=30) as r:
-        return json.load(r).get("events", [])
+        return json.load(r)
+
+
+def mmss(t):
+    m, s = (t or "0:00").split(":")
+    return int(m) + int(s) / 60
+
+
+def extra_time(detail, league):
+    """ESPN final detail ("Final/OT", "Final/2OT", "Final/SO", "Final/11") -> (past regulation?, OT minutes, extra innings)."""
+    if "/" not in (detail or ""):
+        return False, 0, 0
+    suf = detail.split("/")[-1].strip().upper()
+    n = int(suf[:-2]) if suf.endswith("OT") and suf[:-2].isdigit() else 1
+    if league == "MLB":
+        return True, None, max(0, int(suf) - 9) if suf.isdigit() else None
+    if league == "NBA":
+        return True, 5 * n, 0
+    if league == "NHL" and suf == "SO":
+        return True, 5, 0
+    return True, None, 0  # NHL OT length comes from the NHL feed; NFL OT length isn't in ESPN's summary
+
+
+def nhl_workload(code, today):
+    """From the NHL's own feed: starting-goalie workload and exact OT minutes for the last 21 days.
+
+    Returns {"ot": {date: minutes}, "starts": [(date, goalie, minutes, shots against)], newest last}.
+    """
+    season = f"{today.year}{today.year + 1}" if today.month >= 9 else f"{today.year - 1}{today.year}"
+    base = "https://api-web.nhle.com/v1"
+    sched = get_json(f"{base}/club-schedule-season/{code}/{season}").get("games", [])
+    out = {"ot": {}, "starts": []}
+    for g in sched:
+        day = dt.date.fromisoformat(g["gameDate"])
+        if not (today - dt.timedelta(days=21) <= day < today) or g.get("gameState") not in ("OFF", "FINAL"):
+            continue
+        box = get_json(f"{base}/gamecenter/{g['id']}/boxscore")
+        side = "homeTeam" if box["homeTeam"]["abbrev"] == code else "awayTeam"
+        goalies = [x for x in box.get("playerByGameStats", {}).get(side, {}).get("goalies", []) if mmss(x.get("toi")) > 0]
+        start = next((x for x in goalies if x.get("starter")), goalies[0] if goalies else None)
+        if start:
+            out["starts"].append((day, start["name"]["default"], mmss(start.get("toi")), start.get("shotsAgainst") or 0))
+        last = (g.get("gameOutcome") or {}).get("lastPeriodType")
+        if last in ("OT", "SO"):
+            per = 20 if g.get("gameType") == 3 else 5
+            if last == "SO":
+                out["ot"][day] = per
+            else:
+                land = get_json(f"{base}/gamecenter/{g['id']}/landing")
+                goals = [(p["periodDescriptor"]["number"], gl.get("timeInPeriod"))
+                         for p in land.get("summary", {}).get("scoring", []) for gl in p.get("goals", [])]
+                num, t = max(goals, key=lambda x: (x[0], mmss(x[1]))) if goals else (4, f"{per}:00")
+                out["ot"][day] = round((num - 4) * per + mmss(t), 1)
+    out["starts"].sort(key=lambda x: x[0])
+    return out
+
+
+def goalie_fields(w, today):
+    starts = w["starts"]
+    r = dict.fromkeys(["goalie_last", "goalie_starts7", "goalie_starts14", "goalie_streak", "goalie_sa7", "goalie_b2b", "goalies"], "")
+    if not starts:
+        return r
+    in_days = lambda n, name=None: [s for s in starts if (today - s[0]).days <= n and (name is None or s[1] == name)]
+    last = starts[-1][1]
+    k = 0
+    for s in reversed(starts):
+        if s[1] != last:
+            break
+        k += 1
+    r.update(goalie_last=last, goalie_starts7=len(in_days(7, last)), goalie_starts14=len(in_days(14, last)),
+             goalie_streak=k, goalie_sa7=sum(s[3] for s in in_days(7, last)),
+             goalie_b2b="Yes" if (today - starts[-1][0]).days == 1 else "No")
+    parts = []
+    for name in sorted({s[1] for s in in_days(14)}, key=lambda n: -len(in_days(14, n))):
+        g14 = in_days(14, name)
+        parts.append(f"{name}: {len(in_days(7, name))} start{plural(in_days(7, name))} 7d / {len(g14)} in 14d, "
+                     f"{sum(s[3] for s in g14)} shots, {round(sum(s[2] for s in g14))} min in 14d")
+    r["goalies"] = "; ".join(parts)
+    return r
 
 
 def parse(events, league):
@@ -181,6 +270,10 @@ def team_games(games, team):
             out.append(dict(g, side=side, opp=g["away"] if side == "home" else g["home"],
                             day=local(g["loc"], g["utc"]).date() if g["loc"] else g["utc"].date()))
     return out
+
+
+def plural(n):
+    return "" if (n if isinstance(n, int) else len(n)) == 1 else "s"
 
 
 def fmt_day(d):
@@ -269,6 +362,33 @@ def factors(league, team, opp, today, games):
             k += 1
         streak = f"{res[-1]}{k}"
     r["streak"] = streak
+
+    # Overtime / extra innings in the last 7 and 14 days
+    nhl = r_nhl = None
+    if league == "NHL":
+        try:
+            nhl = nhl_workload(NHL_CODE.get(team, team), today)
+        except Exception as e:  # keep the rest of the row if the NHL feed is down
+            r_nhl = f"NHL feed unavailable ({e.__class__.__name__}); goalie and OT minutes missing"
+    for n in SPANS:
+        window = [g for g in prev if g["done"] and (today - g["day"]).days <= n]
+        ex = [(g, *extra_time(g["detail"], league)) for g in window]
+        ex = [e for e in ex if e[1]]
+        r[f"ot{n}"] = len(ex)
+        if league in ("NHL", "NBA"):
+            mins = [(nhl["ot"].get(g["day"]) if nhl and nhl["ot"].get(g["day"]) is not None else m) for g, _, m, _ in ex]
+            r[f"ot_min{n}"] = round(sum(m for m in mins if m is not None), 1) if all(m is not None for m in mins) else ""
+        else:
+            r[f"ot_min{n}"] = ""
+        if n == 14:
+            if league == "MLB":
+                inn = sum(i or 0 for *_, i in ex)
+                r["extra14"] = f"{len(ex)} extra-inning game{plural(ex)}, {inn} extra inning{plural(inn)}" if ex else "None"
+            elif league == "NFL":
+                r["extra14"] = f"{len(ex)} OT game{plural(ex)}" if ex else "None"
+            else:
+                r["extra14"] = (f"{len(ex)} OT game{plural(ex)}" + (f", {r['ot_min14']} OT min" if r["ot_min14"] != "" else "")) if ex else "None"
+    r.update(goalie_fields(nhl, today) if nhl else dict.fromkeys(COLUMNS[COLUMNS.index("goalie_last"):COLUMNS.index("flags")], ""))
     r["last5"] = f"{res[-5:].count('W')}-{res[-5:].count('L')}" if res else ""
     if last:
         sc = last["score"]
@@ -319,8 +439,14 @@ def factors(league, team, opp, today, games):
         flags.append("Back-to-back tomorrow")
     if cur["neutral"]:
         flags.append(f"Neutral site ({cur['where']})")
+    if r["ot_min7"] not in ("", 0) and r["ot_min7"] >= 10:
+        flags.append(f"{r['ot_min7']} OT min in last 7 days")
+    if r["goalie_b2b"] == "Yes":
+        flags.append(f"Goalie {r['goalie_last']} started last night")
+    if r["goalie_streak"] != "" and r["goalie_streak"] >= 5:
+        flags.append(f"Goalie {r['goalie_last']} {r['goalie_streak']} straight starts")
     r["flags"] = "; ".join(flags)
-    r["note"] = "" if cur["loc"] else "Venue location unknown; travel not counted"
+    r["note"] = "; ".join(x for x in ("" if cur["loc"] else "Venue location unknown; travel not counted", r_nhl or "") if x)
     return r
 
 
