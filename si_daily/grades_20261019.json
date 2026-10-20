@@ -1,0 +1,24 @@
+{
+ "graded_by": "Claude (cloud session), 2026-10-20, from published box scores",
+ "results": {
+  "prop|2026-10-19|NHL|Alex Killorn|shots|under|1.5": ["Win", "1 SOG"],
+  "prop|2026-10-19|NHL|Brock Nelson|assists|over|0.5": ["Loss", "0 A"],
+  "prop|2026-10-19|NHL|Evgeni Malkin|assists|over|0.5": ["Loss", "0 A"],
+  "prop|2026-10-19|NHL|Leo Carlsson|shots|over|3.5": ["Loss", "2 SOG"],
+  "prop|2026-10-19|NHL|Macklin Celebrini|assists|over|1.5": ["Loss", "0 A"],
+  "prop|2026-10-19|NHL|Martin Necas|points|over|1.5": ["Loss", "1 G, 0 A"],
+  "prop|2026-10-19|NHL|Will Smith|shots|over|3.5": ["Win", "4 SOG (CBS box score only)"],
+  "xprop|2026-10-19|NHL|Celebrini|ast2": ["Loss", "0 A"],
+  "xprop|2026-10-19|NHL|Nelson|ast1": ["Loss", "0 A"],
+  "xprop|2026-10-19|NHL|Toffoli|ast1": ["Win", "1 A (Marchment goal)"],
+  "xprop|2026-10-19|NHL|Perreault|pt1": ["Win", "1 G"],
+  "xprop|2026-10-19|NHL|Tolvanen|sogU": ["Win", "1 SOG"],
+  "xprop|2026-10-19|NFL|Diggs|recU3.5": ["Loss", "6 rec, 44 yds, 1 TD"],
+  "xprop|2026-10-19|NFL|Daniels|cmpO19.5": ["Win", "29/40"],
+  "xprop|2026-10-19|NFL|McLaurin|rec80": ["Loss", "1 rec, 27 yds; left 1Q knee"],
+  "xprop|2026-10-19|NFL|White|atd": ["Win", "9-yd TD catch, 4Q"],
+  "xprop|2026-10-19|NFL|Black|rush40": ["Loss", "8 car, 34 yds (FootballDB snapshot, confirm final)"],
+  "xprop|2026-10-19|MLB|Peralta|kU3.5": ["Win", "3 K"],
+  "xprop|2026-10-19|MLB|Peralta|outsO13.5": ["Win", "5.1 IP = 16 outs"]
+ }
+}
