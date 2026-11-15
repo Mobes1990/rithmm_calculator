@@ -1,4 +1,4 @@
-# Game Recon: NBA, Sunday Nov 15, 2026
+# Rithmm Model Backtest Analysis (+ calculator bugs)
 
 Prepared in a cloud session (no access to the PC, the Rithmm app, or live model outputs) as a handoff for the PC Claude agent.
 
