@@ -19,7 +19,13 @@ A situational handicapping sheet for the PC Claude agent. For each game it cover
 
 **Monday Nov 16:** Germany–Netherlands and Greece–Serbia (Nations League).
 
-**NCAA men's basketball:** 36 D-I games are written up. **The slate is incomplete**, because the search budget ran out (see the CBB section notes for unconfirmed and missing games).
+**NCAA men's basketball:** 38 D-I games are written up: 36 in the main sections and 2 in the gap-fill section at the end. A conference-by-conference re-check found no others, so the slate is **probably complete**. Not every low-major conference could be confirmed game by game.
+
+**CBB conflicts to check:**
+- **Air Force @ Pacific:** most likely played Saturday, so it isn't counted.
+- **Missouri vs Marquette:** sources disagree on which team is favored.
+- **Syracuse vs St. John's:** one source lists it for Monday, probably a time-zone (UTC) mix-up.
+- **Baylor vs Texas:** the tip time is either noon or 3 PM ET.
 
 ---
 
@@ -1911,3 +1917,146 @@ Groups: **McEnroe** Zverev (1), Shelton (3), Fils (6), Jódar (8). **Lendl** Alc
 
 ---
 
+## CBB Gap-Fill: Additional D-I Men's Games, Sun Nov 15, 2026
+
+**Bottom line:** I checked all nine leads and swept the conferences. Only **2 new games** are confirmed for today. Most of the "Nov 15" leads were Saturday (Nov 14) games. Two things caused this:
+- Saturday-night ET tips show up as Nov 15 in UTC timestamps (for example, Fox Sports listed Rider@Villanova as `2026-11-15T00:00:00Z`).
+- Bleacher Nation's conference roundups mix dates. For example, its "Sunday" WCC and SoCon cards listed games that were played Saturday.
+
+One more game, **Air Force @ Pacific**, has an unresolved date conflict. It is shown separately below and is not counted.
+
+### Slate (new games only, sorted by ET tip)
+
+| ET tip | Game | Venue | TV | Line | Status |
+|---|---|---|---|---|---|
+| 2:00 PM | Albany @ Holy Cross | Hart Center, Worcester MA | ESPN+ | Albany -2.5, O/U 145.5, ML Albany -155 / HC +130 | Confirmed (Holy Cross release) |
+| 4:00 PM (1:00 PT) | UC Merced (D-II) @ UC Santa Barbara | The Thunderdome, Santa Barbara CA | ESPN+ (per campus calendar) | No coverage found | Confirmed (UCSB schedule) |
+| ~~4:00 PM~~ | ~~Air Force @ Pacific~~ | Spanos Center, Stockton CA | ESPN+ | Pacific -12.5 to -13.5, O/U 162.5 to 165.5 | **Date conflict. Most likely played Sat Nov 14** |
+
+---
+
+#### Albany @ Holy Cross (2:00 PM ET)
+- **Line:** Albany -2.5, total 145.5, ML Albany -155 / Holy Cross +130 (Bleacher Nation, DraftKings-based). The models split:
+  - Bleacher Nation's model: Holy Cross 77-73.
+  - Dimers: Albany 59.3% to win, value on the over 145.5 (-104).
+- **Records:** Albany 2-2. Holy Cross 0-3, on a three-game losing streak.
+- **Injuries:** No coverage found.
+- **Rest:**
+  - Albany last played Wed Nov 11 (an 85-76 home loss to Dartmouth), so it comes in on 3 full days off.
+  - Holy Cross is "continuing a homestand." I could not confirm the date of its last game. It played at Rhode Island around Nov 4.
+- **Travel:** Albany's trip is about 2.5 hours by bus. Same time zone, so no travel factor.
+- **Motivation:**
+  - This is a regional non-conference game (America East vs Patriot), not a buy game.
+  - Holy Cross is desperate for its first win, at home, with a football-themed promo day.
+  - Albany is coming off a home loss to an Ivy team.
+  - Series: Holy Cross leads 4-2, but is only 1-2 at the Hart Center against Albany.
+  - Albany guard Tyler Jones is the America East Rookie of the Week (17.3 ppg).
+- **Situational lean (situational, not a pick):** Holy Cross +2.5 or the ML. A winless home dog in a short line against a road favorite off a loss fits the "desperation home dog" spot, and Bleacher Nation's model agrees. Dimers has Albany. This is a modest edge at best.
+
+#### UC Merced @ UC Santa Barbara (4:00 PM ET / 1:00 PM PT)
+- **Line:** No coverage found. UC Merced is NCAA Division II (CCAA), so a non-D-I opponent may not get a posted line.
+- **Records:**
+  - UCSB is 3-0. It beat Oakland 90-67, tying a program record with 18 threes, and beat Nevada 76-63 on Wed Nov 11. CJ Shaw scored 20 against Nevada.
+  - UC Merced: no coverage found. It is in its second D-II season.
+- **Injuries:** No coverage found.
+- **Rest:** UCSB has 3 full days off since Nov 11. I did not confirm whether it played on Nov 14. UC Merced: no coverage found.
+- **Travel:** UC Merced's trip is about 4 hours by bus from the Central Valley. Same time zone.
+- **Motivation:**
+  - This is a buy or tune-up game against a non-D-I opponent.
+  - UCSB is coming off a solid win over a Mountain West team (Nevada), so a letdown or lack of focus is possible.
+  - This is a promo game ("No Shave November").
+- **Situational lean (situational, not a pick):** If a line is posted, the letdown spot after Nevada and possible bench minutes favor the underdog against a big spread. Leaning the UCSB team-total under is the cleaner angle. UCSB should win this outright easily.
+
+#### Air Force @ Pacific (4:00 PM ET, DATE CONFLICT, probably not today)
+- **Conflict:**
+  - Saturday Nov 14: Air Force's live schedule page (2:00 PM MT), Doc's Sports (11/14), FanDuel ("Sat, Nov 14 4:00PM ET") and Bleacher Nation's Nov 13 preview all list Saturday.
+  - Sunday Nov 15: Air Force's August schedule release ("Nov. 15 at Pacific, TBA"), Dimers, Capper's Picks and Bleacher Nation's Nov 15 MWC card all list Sunday.
+  - The most likely explanation is that the game moved to Saturday. **Treat it as not on today's slate unless your book shows it open.**
+- **Line:** Pacific -12.5 / 162.5 (Bleacher Nation, Nov 13) to Pacific -13.5 / 165.5, ML Pacific -847 / Air Force +575 (Bleacher Nation, Nov 15). One AP-style snippet listed Pacific -1.5 and a 190.5 total, which looks wrong.
+- **Records:** Air Force 3-1, on a three-game winning streak. Pacific 2-1, after losing 62-59 to Long Beach State. Jaion Pitt scored 20 in that game.
+- **Injuries:** The Covers report (Nov 11) lists no Air Force injuries. Pacific: no coverage found.
+- **Travel:** Air Force flies Colorado Springs to Stockton, crossing from Mountain to Pacific time (1 hour).
+- **Motivation:** Revenge for Air Force after Pacific won 80-65 in Colorado Springs on Dec 3, 2025. Mountain West vs WCC.
+- **Situational lean (situational, not a pick):** Air Force +12.5/+13.5. The road team is on a three-game win streak and has a revenge angle, against a home favorite coming off a loss, and both Bleacher Nation model runs have Air Force covering. This only applies if the game is actually on today.
+
+---
+
+### Biggest situational edges
+1. **Holy Cross +2.5 (vs Albany):** A winless home dog in a short number, against a road favorite coming off a home loss to Dartmouth. Bleacher Nation's model has Holy Cross outright. This is the only confirmed new game with a real market.
+2. **Air Force +13.5 @ Pacific (only if it is actually today):** Revenge spot and a road team in form against a home favorite off a loss. Both Bleacher Nation model runs favor Air Force against the spread. Verify the date first.
+3. **UCSB vs UC Merced:** Letdown after the Nevada win. There is likely no market, so it is low value.
+
+### Still unconfirmed / not found
+These leads were resolved as **not today**:
+- **Rider @ Villanova:** Played Sat Nov 14. Villanova won 99-62. The Fox Sports UTC timestamp showed Nov 15.
+- **Brown @ Siena:** Scheduled Sat Nov 14, 7 PM, at MVP Arena.
+- **NJIT @ Fairfield:** Scheduled Sat Nov 14, 7 PM, at Mahoney Arena.
+- **Binghamton @ Duquesne:** Scheduled Sat Nov 14, 7:30 PM.
+- **UC San Diego vs San Francisco:** No 2026 game found. UCSD played at Utah State on Fri Nov 13. USF hosted Portland State on Sat Nov 14 (Portland State won 84-68). The matchup was on Nov 16, 2025, last season.
+- **Cal State Fullerton vs Pacific:** No Nov 15 game found. CSUF's next game is Wed Nov 18 at UCLA. One unconfirmed listing had CSUF at Pacific on Nov 12.
+- **Air Force @ Pacific:** Date conflict, see above. Probably Sat Nov 14.
+
+Other Bleacher Nation "Sunday" listings that I checked turned out to be Saturday games:
+- UL Monroe @ Grand Canyon: GCU won 88-52 on Nov 14.
+- Howard @ Davidson: Nov 14, 7 PM.
+- Portland State @ San Francisco: Nov 14.
+- New Mexico @ Santa Clara: Santa Clara won 90-85 on Nov 14.
+- Lipscomb @ Western Carolina: Lipscomb won 75-68 on Nov 14.
+- Furman @ Belmont: Belmont won 72-62 on Nov 14.
+
+Not today for other reasons:
+- **Portland State @ Saint Mary's:** It is **Mon Nov 16**, 10 PM ET. Portland State's site wrongly lists Nov 15.
+- **"Players Era: Louisville vs Texas Tech" (one ESPN listing snippet):** Not credible for today, since Louisville is at Memphis. Most likely an old listing.
+
+**Coverage gaps:** I found no Nov 15 game-level coverage for these conferences: Summit, OVC, WAC, Southland, Horizon (beyond PFW@EIU), ASUN, Big South, CAA (beyond Colgate@Delaware), AAC (beyond Memphis/UTSA), MVC, Ivy (beyond those already listed) and Big Sky (beyond Cal Poly@Montana St). Two things suggest the gap is a light Sunday slate rather than missed games:
+- Bleacher Nation's Nov 15 conference cards only list games already on the sheet. NEC has 4, SWAC 4, MEAC 3, MAC 2 and CUSA 2.
+- Its Top 25 card lists only the known ranked-team games.
+
+**Possible issues in already-covered games, for the main sheet:**
+- **Syracuse @ St. John's:** Bleacher Nation's Top 25 page lists it as Mon Nov 16. That is probably a UTC artifact of a 7 PM ET tip, but it is worth checking.
+- **Missouri vs Marquette:** Action Network/Yahoo has **Missouri -1.5**. Bleacher Nation has **Marquette -1.5**. Mark Mitchell (Missouri) is questionable.
+- **Texas vs Baylor:** Tip time conflict. ESPN says 2 PM CT (3 PM ET), but one Yahoo watchlist says noon. Times in the Spokesman-Review listing appear to be Pacific time.
+
+### Sources
+- [Holy Cross Athletics: MBB continues homestand Sunday vs UAlbany](https://goholycross.com/news/2026/11/14/mens-basketball-mens-basketball-continues-homestand-sunday-versus-ualbany.aspx)
+- [Bleacher Nation: America East picks Nov 15](https://www.bleachernation.com/picks/2026/11/15/america-east-basketball-predictions-computer-picks-and-best-bets-november-15-2/)
+- [Bleacher Nation: Albany vs Holy Cross how to watch](https://www.bleachernation.com/how-to-watch/2026/11/14/albany-ny-vs-holy-cross-free-live-stream-tv-channel-how-to-watch/)
+- [Dimers: Albany vs Holy Cross prediction](https://www.dimers.com/cbb/news/albany-vs-holy-cross-prediction-11-15-2026-ac)
+- [UCSB 2026-27 MBB schedule](https://ucsbgauchos.com/sports/mens-basketball/schedule/2026-27)
+- [UCSB campus events calendar](https://www.campuscalendar.ucsb.edu/)
+- [Santa Barbara Independent: UCSB beats Nevada 76-63](https://www.independent.com/2026/11/12/uc-santa-barbara-mens-basketball-holds-off-nevada-for-76-63-victory/)
+- [Santa Barbara Independent: UCSB routs Oakland 90-67](https://www.independent.com/2026/11/07/uc-santa-barbara-mens-basketball-routs-oakland-90-67-behind-record-tying-three-point-performance/)
+- [UC Merced: first D-II schedule](https://ucmercedbobcats.com/news/2025/10/22/mens-basketball-announces-first-ncaa-division-ii-schedule.aspx)
+- [Air Force 2026-27 non-conference schedule release](https://goairforcefalcons.com/news/2026/8/4/mens-basketball-air-force-mbb-announces-2026-27-non-conference-schedule)
+- [Air Force 2026-27 MBB schedule](https://goairforcefalcons.com/sports/mens-basketball/schedule)
+- [Bleacher Nation: Pacific vs Air Force (Sat Nov 14)](https://www.bleachernation.com/picks/2026/11/13/pacific-vs-air-force-prediction-expert-picks-odds-stats-and-best-bets-saturday-november-14-2026/)
+- [Bleacher Nation: MWC picks Nov 15](https://www.bleachernation.com/picks/2026/11/15/mwc-basketball-predictions-computer-picks-and-best-bets-november-15-2/)
+- [Dimers: Air Force vs Pacific](https://www.dimers.com/cbb/news/air-force-vs-pacific-prediction-11-15-2026-ac)
+- [Doc's Sports: Air Force vs Pacific 11/14/2026](https://www.docsports.com/free-picks/ncaa-college-basketball/2026/air-force-falcons-vs-pacific-tigers-prediction-11-14-2026-college-basketball-picks-best-bets-odds.html)
+- [FanDuel: Air Force @ Pacific](https://sportsbook.fanduel.com/basketball/ncaa-basketball-mens-games/air-force-@-pacific-36317104?tab=popular)
+- [Covers CBB injuries](https://www.covers.com/sport/basketball/ncaab/injuries)
+- [Inquirer: Villanova 99, Rider 62](https://www.inquirer.com/college-sports/villanova/basketball-rider-score-kwame-evans-devin-royal-injuries-20261115.html)
+- [Fox Sports: Rider vs Villanova Nov 14](https://www.foxsports.com/college-basketball/rider-broncs-vs-villanova-wildcats-nov-14-2026-game-boxscore-264890)
+- [albany.com: Siena vs Brown listing](https://www.albany.com/event/siena-saints-mens-basketball-280825/)
+- [FantasyData: Fairfield schedule](https://fantasydata.com/ncaa-basketball/fairfield-stags-schedule)
+- [SportBusy: Binghamton at Duquesne 2026-11-14](https://www.sportbusy.com/games/ncaam/14463460-binghamton-bearcats-at-duquesne-dukes-2026-11-14/)
+- [UCSD live events](https://ucsdtritons.com/coverage)
+- [Washington Post: Portland State 84, San Francisco 68](https://www.washingtonpost.com/sports/colleges/2026/11/14/portland-state-san-francisco-basketball-score/7e35c48a-e0a6-11f1-912c-4fbb80d73f7f_story.html)
+- [UCLA: hosting Long Beach St, Cal State Fullerton](https://uclabruins.com/news/2026/11/14/no-9-mens-basketball-to-host-long-beach-state-cal-state-fullerton)
+- [ESPN: Grand Canyon 88, UL Monroe 52 (Nov 14)](https://www.espn.com/mens-college-basketball/game?gameId=401911347)
+- [Dimers: Howard vs Davidson Nov 14](https://www.dimers.com/cbb/news/howard-vs-davidson-prediction-11-14-2026-ac)
+- [New Mexico: Lobo comeback falls short at Santa Clara](https://golobos.com/news/2026/11/14/lobo-comeback-falls-short-at-santa-clara)
+- [Belmont: Defense leads past Furman](https://belmontbruins.com/news/2026/11/14/untitled-story.aspx)
+- [Western Carolina preview vs Lipscomb (Saturday)](https://catamountsports.com/news/2026/11/13/mens-basketball-catamounts-battle-bisons-in-saturday-night-showdown.aspx)
+- [ESPN: Portland State vs Saint Mary's (Nov 16)](https://www.espn.com/mens-college-basketball/game/_/gameId/401917532/portland-st-saint-marys)
+- [Saint Mary's event page](https://www.stmarys-ca.edu/events/mbb-saint-marys-vs-portland-state)
+- [Bleacher Nation: Top 25 picks Nov 15](https://www.bleachernation.com/picks/2026/11/15/top-25-college-basketball-picks-and-best-bets-november-15/)
+- [Bleacher Nation: NEC picks Nov 15](https://www.bleachernation.com/picks/2026/11/15/nec-basketball-predictions-computer-picks-and-best-bets-november-15/)
+- [Bleacher Nation: SWAC picks Nov 15](https://www.bleachernation.com/picks/2026/11/15/swac-basketball-predictions-computer-picks-and-best-bets-november-15-2/)
+- [Bleacher Nation: MEAC picks Nov 15](https://www.bleachernation.com/picks/2026/11/15/meac-basketball-predictions-computer-picks-and-best-bets-november-15-2/)
+- [Bleacher Nation: CUSA picks Nov 15](https://www.bleachernation.com/picks/2026/11/15/cusa-basketball-predictions-computer-picks-and-best-bets-november-15-2/)
+- [Bleacher Nation: MAC picks Nov 15](https://www.bleachernation.com/picks/2026/11/15/mac-basketball-predictions-computer-picks-and-best-bets-november-15/)
+- [Bleacher Nation: WCC picks Nov 14](https://www.bleachernation.com/picks/2026/11/14/wcc-basketball-predictions-computer-picks-and-best-bets-november-14-2/)
+- [Bleacher Nation: SoCon picks Nov 14](https://www.bleachernation.com/picks/2026/11/14/socon-basketball-predictions-computer-picks-and-best-bets-november-14-2/)
+- [Yahoo/Action: Missouri vs Marquette Nov 15](https://sports.yahoo.com/articles/missouri-vs-marquette-prediction-pick-104523599.html)
+- [Spokesman-Review: On the air Nov 14](https://www.spokesman.com/stories/2026/nov/14/on-the-air/)
