@@ -1,4 +1,4 @@
-# Game Recon: Sunday, Nov 15, 2026 (NFL Week 10 · NBA · NHL)
+# Game Recon: Sunday, Nov 15, 2026 (NFL Week 10 · NBA · NHL · NCAA Men's Basketball · Soccer · CFL · Rugby · Tennis · Golf)
 
 A situational handicapping sheet for the PC Claude agent. For each game it covers lines and movement, injuries, beat-writer and practice notes, rest and schedule spots, travel, motivation, and weather. Each game ends with a **situational lean**: which side the situation favors. These leans are not picks.
 
@@ -10,7 +10,16 @@ A situational handicapping sheet for the PC Claude agent. For each game it cover
 >
 > **Note:** today is **NFL Week 10**, not Week 11. Week 11 is Nov 19–23.
 
-**Not covered:** college football, college basketball and soccer.
+**Scope:** every men's league on the board today. Women's sports are excluded at the user's request.
+
+**Not playing today:**
+- Soccer: club soccer (EPL, the other big European leagues, UCL and Liga MX, all paused for the FIFA window) and MLS (its playoffs start Nov 19)
+- College football
+- NASCAR, F1 and UFC
+
+**Monday Nov 16:** Germany–Netherlands and Greece–Serbia (Nations League).
+
+**NCAA men's basketball:** 36 D-I games are written up. **The slate is incomplete**, because the search budget ran out (see the CBB section notes for unconfirmed and missing games).
 
 ---
 
@@ -32,6 +41,16 @@ A situational handicapping sheet for the PC Claude agent. For each game it cover
 | NHL | NSH @ SJ (9:00) | NSH | The only real rest mismatch: SJ is on the 2nd night of a back-to-back after a shootout in Utah, while NSH had a day off and has won 7 straight. Watch whether Askarov or Nedeljkovic starts. |
 | NHL | CGY @ ANA (8:00) | CGY ~+127 / Over 6.5 | Both teams are on back-to-backs, and backups are projected (Husso and Cooley). CGY's trip was a short bus ride, and it wants revenge for a blown 3-1 lead. |
 | NHL | VAN @ VGK (9:00) | VGK puck line / Over | VAN is 3-17-1, has lost 7 straight, allows 4.52 goals a game, and is without Demko. The moneyline is about -410, so the moneyline itself has no value. |
+| NCAAB | Niagara @ Iowa State (1:00) | Niagara +38.5/+39.5 | Buy game, and ISU has 9 days off before the Players Era Festival. This is Dimers' top men's college basketball bet. |
+| NCAAB | Syracuse vs St. John's (7:00, MSG) | Syracuse +12.5 | Rivalry underdog off a close loss to Indiana. St. John's is 3-0 against weak opponents. VSiN calls the number too big. |
+| NCAAB | W. Michigan @ Southern Indiana (4:30) | S. Indiana +6.5 | Revenge for an 88-74 loss last season, as a home underdog, and the visitor crosses a time zone. |
+| NCAAB | William & Mary @ Michigan (2:00) | W&M +28.5 | Michigan has a look-ahead to Villanova on Nov 21, and the 166.5 total helps a backdoor cover. |
+| NCAAB | Louisville @ Memphis (1:00) | Watch Almodovar | Memphis is short-handed (Popović suspended, Smith out, Reid's ankle). If Almodovar sits, lean Louisville; if not, Memphis +8.5. |
+| Soccer | Belgium vs Italy (2:45) | Belgium | Belgium must win; Italy advance with a draw and are without Bastoni (suspended) and Frattesi (injured). |
+| Soccer | France vs Türkiye (2:45) | France | Türkiye are already relegated, on a long trip with 3 days of rest, and Kabak is suspended. *Risk: France's injury news is conflicting.* |
+| Soccer | Spain vs England (2:45) | England / draw no bet | Spain only need a draw; England need a win and have revenge motivation. |
+| CFL | Grey Cup: MTL vs EDM (6:00, Calgary) | EDM +3.5 | EDM travels about 300 km and has crowd support; MTL flies about 3,000 km across 2 time zones. |
+| Rugby | Scotland vs Australia (10:10 AM) | AUS +7.5 | 7 of the last 9 meetings were decided by 6 points or fewer. |
 
 **Late checks:**
 - **NFL:** Freiermuth, Trent Williams, Myles Garrett, McConkey, and Will Anderson Jr.
@@ -1008,6 +1027,886 @@ A situational handicapping sheet for the PC Claude agent. For each game it cover
 - [Dimers: Canucks vs Golden Knights](https://www.dimers.com/nhl/news/vancouver-canucks-vs-vegas-golden-knights-prediction-11-15-2026-ac)
 - [The Hockey News: Canucks franchise record in 5-1 loss to Rangers](https://thehockeynews.com/nhl/vancouver-canucks/game-day/canucks-set-a-new-franchise-record-in-5-1-loss-to-the-new-york-rangers)
 - [TSN/CP: Canucks search for consistent game amid skid](https://www.tsn.ca/nhl/article/canucks-continue-search-for-consistent-game-amid-losing-skid/)
+
+
+---
+
+## CBB Game Recon: Early Window (tips before 2:00 PM ET), Sunday Nov. 15, 2026
+
+**Scope:** NCAA D-I men's games with a scheduled tip before 2:00 PM ET. Games tipping at 2:00 PM ET or later belong to the other agents.
+
+**Method and limits:** Direct site fetches failed (DNS blocked). Everything here comes from web-search result summaries. The shared web-search budget ran out partway through research, so the later games, and Louisville/Memphis, Boise State/Nebraska and BC/UNH, got less depth than planned. Lines come mostly from model-pick sites (Bleacher Nation, Dimers, Pick Dawgz) that quote DraftKings or FanDuel. I found no open-to-current movement data for any game. Records are as of the preview snapshots and may be stale.
+
+### Slate (ET)
+
+| # | Time (ET) | Game | TV | Status |
+|---|---|---|---|---|
+| 1 | 12:00 PM | Quinnipiac @ Central Connecticut | NEC Front Row / ESPN+ (unverified) | Confirmed (Bleacher Nation, BVM Sports, Bang the Book) |
+| 2 | 12:00 PM | LIU @ Bucknell | ESPN+ | **UNCONFIRMED.** Only an ESPN Watch listing. Could be the women's game. |
+| 3 | 1:00 PM | No. 10 Louisville @ Memphis | ESPN | Confirmed (noon CT) |
+| 4 | 1:00 PM | Niagara @ Iowa State | ESPN2 | Confirmed (noon CT) |
+| 5 | 1:00 PM | Boise State vs. No. 25 Nebraska (Sanford Pentagon, Sioux Falls, SD) | BTN or FS1 (conflict) | Confirmed (noon CT / 11 AM MT) |
+| 6 | 1:00 PM | Harvard @ American | ESPN+ | Confirmed |
+| 7 | 1:00 PM | Dartmouth @ Boston University | ESPN+ | Confirmed (ESPN Watch, SportBusy, Bleacher Nation) |
+| 8 | 1:00 PM | Colgate @ Delaware | n/a | Confirmed (Delaware game notes, Bleacher Nation) |
+| 9 | 1:00 PM | Norfolk State @ Georgia State | ESPN+ (unverified) | Confirmed by SportBusy and Bleacher Nation (MEAC page) only |
+| 10 | 1:30 PM | New Hampshire @ Boston College | ACC Network Extra | Confirmed (BC athletics) |
+
+**Boundary and excluded games (flagged for the 2–6 PM agent):**
+- **William & Mary @ Michigan:** Dimers and Bleacher Nation list 2:00 PM ET. A Michigan regional TV listing says "2 p.m. Central", and one roundup says 1 p.m. The time conflicts. Most sources say 2:00 PM ET, so I left it out of this window.
+- **Washington @ Utah:** Moved from Sat. Nov. 14 to Sunday at noon MT (2:00 PM ET) because of FAA-related travel disruptions (utahutes.com). Excluded.
+- **Temple @ La Salle:** 2:00 PM ET (Dimers, ESPN Watch). One regional listing says 2 p.m. Central. Excluded.
+- **Capital (D-III) @ Robert Morris:** 2:00 PM ET. **South Carolina State @ Charleston:** 2:00 PM ET. **Missouri vs. Marquette (Chicago):** 2:30 PM ET. **Baylor vs. Texas:** 3:00 PM ET. All excluded.
+- **Not D-I men's:** Seton Hall–NC State (1 PM) is a women's game. Kentucky–Eastern Michigan (noon) is women's. BU vs. Navy "Championship" (1 PM ESPN+) is a different sport.
+- **Possibly missed:** I found no men's games at 11 AM or 12:30 PM ET, and no early tips from the A-10, CAA, SoCon, Big South, ASUN, Sun Belt or AAC beyond those listed. Search coverage of those conferences' Nov. 15 slates came back empty, not confirmed empty. There may be more low-major early tips I couldn't surface.
+
+---
+
+#### Quinnipiac @ Central Connecticut (12:00 PM ET)
+- **Line:** Quinnipiac -4.5 (Bleacher Nation). Quinnipiac ML -180 (Bang the Book). Bleacher Nation model: Quinnipiac 74–70. No total confirmed. No movement data.
+- **Injuries / availability:** No coverage found.
+- **Local notes:** This is CCSU's home opener at Detrick Gymnasium. CCSU hosts Quinnipiac and Vermont State Lyndon on its opening homestand (BVM Sports). Patrick Sellers is in his sixth season with two NEC regular-season titles. CCSU was picked tied for third in the NEC. Raphel Laurent leads CCSU at 18.8 ppg (betting preview). One preview cites a scoring average without saying which team it describes, so treat the scoring splits as unverified.
+- **Rest/schedule:** Both teams are listed at 2-2. CCSU has won two straight, after losses at Temple (56 points) and Syracuse (49 points). Exact days of rest weren't found. Not an MTE.
+- **Travel:** Quinnipiac (Hamden, CT) to New Britain, CT is a short in-state bus trip of roughly 30 miles. No time-zone change.
+- **Motivation:** Connecticut in-state rivalry. CCSU leads the series 48-26, but Quinnipiac won the most recent meeting. CCSU's home opener comes after two road buy-game losses.
+- **Situational lean (situational, not a pick):** CCSU +4.5. A home opener, two straight wins, and a short-trip rivalry make the price look rich for a road favorite.
+
+#### LIU @ Bucknell (12:00 PM ET), UNCONFIRMED
+- **Status:** The only evidence is an ESPN Watch listing, "Long Island University vs. Bucknell (11/15/26)", at Sun 12:00 PM ET on ESPN+. No men's preview, line or school release turned up, so this may be the women's game. **Verify before using.**
+- **Line / injuries / notes:** No coverage found.
+- **Travel:** Brooklyn to Lewisburg, PA is a regional bus trip of roughly 170 miles. No time-zone change.
+- **Situational lean:** None. The game isn't confirmed.
+
+#### No. 10 Louisville @ Memphis (1:00 PM ET, ESPN, FedExForum)
+- **Line:** Louisville -8.5, total 164.5 (Bleacher Nation, DraftKings-sourced). No moneyline found. No movement data. Projections: KenPom Louisville 84–79 (per preview), DraftKings Network 87–77, Bleacher Nation 87–79, CardinalAuthority 86–72. Sports Gambling Podcast has Memphis +8.5 as a "triple lock".
+- **Injuries / availability:**
+  - Memphis: Nemanja Popović is serving an NCAA-mandated **six-game suspension**. Fr. F Fred Smith Jr. has been out with a knee injury since October. PG Jayden Reid has a sprained left ankle from the Vanderbilt game but played 30 minutes in it. Luke Almodovar took a hard fall on the back of his head vs. Vanderbilt, was reportedly unconscious about 45 seconds, and is a game-time decision. Sources conflict on his status.
+  - Louisville: De'Shayne Montgomery and Gabe Dynes are **out** (CardinalAuthority/247Sports). One other preview says it has no confirmed statuses.
+- **Local notes:** Previews from Card Chronicle, CardinalAuthority (247Sports), Yahoo, and a Memphis-focused Substack ("roaclear"). Coach quotes weren't retrievable. Context: Memphis beat Iowa State in Iowa State's opener (Field Level Media, noting ISU "lost to Memphis in its opener").
+- **Rest/schedule:** Memphis is coming off the Vanderbilt game (date not confirmed). Louisville's last game and the rest differential weren't found. Not an MTE.
+- **Travel:** Louisville to Memphis is about 385 road miles (approximate). Both are in Central time. This is a true road game for Louisville. Whether it's Louisville's first true road game wasn't confirmed.
+- **Motivation:** A former Metro/C-USA rivalry with a big-stage home date for Memphis. Louisville is ranked; Memphis is unranked but owns the Iowa State win. Memphis is short-handed: Popović suspended, Reid and Almodovar banged up.
+- **Situational lean (situational, not a pick):** Mixed. Home dog in a rivalry spot with the high total cushions Memphis +8.5. If Almodovar is out on top of the Popović suspension, the depth edge goes to Louisville. Check the Almodovar status before tip.
+
+#### Niagara @ Iowa State (1:00 PM ET, ESPN2, Hilton Coliseum)
+- **Line:** Iowa State -38.5, total 143.5 (Yahoo/Field Level Media). Bleacher Nation and Dimers show -39.5, so the number may have ticked up a point. Dimers' top men's best bet for the day is **Niagara +39.5** (-108, about 60% model probability). The Bleacher Nation model has ISU 86–59, a 27-point margin, well short of the spread.
+- **Injuries / availability:** No coverage found.
+- **Local notes:** T.J. Otzelberger says the team is "still building an identity on defense" (via Field Level Media). ISU has held 21 straight opponents below their season scoring average. Niagara ranks 359th in offensive rebounding rate and 301st in defensive rebounding rate (KenPom, per preview) and turns it over a lot. Logan Woods leads Niagara at 13.7 ppg. Previews from Field Level Media, SI (Cyclone Fanatic-style "next 3 games are key"), Yahoo/Des Moines Register ("3 things to watch") and Raw Chili.
+- **Rest/schedule:** ISU is 2-1, with a loss to Memphis and then wins over Southern Miss and Southern. Niagara is 0-3, with losses to West Virginia, Morgan State and Bowling Green. ISU's next game is **Nov. 24 vs. San Diego State in the Players Era Festival**, nine days away, so there's no immediate look-ahead. A long layoff follows.
+- **Travel:** Niagara has a long trip from western New York to Ames, roughly 900 miles, crossing one time zone (ET to CT) for an early tip at 12 PM local, 1 PM body clock.
+- **Motivation:** A classic buy-game mismatch. ISU is a top-15 defense every year under Otzelberger.
+- **Situational lean (situational, not a pick):** Niagara +38.5/39.5. Spreads this large invite garbage-time backdoors. ISU has no look-ahead but also no urgency, and the models price it well under the line. Niagara's rebounding is a real counter.
+
+#### Boise State vs. No. 25 Nebraska (1:00 PM ET, Sanford Pentagon, Sioux Falls, SD)
+- **Time/TV:** Noon CT / 11 AM MT per Nebraska and Boise State athletics, which is 1:00 PM ET. Nebraska's site lists BTN in one place and its game preview says FS1, so the network conflicts.
+- **Line:** Nebraska -9.5 (DraftKings via Bleacher Nation). No total or moneyline found. No movement data. The Bleacher Nation model picks **Boise State outright, 86–81**, and calls Boise +9.5 a best bet. A Yahoo preview also picks Boise +9.5.
+- **Injuries / availability:** No coverage found. Search budget ran out before injury searches.
+- **Local notes:** Nebraska athletics preview: "Huskers Head to Sioux Falls to Battle Broncos." Boise State "sets another program record in rout of Oakland" (Idaho Statesman via Yahoo/SI). The game has been **sold out** since tickets went on sale in September.
+- **Rest/schedule:** This is Nebraska's game #4. Days of rest weren't found. Not an MTE; it's a one-off neutral-site showcase.
+- **Travel:** Nominally neutral, but effectively a Nebraska-leaning crowd: Lincoln is about 270 road miles from Sioux Falls, versus well over 1,000 miles from Boise (approximate). Boise loses an hour (MT to CT), but an 11 AM MT tip is body-clock neutral-ish for them.
+- **Motivation:** Nebraska is newly ranked (No. 25) and playing to a pro-Husker sellout. Boise State comes in off a record-setting rout, possibly overvalued after a blowout of a weaker opponent, or a team on the rise.
+- **Situational lean (situational, not a pick):** Slight Nebraska. A ranked team in front of a near-home crowd counters the model's Boise lean. Boise +9.5 has model support, but the crowd edge favors Nebraska, so treat this one as a model-vs-situation disagreement.
+
+#### Harvard @ American (1:00 PM ET, ESPN+, Bender Arena)
+- **Line:** American -1.5 (Bleacher Nation). Model: American 71–70. No total or moneyline found.
+- **Injuries / availability:** No coverage found.
+- **Local notes:** AU athletics headline: "Men's Basketball Brings Momentum Into Sunday's Home Opener Against Harvard." It's AU's home opener **after three road games to start the season**, the last at Drexel on Nov. 11. AU is 4-1 all-time vs. Harvard and won the 2024 home opener vs. Harvard 67–55. ATS.io picks American to win the Patriot League, returning preseason all-league players Madden Collins and Greg Jones.
+- **Rest/schedule:** AU's last game was at Drexel (Nov. 11), so about 4 days of rest. Harvard's schedule wasn't found. Not an MTE.
+- **Travel:** Cambridge to D.C. is about 440 miles (approximate), likely a flight or train. No time-zone change.
+- **Motivation:** AU's home opener after a three-game road trip that the school calls a run of "momentum". Revenge isn't a factor (AU won the last meeting).
+- **Situational lean (situational, not a pick):** American -1.5. A first home game after three straight road games against a traveling Ivy team.
+
+#### Dartmouth @ Boston University (1:00 PM ET, ESPN+, Case Gymnasium)
+- **Line:** BU -2.5, total 141.5 (Bleacher Nation). Model: BU 76–72.
+- **Injuries / availability:** No coverage found.
+- **Local notes:** No 2026 preview found. Records not found.
+- **Rest/schedule:** Not found.
+- **Travel:** Hanover, NH to Boston is about 125 miles by bus (approximate). No time-zone change.
+- **Motivation:** A regional New England non-conference series; the teams meet regularly.
+- **Situational lean (situational, not a pick):** Slight BU. Home court in a short-number regional game, with no other edge found.
+
+#### Colgate @ Delaware (1:00 PM ET, Bob Carpenter Center)
+- **Line:** Delaware -1.5, total 147.5 (Bleacher Nation, filed on its "CUSA" page). Model: Delaware 78–67, with Delaware the model's ATS side.
+- **Injuries / availability:** No coverage found.
+- **Local notes:** Delaware game notes list the date and 1 PM tip. Delaware's schedule shows a 105–44 win over Notre Dame (Md.) and a 73–64 loss at Wisconsin. Delaware also has game notes for a **James Madison** game, dated Nov. 11, so its record is likely past 1-1. The exact record is unconfirmed. Last meeting: Delaware won 72–68 in 2022 at the Cathedral Classic.
+- **Rest/schedule:** Delaware probably played JMU around Nov. 11 or 12, for about 3–4 days of rest (inferred from the notes date, unconfirmed). Colgate's schedule wasn't found.
+- **Travel:** Hamilton, NY to Newark, DE is about 270 miles by bus (approximate). No time-zone change.
+- **Motivation:** No rivalry. A Patriot favorite contender (Colgate) against a CUSA newcomer (Delaware).
+- **Situational lean (situational, not a pick):** Slight Delaware. Home court at a near pick'em, with the model on the same side.
+
+#### Norfolk State @ Georgia State (1:00 PM ET, GSU Sports Arena)
+- **Line:** Georgia State -11.5 per one preview, with a model score of GSU 82–75 (Bleacher Nation MEAC page). No total found. The 11.5 figure came from a search summary, not a book page, so treat it as soft.
+- **Injuries / availability:** No coverage found.
+- **Local notes:** No real preview found. SportBusy shows Norfolk State 1-0 and Georgia State 0-1 in one snapshot and old season totals in another, so the records are unreliable.
+- **Rest/schedule:** Not found.
+- **Travel:** Norfolk, VA to Atlanta is about 560 miles (approximate). No time-zone change.
+- **Motivation:** Norfolk State is a perennial MEAC contender and a frequent road warrior. Georgia State may still be looking for a first win, if the 0-1 snapshot is current.
+- **Situational lean (situational, not a pick):** Norfolk State +11.5. The model margin (7) sits under the number for a road-tested MEAC side. Low confidence.
+
+#### New Hampshire @ Boston College (1:30 PM ET, ACC Network Extra, Conte Forum)
+- **Line:** Boston College -22.5 (Bleacher Nation). Bleacher Nation's model has BC 80–50 and lists BC as its best spread bet. Sports Gambling Podcast also has BC -22.5. No total or moneyline found.
+- **Injuries / availability:** No coverage found. Search budget ran out.
+- **Local notes:** BC athletics headline: "Eagles Host New Hampshire in Sunday Matinee." It's an **ACCNX "90s Day"** promotion date.
+- **Rest/schedule:** Not found.
+- **Travel:** Durham, NH to Chestnut Hill is about 65 miles by bus (approximate).
+- **Motivation:** A buy game. UNH has historically been a weak America East program in recent seasons. Current form wasn't found.
+- **Situational lean (situational, not a pick):** BC, mildly. A power-conference home favorite against a weak low-major, with both a model and a pundit on BC. Large spreads cut both ways, so this is a weak lean.
+
+---
+
+### Biggest situational edges
+
+1. **Niagara +38.5/39.5 at Iowa State.** A buy-game spread near 40 against an ISU team with no urgency. The next game is nine days away in the Players Era. Dimers' top men's best bet for the day is Niagara, and the Bleacher Nation model projects a 27-point margin. The risk: Niagara's rebounding (359th offensive) and turnover issues against an elite ISU defense.
+2. **Central Connecticut +4.5 vs. Quinnipiac.** CCSU's home opener in an in-state rivalry after two straight wins, with a short road trip for the favorite.
+3. **American -1.5 vs. Harvard.** AU's first home game after three straight road games, against a projected Patriot League favorite's traveling Ivy opponent.
+4. **Louisville @ Memphis is a watch spot, not a clear edge.** The home dog plus a high total argue for Memphis +8.5, but Memphis's depth is badly hit: Popović suspended for six games, Smith out, Reid's ankle, and Almodovar a game-time decision after a head injury. If Almodovar sits, the situation tilts to Louisville.
+5. **Boise State vs. Nebraska: model and situation disagree.** The model likes Boise +9.5 outright. The situation, a pro-Nebraska sellout about 270 miles from Lincoln with Nebraska newly ranked, favors the Huskers.
+
+### Sources
+- [Bleacher Nation: Top 25 picks, Nov. 15](https://www.bleachernation.com/picks/2026/11/15/top-25-college-basketball-picks-and-best-bets-november-15/)
+- [Bleacher Nation: NEC picks, Nov. 15](https://www.bleachernation.com/picks/2026/11/15/nec-basketball-predictions-computer-picks-and-best-bets-november-15/)
+- [Bleacher Nation: MAAC picks, Nov. 15](https://www.bleachernation.com/picks/2026/11/15/maac-basketball-predictions-computer-picks-and-best-bets-november-15/)
+- [Bleacher Nation: Patriot League picks, Nov. 15](https://www.bleachernation.com/picks/2026/11/15/patriot-league-basketball-predictions-computer-picks-and-best-bets-november-15/)
+- [Bleacher Nation: America East picks, Nov. 15](https://bleachernation.com/picks/2026/11/15/america-east-basketball-predictions-computer-picks-and-best-bets-november-15-2)
+- [Bleacher Nation: MEAC picks, Nov. 15](https://www.bleachernation.com/picks/2026/11/15/meac-basketball-predictions-computer-picks-and-best-bets-november-15-2/)
+- [Bleacher Nation: CUSA picks, Nov. 15](https://www.bleachernation.com/picks/2026/11/15/cusa-basketball-predictions-computer-picks-and-best-bets-november-15-2/)
+- [Bleacher Nation: Pac-12 picks, Nov. 15](https://www.bleachernation.com/picks/2026/11/15/pac-12-basketball-predictions-computer-picks-and-best-bets-november-15/)
+- [Dimers: men's CBB best bets, 11/15/2026](https://www.dimers.com/cbb/news/mens-college-basketball-best-bets-11-15-2026-ac)
+- [Dimers: William & Mary vs. Michigan](https://www.dimers.com/cbb/news/william-mary-vs-michigan-prediction-11-15-2026-ac)
+- [Dimers: Temple vs. La Salle](https://www.dimers.com/cbb/news/temple-vs-la-salle-prediction-11-15-2026-ac)
+- [Sports Gambling Podcast: CBB picks, Nov. 15](https://www.sportsgamblingpodcast.com/2026/11/15/college-basketball-picks-for-november-15th-ncaa-basketball-banter-best-bets-ep-1228/)
+- [Bang the Book: Quinnipiac vs. Central Connecticut](https://bangthebook.com/quinnipiac-bobcats-vs-central-connecticut-blue-devils-prediction-2026-11-15/)
+- [BVM Sports: CCSU opens home schedule vs. Quinnipiac](https://bvmsports.com/2026/11/13/ccsu-mens-basketball-opens-home-schedule-vs-quinnipiac/)
+- [ESPN Watch: LIU vs. Bucknell listing](https://www.espn.com/watch/player/_/id/c8625665-3a7b-4197-bdb6-e4361c731e0e)
+- [ESPN Watch: Louisville vs. Memphis](https://www.espn.com/watch/player/_/id/2f46df56-857e-432f-af75-f5594256e504)
+- [ESPN Watch: Niagara vs. Iowa State](https://www.espn.com/watch/player/_/id/16f34ef4-3c21-4907-8875-7bfda828bb65)
+- [ESPN Watch: Harvard vs. American](https://www.espn.com/watch/player/_/id/f5c08e4d-c6e1-4aa7-9f32-21e64ae5230c)
+- [ESPN Watch: Dartmouth vs. Boston University](https://www.espn.com/watch/player/_/id/f9e3577c-8dac-4d56-a473-3f8cb98f3ec0)
+- [ESPN Watch: Capital vs. Robert Morris](https://www.espn.com/watch/player/_/id/c65d0fc6-77d4-41e7-b63c-d694accbd1f8)
+- [DraftKings Network: Memphis vs. Louisville](https://dknetwork.draftkings.com/2026/11/15/memphis-tigers-vs-louisville-cardinals-prediction-pick-for-college-basketball-on-sunday-11-15-26/)
+- [CardinalAuthority (247Sports): Louisville at Memphis predictions](https://247sports.com/college/louisville/article/cardinalauthority-predictions-no-10-louisville-at-memphis-292679697/)
+- [Card Chronicle: Previewing Louisville at Memphis](https://www.cardchronicle.com/basketball/105968/previewing-louisville-at-memphis)
+- [Substack: What to expect when Memphis hosts No. 10 Louisville](https://roaclear.substack.com/p/what-to-expect-when-memphis-basketball-65e)
+- [Bang the Book: Louisville vs. Memphis](https://bangthebook.com/louisville-cardinals-vs-memphis-tigers-prediction-2026-11-15/)
+- [Louisville athletics: TV and tip times](https://gocards.com/news/2026/10/7/mens-basketball-television-and-tip-times-announced-for-2026-27-louisville-mens-basketball-schedule)
+- [Field Level Media: Iowa State vs. winless Niagara](https://fieldlevelmedia.com/ncaab/iowa-state-looks-to-continue-ascendence-vs-winless-niagara/)
+- [Yahoo: Niagara vs. Iowa State prediction](https://sports.yahoo.com/articles/niagara-vs-iowa-state-prediction-101551291.html)
+- [SI: Next 3 games key for Iowa State](https://www.si.com/college/iowa-state/basketball/next-3-games-are-key-for-iowa-state-basketball-to-get-going)
+- [Nebraska athletics: Huskers head to Sioux Falls](https://huskers.com/news/2026/11/13/huskers-head-to-sioux-falls-to-battle-broncos-on-sunday)
+- [Yahoo: Boise State vs. Nebraska prediction](https://sports.yahoo.com/articles/boise-state-vs-nebraska-prediction-103057641.html)
+- [Yahoo: How to watch Boise State vs. No. 25 Nebraska](https://sports.yahoo.com/articles/watch-boise-state-vs-no-180003943.html)
+- [Yahoo: Boise State sets program record in rout of Oakland](https://sports.yahoo.com/articles/boise-state-mens-basketball-sets-160437047.html)
+- [KELO: Sunday listings, Nov. 15](https://www.keloland.com/news/local-news/sunday-boredom-busters-november-15/)
+- [AU athletics: home opener vs. Harvard](https://aueagles.com/news/2026/11/13/mens-basketball-mens-basketball-brings-momentum-into-sundays-home-opener-against-harvard.aspx)
+- [AU athletics: 2026-27 non-conference schedule](https://aueagles.com/news/2026/8/12/mens-basketball-power-conference-matchups-six-home-games-highlight-mens-basketball-non-conference-schedule.aspx)
+- [ATS.io: Patriot League futures](https://ats.io/college-basketball/patriot-league-championship-futures/)
+- [SportBusy: Dartmouth at Boston University](https://www.sportbusy.com/games/ncaam/14463483-dartmouth-big-green-at-boston-terriers-2026-11-15/)
+- [SportBusy: Norfolk State at Georgia State](https://www.sportbusy.com/games/ncaam/14522386-norfolk-state-spartans-at-georgia-state-panthers-2026-11-15/)
+- [Delaware MBB game notes (JMU)](https://s3.us-east-2.amazonaws.com/sidearm.nextgen.sites/bluehens.com/documents/2026/11/11/2026-26_MBB_Game_Notes_-_James_Madison.pdf)
+- [BC athletics: Eagles host New Hampshire](https://bceagles.com/news/2026/11/14/mens-basketball-eagles-host-new-hampshire-in-sunday-matinee)
+- [BC athletics: 2026-27 schedule](https://bceagles.com/sports/mens-basketball/schedule)
+- [Utah athletics: Washington game moved to Sunday at noon](https://utahutes.com/news/2026/11/13/utah-mens-basketball-versus-washington-moved-to-sunday-at-noon)
+- [WTOP: Sports on TV, Nov. 14–15](https://wtop.com/sports/2026/11/sports-on-tv-for-nov-14-15/)
+- [Yahoo: Michigan Sportswatch listings](https://sports.yahoo.com/articles/michigan-sportswatch-daily-listings-190024935.html)
+
+
+---
+
+## CBB Game Recon: Sun Nov 15, 2026, D-I men's tips from 2:00 to 5:59 PM ET
+
+**How this was built and its limits.** WebFetch could not reach any site (ESPN failed with ENOTFOUND), so everything here comes from search-result summaries. The search budget for the turn (200 calls, shared by all agents) ran out before every game could be checked. **This slate is probably incomplete.** The games below are the ones I could place in the window. A separate list covers games found with no confirmed time. Lines come from different books and timestamps: a spread gap between sources may be real movement or just a different book, and I mark it as a conflict either way. Rest, injury and beat-writer detail was mostly **not found**. Nothing has been filled in from memory.
+
+### Slate (19 games placed in the window)
+
+| # | Tip (ET) | Game | Time confidence |
+|---|---|---|---|
+| 1 | 2:00 | Temple @ La Salle | Medium (school site, CBS odds board) |
+| 2 | 2:00 | Princeton @ Rhode Island | Medium (SportBusy, CBS board) |
+| 3 | 2:00 | Washington @ Utah | Low (CBS odds board only, page flagged stale) |
+| 4 | 2:00 | William & Mary @ Michigan | Medium (odds board says 2 ET; a TV listing says "2 p.m. Central", see note) |
+| 5 | 2:00 | South Carolina State @ Charleston | Low (SportBusy only) |
+| 6 | 2:30 | Missouri vs. Marquette (United Center, Chicago) | High (Mizzou release: 1:30 CT) |
+| 7 | 3:00 | Baylor vs. Texas (Frost Bank Center, San Antonio) | High (Texas schedule: 2 CT) |
+| 8 | 3:00 | Creighton vs. Iowa (Casey's Center, Des Moines) | High (HawkCentral: 2 CT) |
+| 9 | 3:00 | Purdue Fort Wayne @ Eastern Illinois | Medium (Dimers) |
+| 10 | 3:00 | High Point @ Saint Louis | Low (SportBusy) |
+| 11 | 3:00 | Cleveland State @ Alabama A&M | Medium (Bleacher Nation) |
+| 12 | 4:00 | Mercyhurst @ James Madison | Medium (Dimers, odds board) |
+| 13 | 4:00 | Chicago State @ Loyola Marymount | Medium (Dimers) |
+| 14 | 4:00 | Idaho State @ Seattle U | Medium (Dimers) |
+| 15 | 4:00 | New Mexico State @ San Diego State | Medium (Dimers, odds board; venue not confirmed) |
+| 16 | 4:30 | New Haven @ Penn State | High (Dimers, TV listing, Peacock) |
+| 17 | 4:30 | Western Michigan @ Southern Indiana | Low (SportBusy only) |
+| 18 | 5:00 | Pepperdine @ Oregon | High (Oregon schedule: 2 PT) |
+| 19 | 5:30 | Canisius @ Buffalo | Medium (Dimers) |
+
+**Played on Nov 15 but tip time not confirmed** (each could fall inside the window; check before use):
+- Holy Cross @ Albany (sources disagree on which team is home). Total 145.5. Bleacher Nation model: Holy Cross 77-73. Dimers: Albany 59.3%.
+- Rider @ Villanova. Villanova about -36.5 (Bleacher Nation MAAC page).
+- Brown @ Siena. Model 82-68 Siena. No line found.
+- NJIT @ Fairfield. Model 75-60 Fairfield. Bleacher Nation's best spread bet is Fairfield.
+- Binghamton @ Duquesne. Model 76-63. No line found.
+- Air Force @ Pacific. Cappers model 89-78 Pacific. Venue and time not confirmed.
+
+**Excluded as outside the window:** Quinnipiac @ CCSU (12:00), BC vs. UNH (1:30), Boise St vs. Nebraska (1:00), Louisville @ Memphis (1:00), Niagara @ Iowa St (1:00), Colgate @ Delaware (1:00), Dartmouth @ BU (1:00), Cal Poly @ Montana St (6:00), Syracuse @ St. John's (7:00), UAPB @ USC (7:00), Texas St @ UTSA (8:00), Coastal Carolina @ Wisconsin (8:00, per SportBusy; one listing is a placeholder), FAMU @ UTEP (8:00), Alabama St @ San José St (9:00, per SportBusy).
+
+---
+
+#### Temple @ La Salle (2:00 PM ET)
+- **Line:** La Salle -1.5 (-110), total 149.5 (CBS, labeled "Open"). Bang the Book has La Salle -1.5 (-105) / Temple +1.5 (-115), total 150.5, checked 00:03 UTC Nov 15. The total ticked up about a point. No moneyline found.
+- **Injuries / availability:** No coverage found.
+- **Beat / local notes:** Dimers' model favors La Salle at John Glaser Arena. DocSports (Guy Bruhn) picks Temple. No beat-writer quotes found.
+- **Rest/schedule:** Last game dates not found. This is not an MTE game.
+- **Travel:** Crosstown Philadelphia game, so essentially no travel. Temple plays a true road game in a hostile Big 5 building.
+- **Motivation:** Philadelphia Big 5 rivalry (AAC vs. A-10). Records not found.
+- **Situational lean:** Small edge to **La Salle**, as a home dog-or-pick'em in a city rivalry where the motivation cancels out. Situational, not a pick.
+
+#### Princeton @ Rhode Island (2:00 PM ET)
+- **Line:** Rhode Island -8.5 (-110), total 137.5 (CBS open). ESPN shows Princeton +9.5, total 139.5, which suggests a move toward URI. Dimers has URI -8.5 at +108 with a 6.7% edge. No moneyline found.
+- **Injuries / availability:** No coverage found.
+- **Beat / local notes:** Dimers model: URI 73-65 (80.8%). No local coverage found.
+- **Rest/schedule:** Not found.
+- **Travel:** Princeton, NJ to Kingston, RI is about 200 miles, a bus trip in the same time zone. The game is at the Ryan Center.
+- **Motivation:** An Ivy team against an A-10 home favorite. Records not found.
+- **Situational lean:** Lean **Rhode Island**, given home court and the market move toward the Rams. Situational, not a pick.
+
+#### Washington @ Utah (2:00 PM ET)
+- **Line:** Utah -2.5 (-120), total 143.5 (CBS board, whose metadata looked stale). BetIQ has Utah -3.5, total 143.5. Dimers leans Washington +3.5 (-110), a 6.0% edge. **Low-confidence listing:** no preview of this game was found to confirm it.
+- **Injuries / availability:** No coverage found.
+- **Beat / local notes:** No coverage found.
+- **Rest/schedule:** Not found.
+- **Travel:** Seattle to Salt Lake City is about 700 miles, one time zone east, and a noon local tip for Washington's body clock (11 AM Pacific). It is at altitude (about 4,200 ft).
+- **Motivation:** Old Pac-12 rivals, now Big Ten (UW) vs. Big 12 (Utah), playing a non-conference game.
+- **Situational lean:** Slight edge to **Utah**: an early local tip, altitude, and the visitor crossing a time zone. Situational, not a pick.
+
+#### William & Mary @ Michigan (2:00 PM ET)
+- **Line:** Michigan -28.5, total 166.5. BetRivers -28.5 at -107 (Michigan) / -115 (W&M). No movement found.
+- **Time note:** The odds boards and SportBusy say 2:00 PM ET. A Yahoo "Sportswatch" listing labels it 2 p.m. Central, but the same listing puts BC-UNH at 1:30, which matches ET, so the "Central" label looks wrong. Treat 2:00 ET as most likely.
+- **Injuries / availability:** No coverage found.
+- **Beat / local notes:** Michigan is the defending national champion (beat UConn 69-63 in the 2026 title game, per ClickOnDetroit). It played a UConn rematch at TD Garden earlier this month and beat Marquette 84-70 (Tony's Picks). Michigan hosts Villanova on Nov 21. One odds summary lists Michigan as No. 20.
+- **Rest/schedule:** Last game date not found. Not an MTE.
+- **Travel:** Williamsburg, VA to Ann Arbor is about 600 miles. W&M plays a true road game at Crisler.
+- **Motivation:** A buy game with a big talent gap. Michigan has a mild look-ahead to Villanova (Nov 21), six days away.
+- **Situational lean:** **William & Mary +28.5**. A big number in a sleepy Sunday buy game; the total of 166.5 implies pace, which helps backdoor covers. Situational, not a pick.
+
+#### South Carolina State @ Charleston (2:00 PM ET)
+- **Line:** Charleston -18.5, total 161.5 (DraftKings, via Bleacher Nation). Charleston moneyline -2400 (Bang the Book).
+- **Injuries / availability:** No coverage found.
+- **Beat / local notes:** Bang the Book notes SC State's road wins but also its "recent offensive struggles at Notre Dame". Bleacher Nation model: Charleston 85-77, with SC State the best spread bet.
+- **Rest/schedule:** Not found. The tip time comes from SportBusy only.
+- **Travel:** Orangeburg to Charleston is about 75 miles, a short in-state bus ride.
+- **Motivation:** In-state MEAC vs. CAA game; the two schools have met in several recent seasons. SC State may have a letdown or fatigue factor after a power-conference road game at Notre Dame (date unknown).
+- **Situational lean:** **SC State +18.5**. Short travel and familiarity with the opponent. Situational, not a pick.
+
+#### Missouri vs. Marquette (2:30 PM ET, United Center, Chicago)
+- **Line:** Close to a pick'em. Dimers' model slightly favors Marquette and lists Marquette +1.5 (-118) as the value side, which implies Missouri -1.5. One Dimers summary garbles this sentence, so treat the favorite as uncertain. Bang the Book has Missouri -102 on the moneyline.
+- **Injuries / availability:** No coverage found.
+- **Beat / local notes:** Missouri's game release says both teams are 2-1. The game is the Legends Classic, on Peacock. Marquette's loss includes an 84-70 defeat to Michigan. DocSports (Josh Schonwald) and Bang the Book (Missouri) have published picks.
+- **Rest/schedule:** Last game dates not found. This is a single neutral-site showcase game under the Legends Classic banner, not a confirmed multi-game bracket.
+- **Travel:** Marquette is about 90 miles from Chicago, so expect a pro-Marquette crowd. Missouri travels about 400 miles, same time zone.
+- **Motivation:** SEC vs. Big East, with both teams at 2-1 looking for a résumé win.
+- **Situational lean:** **Marquette**, given the de facto home crowd and the model's lean. Situational, not a pick.
+
+#### Baylor vs. Texas (3:00 PM ET, Frost Bank Center, San Antonio)
+- **Line:** Texas -4.5, total 158.5 (one board). Dimers shows Baylor +5.5 (-108) as value, so the line may have moved from 4.5 to 5.5 toward Texas, or the sources use different books. Bang the Book has Texas -225 on the moneyline.
+- **Injuries / availability:** No coverage found.
+- **Beat / local notes:** San Antonio Hoops Showdown, on ESPN. Dimers: Texas 66.3% to win. Bang the Book picks Texas.
+- **Rest/schedule:** Not found. A one-off neutral-site game.
+- **Travel:** Austin is about 80 miles away and Waco about 180, so the crowd should lean Texas. Both teams are in the same time zone.
+- **Motivation:** A former Big 12 rivalry renewed, now SEC (Texas) vs. Big 12 (Baylor). Bragging rights in the state.
+- **Situational lean:** Texas has the crowd edge, but Baylor +5.5 is the better number if the line is drifting. Lean **Baylor at +5.5 or better**. Situational, not a pick.
+
+#### Creighton vs. Iowa (3:00 PM ET, Casey's Center, Des Moines)
+- **Line:** Iowa -3.5 (Bleacher Nation) or -4.5 (Pick Dawgz). Total 146.5. Moneyline Iowa -177 / Creighton +144.
+- **Injuries / availability:** No coverage found.
+- **Beat / local notes:** HawkCentral (Des Moines Register) says Iowa is looking to bounce back from its **first loss of the season**. Bleacher Nation's model has Iowa 76-73 and takes Creighton +3.5 and the over. Pick Dawgz takes Iowa, citing its point differential.
+- **Rest/schedule:** Not found.
+- **Travel:** A neutral site in Iowa, about 115 miles from Iowa City and about 135 from Omaha. The crowd likely leans Iowa.
+- **Motivation:** A regional rivalry. Iowa has a bounce-back spot; Creighton has a road-ish game.
+- **Situational lean:** Lean **Iowa** for the bounce-back after a loss plus an in-state crowd. Note the model disagrees. Situational, not a pick.
+
+#### Purdue Fort Wayne @ Eastern Illinois (3:00 PM ET)
+- **Line:** PFW -3.5 (DraftKings), moneyline -155. Dimers likes EIU +3.5.
+- **Venue conflict:** One Bleacher Nation listing reads "Eastern Illinois at Purdue Fort Wayne" but names Lantz Arena, which is EIU's home court, so EIU is the home team.
+- **Injuries / availability:** No coverage found.
+- **Beat / local notes:** Bleacher Nation model: EIU 80-68. It rates EIU 15.7 points better than the market, which is a large and suspicious gap.
+- **Rest/schedule:** Not found.
+- **Travel:** Fort Wayne to Charleston, IL is about 230 miles and crosses into Central time.
+- **Motivation:** Horizon vs. OVC, a mid-major game.
+- **Situational lean:** **EIU +3.5**, a home dog with the time-zone edge. Situational, not a pick.
+
+#### High Point @ Saint Louis (3:00 PM ET)
+- **Line:** SLU -6.5 (Pick Dawgz). No total found.
+- **Injuries / availability:** No coverage found.
+- **Beat / local notes:** Pick Dawgz says High Point is shooting 26.1% from three. DocSports and Pick Dawgz both pick SLU. SportBusy lists both teams at 1-0, which may be stale.
+- **Rest/schedule:** Not found. The time is from SportBusy only.
+- **Travel:** High Point, NC to St. Louis is about 750 miles, one time zone. High Point plays a true road game at Chaifetz.
+- **Motivation:** A Big South power at a strong A-10 home team. The teams met in 2019 (SLU won 67-55).
+- **Situational lean:** **SLU**: home court plus the long trip for the visitor. Situational, not a pick.
+
+#### Cleveland State @ Alabama A&M (3:00 PM ET)
+- **Line:** AAMU -3.5, total 144.5 (DraftKings).
+- **Injuries / availability:** No coverage found.
+- **Beat / local notes:** Bleacher Nation model: Cleveland State 77-76. Cleveland State won the 2023 meeting 86-59.
+- **Rest/schedule:** Not found.
+- **Travel:** Cleveland to Huntsville is about 700 miles and crosses into Central time. A Horizon team making a return trip to a SWAC school.
+- **Motivation:** A rare SWAC home favorite over a Horizon team.
+- **Situational lean:** Lean **Alabama A&M**: the long trip and time change hurt the visitor. The model disagrees. Situational, not a pick.
+
+#### Mercyhurst @ James Madison (4:00 PM ET)
+- **Line:** JMU -15.5, total 137.5. Moneyline JMU -1650 (Bang the Book).
+- **Injuries / availability:** No coverage found.
+- **Beat / local notes:** Bang the Book cites JMU's win at Delaware. Dimers model: JMU 78-62 (93.3%). Bleacher Nation model: JMU 76-67. DocSports (Schonwald) picks Mercyhurst.
+- **Rest/schedule:** Not found.
+- **Travel:** Erie, PA to Harrisonburg, VA is about 400 miles, same time zone.
+- **Motivation:** A buy game for JMU following a road win at Delaware, so there is some letdown risk.
+- **Situational lean:** Slight lean **Mercyhurst +15.5** on the letdown angle. Situational, not a pick.
+
+#### Chicago State @ Loyola Marymount (4:00 PM ET / 1 PT)
+- **Line:** LMU -15.5 (Bleacher Nation expert page) or -18.5 (Bleacher Nation NEC page). This is a conflict, or possible movement. Total 141.5.
+- **Injuries / availability:** No coverage found.
+- **Beat / local notes:** Dimers model: LMU 80-62 (95.1%). Bleacher Nation model: LMU 79-75 or 80-74, and it takes Chicago State. Tony Sink (DocSports) picks LMU.
+- **Rest/schedule:** Not found.
+- **Travel:** Chicago to Los Angeles is about 2,000 miles across two time zones. The 1 PM local tip feels like 3 PM to the visitor, which is better than a late tip.
+- **Motivation:** A low-major buy game. Chicago State is an NEC member.
+- **Situational lean:** **LMU**: cross-country travel for a weak visitor. The models disagree sharply on the margin. Situational, not a pick.
+
+#### Idaho State @ Seattle U (4:00 PM ET / 1 PT)
+- **Line:** Seattle -16.5 (BetMGM). Dimers lists Seattle -16.5 (-105) as value.
+- **Injuries / availability:** No coverage found.
+- **Beat / local notes:** Cappers model: Seattle 71-61. The game is at Redhawk Center.
+- **Rest/schedule:** Not found.
+- **Travel:** Pocatello to Seattle is about 700 miles, one time zone west.
+- **Motivation:** Big Sky vs. WCC.
+- **Situational lean:** The 16.5 points looks large next to the 10-point model. Lean **Idaho State +16.5**. Situational, not a pick.
+
+#### New Mexico State @ San Diego State (4:00 PM ET / 1 PT)
+- **Line:** SDSU spread ranges from -10.5 (Pick Dawgz) to -11.5 (Bleacher Nation expert page) to -13.5 (odds summary and Bleacher Nation's "Pac-12" page). The spread looks to have moved toward SDSU, but the books differ. Total 143.5.
+- **Venue:** Listed as an SDSU home game, but the venue is not confirmed.
+- **Injuries / availability:** No coverage found.
+- **Beat / local notes:** Dimers model: SDSU 79-66 (88.8%). Bleacher Nation model: 86-69, taking SDSU and the over (its model total is 154.8).
+- **Rest/schedule:** Not found.
+- **Travel:** Las Cruces to San Diego is about 700 miles, one time zone west.
+- **Motivation:** An old regional pairing, Mountain West vs. CUSA.
+- **Situational lean:** **SDSU**: home court, and the market is moving its way. Situational, not a pick.
+
+#### New Haven @ Penn State (4:30 PM ET)
+- **Line:** PSU -24.5 (Bleacher Nation) or -23.5 (FanDuel, via Dimers). Total 142.5. Moneyline PSU -10000 (BetMGM).
+- **Injuries / availability:** No coverage found.
+- **Beat / local notes:** On Peacock. Dimers model: PSU 82-61 (96.8%), with New Haven +23.5 at +100 as value. Bleacher Nation model: 77-66. Cappers model: 82-65. DocSports picks PSU.
+- **Rest/schedule:** Not found.
+- **Travel:** West Haven, CT to State College is about 300 miles, same time zone.
+- **Motivation:** New Haven is a reclassifying program (moved from D-II to NEC) in a big buy game.
+- **Situational lean:** **New Haven +24**: every model projects a margin under the number. Situational, not a pick.
+
+#### Western Michigan @ Southern Indiana (4:30 PM ET)
+- **Line:** WMU -6.5 as a road favorite (Pick Dawgz). Moneyline WMU -218 (Bang the Book). No total found.
+- **Injuries / availability:** No coverage found.
+- **Beat / local notes:** Bang the Book cites WMU's shooting and a recent road win. Cappers model: WMU 81-73. DocSports (Bruhn) picks WMU.
+- **Rest/schedule:** Not found. The time is from SportBusy only.
+- **Travel:** Kalamazoo to Evansville is about 330 miles and crosses into Central time.
+- **Motivation:** **Revenge spot for USI**: WMU beat Southern Indiana 88-74 in Kalamazoo on Dec 3, 2025. This is the return game.
+- **Situational lean:** **Southern Indiana +6.5**: a home dog in the return game with a revenge angle. Situational, not a pick.
+
+#### Pepperdine @ Oregon (5:00 PM ET / 2 PT)
+- **Line:** Oregon -12.5 (Pick Dawgz). No total found.
+- **Injuries / availability:** No coverage found.
+- **Beat / local notes:** Cappers model: Oregon 82-72. Pick Dawgz picks Oregon. The game is at Matthew Knight Arena.
+- **Rest/schedule:** Not found.
+- **Travel:** Malibu to Eugene is about 800 miles, same time zone.
+- **Motivation:** A Big Ten team against a WCC buy-game opponent.
+- **Situational lean:** **Oregon**, but the margin is a coin flip at 12.5. Situational, not a pick.
+
+#### Canisius @ Buffalo (5:30 PM ET)
+- **Line:** Buffalo -14.5 (DraftKings) or -15.5 (Pick Dawgz). Total 150.5. Dimers takes the under at -105 (BetMGM).
+- **Injuries / availability:** No coverage found.
+- **Beat / local notes:** Pick Dawgz says Buffalo is shooting 22.1% from three. Dimers model: Buffalo 82-67 (91%). Bleacher Nation model: 78-73, and it takes Canisius on both its MAAC and MAC pages. Cappers model: 84-68. The models split widely.
+- **Rest/schedule:** Not found.
+- **Travel:** Crosstown Buffalo, under 10 miles. The game is at Broadview Arena.
+- **Motivation:** Buffalo's "Big 4" city rivalry. Expect the underdog to be fully motivated.
+- **Situational lean:** **Canisius +14.5 or better**: a city rivalry and a favorite that is struggling from three. Situational, not a pick.
+
+---
+
+### Biggest situational edges (situational, not picks)
+1. **Southern Indiana +6.5 vs. Western Michigan.** Revenge for the 88-74 loss on Dec 3, 2025, a home dog, and the visitor crossing into Central time. The tip time comes from one source only.
+2. **New Haven +23.5/24.5 @ Penn State.** All three models (Dimers, Bleacher Nation, Cappers) project a margin of 11 to 21 points, under the number. A Sunday buy game for a Big Ten team.
+3. **Canisius +14.5 @ Buffalo.** A crosstown rivalry dog against a favorite shooting 22.1% from three. Bleacher Nation's model has a 5-point game.
+4. **William & Mary +28.5 @ Michigan.** The defending champion has a look-ahead to Villanova on Nov 21, and a high total (166.5) helps a backdoor cover.
+5. **Iowa vs. Creighton.** Iowa's bounce-back after its first loss, with an in-state "neutral" crowd. The model disagrees, so treat this lean with caution.
+6. **Marquette vs. Missouri.** A near pick'em in Chicago, about 90 miles from Marquette's campus.
+
+### Gaps and conflicts to resolve before betting
+- Times for Albany/Holy Cross, Rider/Villanova, Brown/Siena, NJIT/Fairfield, Binghamton/Duquesne and Air Force/Pacific were not confirmed. Any of them could belong in this window.
+- Washington @ Utah appears only on a CBS odds page with stale metadata. Verify that the game exists.
+- Injuries and rest days were not found for any game. Do a live injury check (for example, team X accounts or KenPom/EvanMiya lineup data) before tip.
+- Spread conflicts: SDSU (-10.5 to -13.5), LMU (-15.5 vs. -18.5), Texas (-4.5 vs. -5.5), Iowa (-3.5 vs. -4.5).
+
+### Sources
+- [Dimers: men's CBB best bets 11/15/2026](https://www.dimers.com/cbb/news/mens-college-basketball-best-bets-11-15-2026-ac)
+- [Dimers: Texas vs. Baylor](https://www.dimers.com/cbb/news/texas-vs-baylor-prediction-11-15-2026-ac)
+- [Dimers: Missouri vs. Marquette](https://www.dimers.com/cbb/news/missouri-vs-marquette-prediction-11-15-2026-ac)
+- [Dimers: Temple vs. La Salle](https://www.dimers.com/cbb/news/temple-vs-la-salle-prediction-11-15-2026-ac)
+- [Dimers: Princeton vs. Rhode Island](https://www.dimers.com/cbb/news/princeton-vs-rhode-island-prediction-11-15-2026-ac)
+- [Dimers: Mercyhurst vs. James Madison](https://www.dimers.com/cbb/news/mercyhurst-vs-james-madison-prediction-11-15-2026-ac)
+- [Dimers: Chicago State vs. LMU](https://www.dimers.com/cbb/news/chicago-state-vs-loyola-marymount-prediction-11-15-2026-ac)
+- [Dimers: Idaho State vs. Seattle](https://www.dimers.com/cbb/news/idaho-state-vs-seattle-prediction-11-15-2026-ac)
+- [Dimers: New Mexico State vs. San Diego State](https://www.dimers.com/cbb/news/new-mexico-state-vs-san-diego-state-prediction-11-15-2026-ac)
+- [Dimers: New Haven vs. Penn State](https://www.dimers.com/cbb/news/new-haven-vs-penn-state-prediction-11-15-2026-ac)
+- [Dimers: Canisius vs. Buffalo](https://www.dimers.com/cbb/news/canisius-vs-buffalo-prediction-11-15-2026-ac)
+- [Dimers: Purdue Fort Wayne vs. Eastern Illinois](https://www.dimers.com/cbb/news/purdue-fort-wayne-vs-eastern-illinois-prediction-11-15-2026-ac)
+- [Dimers: Albany vs. Holy Cross](https://www.dimers.com/cbb/news/albany-vs-holy-cross-prediction-11-15-2026-ac)
+- [Bleacher Nation: Horizon League picks Nov 15](https://www.bleachernation.com/picks/2026/11/15/horizon-league-basketball-predictions-computer-picks-and-best-bets-november-15-2/)
+- [Bleacher Nation: MEAC picks Nov 15](https://www.bleachernation.com/picks/2026/11/15/meac-basketball-predictions-computer-picks-and-best-bets-november-15-2/)
+- [Bleacher Nation: MAAC picks Nov 15](https://www.bleachernation.com/picks/2026/11/15/maac-basketball-predictions-computer-picks-and-best-bets-november-15/)
+- [Bleacher Nation: NEC picks Nov 15](https://www.bleachernation.com/picks/2026/11/15/nec-basketball-predictions-computer-picks-and-best-bets-november-15/)
+- [Bleacher Nation: America East picks Nov 15](https://www.bleachernation.com/picks/2026/11/15/america-east-basketball-predictions-computer-picks-and-best-bets-november-15-2/)
+- [Bleacher Nation: Pac-12 picks Nov 15](https://www.bleachernation.com/picks/2026/11/15/pac-12-basketball-predictions-computer-picks-and-best-bets-november-15/)
+- [Bleacher Nation: Iowa vs. Creighton](https://www.bleachernation.com/picks/2026/11/14/iowa-vs-creighton-prediction-spread-total-points-moneyline-picks-sunday-november-15-2026/)
+- [Bleacher Nation: SDSU vs. NMSU](https://www.bleachernation.com/picks/2026/11/14/san-diego-state-vs-new-mexico-state-prediction-expert-picks-odds-stats-and-best-bets-sunday-november-15-2026/)
+- [Bleacher Nation: LMU vs. Chicago State](https://www.bleachernation.com/picks/2026/11/14/loyola-marymount-vs-chicago-state-prediction-expert-picks-odds-stats-and-best-bets-sunday-november-15-2026/)
+- [Bleacher Nation: Penn State vs. New Haven](https://www.bleachernation.com/picks/2026/11/14/penn-state-vs-new-haven-prediction-expert-picks-odds-stats-and-best-bets-sunday-november-15-2026/)
+- [Bang the Book: Temple vs. La Salle](https://bangthebook.com/temple-owls-vs-la-salle-explorers-prediction-2026-11-15/)
+- [Bang the Book: Princeton vs. Rhode Island](https://bangthebook.com/princeton-tigers-vs-rhode-island-rams-prediction-2026-11-15/)
+- [Bang the Book: Missouri vs. Marquette](https://bangthebook.com/missouri-tigers-vs-marquette-golden-eagles-prediction-2026-11-15/)
+- [Bang the Book: Baylor vs. Texas](https://bangthebook.com/baylor-bears-vs-texas-longhorns-prediction-2026-11-15/)
+- [Bang the Book: SC State vs. Charleston](https://bangthebook.com/south-carolina-state-bulldogs-vs-charleston-cougars-prediction-2026-11-15/)
+- [Bang the Book: Mercyhurst vs. JMU](https://bangthebook.com/mercyhurst-lakers-vs-james-madison-dukes-prediction-2026-11-15/)
+- [Bang the Book: WMU vs. Southern Indiana](https://bangthebook.com/western-michigan-broncos-vs-southern-indiana-screaming-eagles-prediction-2026-11-15/)
+- [Pick Dawgz: Canisius vs. Buffalo](https://pickdawgz.com/college-basketball-picks/canisius-vs-buffalo-prediction-11-15-2026-todays-college-basketball-picks/)
+- [Pick Dawgz: Pepperdine vs. Oregon](https://pickdawgz.com/college-basketball-picks/pepperdine-vs-oregon-prediction-11-15-2026-todays-college-basketball-picks/)
+- [Pick Dawgz: Creighton vs. Iowa](https://pickdawgz.com/college-basketball-picks/creighton-vs-iowa-prediction-11-15-2026-todays-college-basketball-picks/)
+- [Pick Dawgz: High Point vs. Saint Louis](https://pickdawgz.com/college-basketball-picks/high-point-vs-st-louis-prediction-11-15-2026-todays-college-basketball-picks/)
+- [Pick Dawgz: NMSU vs. SDSU](https://pickdawgz.com/college-basketball-picks/new-mexico-state-vs-san-diego-state-prediction-11-15-2026-todays-college-basketball-picks/)
+- [Pick Dawgz: WMU vs. Southern Indiana](https://pickdawgz.com/college-basketball-picks/western-michigan-vs-southern-indiana-prediction-11-15-2026-todays-college-basketball-picks/)
+- [DocSports: Temple vs. La Salle](https://www.docsports.com/free-picks/ncaa-college-basketball/2026/temple-owls-vs-la-salle-explorers-prediction-11-15-2026-college-basketball-picks-best-bets-odds.html)
+- [DocSports: Missouri vs. Marquette](https://www.docsports.com/free-picks/ncaa-college-basketball/2026/missouri-tigers-vs-marquette-golden-eagles-prediction-11-15-2026-college-basketball-picks-best-bets-odds.html)
+- [CappersPicks: Idaho State at Seattle](https://www.capperspicks.com/free-picks/ai/idaho-state-bengals-at-seattle-redhawks-pick-ncaa-basketball-prediction-preview-odds-11-15-2026/)
+- [CappersPicks: Pepperdine at Oregon](https://www.capperspicks.com/free-picks/ai/pepperdine-waves-at-oregon-ducks-pick-ncaa-basketball-prediction-preview-odds-11-15-2026/)
+- [SportsBetting3: William & Mary vs. Michigan odds](https://www.sportsbetting3.com/ncaabb-matchups/william-mary-tribe-vs-michigan-wolverines-ncaabb-betting-odds)
+- [CBS Sports college basketball odds](https://www.cbssports.com/college-basketball/odds/)
+- [Mizzou: Men's basketball faces Marquette Sunday in Chicago](https://mutigers.com/news/2026/11/13/mens-basketball-faces-marquette-sunday-in-chicago)
+- [HawkCentral: How to watch Iowa vs. Creighton](https://www.hawkcentral.com/story/sports/college/iowa/basketball-men/2026/11/15/iowa-mens-basketball-creighton-how-to-watch-channel-time-hawkeyes/92759048007/)
+- [Texas 2026-27 schedule](https://texaslonghorns.com/sports/mens-basketball/schedule)
+- [Oregon 2026-27 schedule](https://goducks.com/sports/mens-basketball/schedule)
+- [Temple 2026-27 schedule](https://owlsports.com/sports/mens-basketball/schedule)
+- [ClickOnDetroit: Michigan vs. UConn rematch / schedule](https://www.clickondetroit.com/sports/2026/11/06/michigan-basketball-vs-uconn-wolverines-face-huskies-in-national-championship-rematch-at-td-garden/)
+- [Tony's Picks: CBB best bets Nov 15](https://www.tonyspicks.com/2026/11/14/college-basketball-best-bets-jevon-jones-11-15-26/)
+- [Yahoo Sportswatch: Mid-Atlantic listings](https://sports.yahoo.com/articles/mid-atlantic-sportswatch-daily-listings-190004548.html)
+- [SportBusy: High Point at Saint Louis](https://www.sportbusy.com/games/ncaam/14463489-high-point-panthers-at-saint-louis-billikens-2026-11-15/)
+- [SportBusy: SC State at Charleston](https://www.sportbusy.com/games/ncaam/14522385-south-carolina-state-bulldogs-at-charleston-cougars-2026-11-15/)
+- [SportBusy: WMU at Southern Indiana](https://www.sportbusy.com/games/ncaam/14502644-western-michigan-broncos-at-southern-indiana-screaming-eagles-2026-11-15/)
+- [SportBusy: Princeton at Rhode Island](https://www.sportbusy.com/games/ncaam/14463498-princeton-tigers-at-rhode-island-rams-2026-11-15/)
+- [CBS: WMU 88, Southern Indiana 74 (Dec 3, 2025)](https://www.cbssports.com/college-basketball/gametracker/recap/NCAAB_20251203_SOINDI@WMICH)
+
+
+---
+
+## CBB Game Recon: D-I Men's Games Tipping 6:00 PM ET or Later, Sunday Nov. 15, 2026
+
+**This list is incomplete. Read this first.** WebFetch was blocked (ESPN ENOTFOUND), and the shared web-search budget ran out partway through Step 1. I could not pull a full ESPN, CBS or NCAA scoreboard. The games below were found one at a time through preview and listing sites (Dimers, BangTheBook, Bleacher Nation, SportBusy, school sites) and cross-checked where I could. **Assume there are more evening games I could not find**, especially low-major home games in the Central, Mountain and Pacific time zones and any game in Hawaii. I found no Hawaii men's game on Nov. 15. Injury and beat-writer coverage is very thin for these games, and nothing was filled in by guesswork.
+
+All times are ET. "Line" is the best number I found, with the book named when known. Many lines come from model-pick sites (Dimers, Bleacher Nation, BangTheBook) that quote one sportsbook early on Nov. 15, so check them before use.
+
+### Slate (7 games found in the window)
+
+| # | Matchup | Tip (ET) | Site | TV | Time confidence |
+|---|---|---|---|---|---|
+| 1 | Cal Poly @ Montana State | 6:00 PM | Worthington Arena, Bozeman | n/a | Medium (two sources; home/away conflict noted) |
+| 2 | Syracuse @ St. John's | 7:00 PM | Madison Square Garden, NYC | Peacock/NBCSN (older listing) | High |
+| 3 | Arkansas-Pine Bluff @ USC | 7:00 PM | Galen Center, Los Angeles | B1G+ | High (4:00 PT, USC schedule) |
+| 4 | Coastal Carolina @ Wisconsin | 8:00 PM | Kohl Center, Madison | BTN (unconfirmed) | High (7:00 CT, UW schedule + Dimers) |
+| 5 | Texas State @ UTSA | 8:00 PM | San Antonio (home/away not confirmed) | ESPN2 | Medium |
+| 6 | Florida A&M @ UTEP | 8:00 PM | Don Haskins Center, El Paso | n/a | Low-Medium (one listing; a second shows a placeholder time) |
+| 7 | Alabama State @ San Jose State | 9:00 PM | Provident Credit Union Event Center, San Jose | MW+ | High (6:00 PT, SJSU release) |
+
+**Checked and outside the window (left to the other agents):** Pepperdine @ Oregon (5:00 ET, confirmed 2:00 PT), Air Force vs. Pacific (4:00 ET per Dimers), Chicago State @ Loyola Marymount (4:00 ET per a single schedule page), New Mexico State @ San Diego State (4:00 ET), New Haven @ Penn State (4:30 ET), Mercyhurst @ James Madison (4:00 ET), Creighton vs. Iowa (3:00 ET, Des Moines).
+
+**Not on today's slate:** Xavier vs. Mississippi State (Greenbrier Tip-Off) was played Friday, Nov. 13. UIC @ Saint Mary's was also Nov. 13. A DirecTV listing showed a 10 PM UIC-Saint Mary's tip, but that listing was for an earlier day.
+
+**Unconfirmed, possibly in the window:** A Big West game listing for Nov. 15 also showed UC Santa Barbara vs. UC Merced, UC San Diego vs. San Francisco, and Cal State Fullerton vs. Pacific. I could not confirm a date or time for any of them. Two conflict with other sources: UCSD's and USF's announced schedules show no such game, and Pacific is listed against Air Force at 4:00 ET today. A Big West notebook dated Oct. 30 called North Dakota State-CSU Bakersfield the "lone" Sunday game. But SportBusy lists that game in Fargo at 2:00 ET, which is outside the window. Treat these as unverified.
+
+---
+
+#### Cal Poly @ Montana State (6:00 PM ET)
+- **Line:** Montana State about -6.5. Bleacher Nation took Cal Poly +6.5. The total is 165.5 at Caesars, per Dimers. No moneyline found and no movement tracked.
+- **Injuries / availability:** No coverage found.
+- **Beat / local notes:** No beat coverage found. Model views: Bleacher Nation projects Montana State 85-79. Dimers projects Montana State 83-75 and leans to the Under 165.5. Dimers' page contradicts itself on win probability: one section gives Montana State 74.7%, another gives Cal Poly 74.7%.
+- **Conflict:** The Big West listing shows "Montana State at Cal Poly." Montana State's 2026-27 schedule, SportBusy (Worthington Arena) and Dimers all put the game in Bozeman. Bozeman is used here.
+- **Rest/schedule:** Days since last game unknown. No MTE found.
+- **Travel:** Cal Poly travels from San Luis Obispo to Bozeman, roughly 1,000 miles and Pacific to Mountain time (+1 hour). The 6 ET tip is 4:00 PM local.
+- **Motivation:** Non-conference game (Big West at Big Sky). The teams met in Dec. 2025 at Cal Poly. No 2026 records found.
+- **Situational lean (situational, not a pick):** Montana State, at home at altitude against a team crossing a time zone. Both models expect a margin inside the number, so the spot favors MSU more than the line does.
+
+#### Syracuse @ St. John's (7:00 PM ET)
+- **Line:** St. John's -12.5, total 149.5, per FanDuel Research. BangTheBook lists St. John's ML at -950. No movement tracked.
+- **Injuries / availability:** No coverage found.
+- **Beat / local notes:** VSiN notes St. John's is 3-0, beating Monmouth by 15, Iona by 39 and Colgate by 31. It calls this the Red Storm's "first big test." VSiN doesn't expect an upset but thinks a 13-point-plus margin is a bit optimistic. Dimers projects St. John's 81-67, with an 88.7% win probability. Its text also assigns 88.7% to Syracuse, which is an internal error.
+- **Rest/schedule:** Days since last game unknown. Syracuse is coming off a close loss to Indiana in Indianapolis, per VSiN. That game was a neutral-site event, and its date was not found.
+- **Travel:** Syracuse to NYC is about 250 miles, same time zone. MSG is St. John's home venue but plays close to neutral for this matchup: it is an old Big East rivalry and Syracuse fans travel well.
+- **Motivation:** Old Big East rivalry, the top TV game of the night. St. John's is unbeaten against a weak early schedule. Syracuse (2-1) has a chance to bounce back after a narrow loss.
+- **Situational lean (situational, not a pick):** Syracuse +12.5. A rivalry dog off a close loss, in a game VSiN also flags as a big number, is the classic bounce-back spot. St. John's has not yet faced a team of this level.
+
+#### Arkansas-Pine Bluff @ USC (7:00 PM ET)
+- **Line:** USC about -43.5. Dimers' all-sports best bets list UAPB +43.5 (-110, Caesars) as a top play. No total found.
+- **Injuries / availability:** No coverage found.
+- **Beat / local notes:** No coverage found. Dimers' summary table mislabels this play, so check the matchup before trusting the number.
+- **Rest/schedule:** Unknown.
+- **Travel:** Pine Bluff, Ark., to Los Angeles is roughly 1,600 miles, Central to Pacific time (-2 hours). The game tips at 4:00 PM local. A typical SWAC road "buy game."
+- **Motivation:** Pure buy-game mismatch. USC (Big Ten) has no look-ahead issue I could confirm.
+- **Situational lean (situational, not a pick):** UAPB +43.5. Huge buy-game spreads invite a late-game ease-off by the favorite and backdoor cover risk. The underdog has no reason to fold.
+
+#### Coastal Carolina @ Wisconsin (8:00 PM ET)
+- **Line:** No spread found. The total is 147.5 (Over -105, BetMGM) in Dimers' game page and 148.5 in Dimers' best-bets list. That is either a small rise or a book difference. Dimers projects Wisconsin 89-63 (98.2%).
+- **Injuries / availability:** No coverage found.
+- **Beat / local notes:** No beat coverage found. TV Insider listed the game on BTN, but that listing's layout made it ambiguous.
+- **Rest/schedule:** Unknown.
+- **Travel:** Conway, S.C., to Madison is roughly 900 miles, Eastern to Central time. Tip is 7:00 PM local.
+- **Motivation:** Buy game: a Sun Belt team on the road at a Big Ten program.
+- **Situational lean (situational, not a pick):** Wisconsin's home-court edge in a buy game. The market interest is the total; Dimers models it well over 147.5.
+
+#### Texas State @ UTSA (8:00 PM ET)
+- **Line:** Texas State is the road favorite. Moneyline is -162 at BetRivers per Dimers, or -192 per BangTheBook. That could be a book difference or the line moving toward Texas State; I could not tell. No spread or total found.
+- **Injuries / availability:** No coverage found.
+- **Beat / local notes:** BangTheBook says Texas State is 4-0 and averaging 89.8 points per game. Dimers projects Texas State 77-72. Yahoo's TV listing has the game on ESPN2 at 8 p.m.
+- **Conflict:** Previews title it "Texas State vs. UTSA" but don't confirm the arena. The "@ UTSA" here follows BangTheBook's naming order and is not verified.
+- **Rest/schedule:** Unknown.
+- **Travel:** San Marcos to San Antonio is about 50 miles, so travel is a non-factor.
+- **Motivation:** The I-35 rivalry, on national TV. Texas State is unbeaten.
+- **Situational lean (situational, not a pick):** UTSA as the home underdog in a rivalry. Short-travel rivalry games tend to tighten, and the models already expect about 5 points.
+
+#### Florida A&M @ UTEP (8:00 PM ET)
+- **Line:** UTEP -19.5, per Dimers, which projects UTEP 81-61 and sees value on UTEP. No total or moneyline found.
+- **Injuries / availability:** No coverage found.
+- **Beat / local notes:** No coverage found. SportBusy shows both teams at 0-1, which is likely stale.
+- **Time conflict:** One SportBusy page says 8:00 PM ET (6:00 PM MT). A second page for the same game shows 12:00 AM ET, likely a placeholder.
+- **Travel:** Tallahassee to El Paso is roughly 1,600 miles, Eastern to Mountain time (-2 hours). A SWAC road buy game.
+- **Motivation:** Buy-game mismatch.
+- **Situational lean (situational, not a pick):** UTEP. A long cross-country trip and the time change hurt the SWAC visitor, though a 19.5-point spread leaves backdoor risk.
+
+#### Alabama State @ San Jose State (9:00 PM ET)
+- **Line:** No spread found. Dimers leans to the Under 151.5, projects SJSU 82-69 and gives SJSU an 87.1% win probability.
+- **Injuries / availability:** No coverage found.
+- **Beat / local notes:** The SJSU release confirms a 6 p.m. PT tip on MW+ and lists the Spartans at 1-2.
+- **Rest/schedule:** Unknown.
+- **Travel:** Montgomery to San Jose is roughly 2,300 miles, Central to Pacific time. Tip is 8:00 PM on the visitors' body clock.
+- **Motivation:** Buy game. SJSU (1-2) needs a win.
+- **Situational lean (situational, not a pick):** San Jose State, at home after a 1-2 start against a SWAC team at the end of a long trip.
+
+---
+
+### Biggest situational edges
+1. **Syracuse +12.5 vs. St. John's.** A rivalry dog off a close loss to Indiana, playing a 3-0 team that has beaten only weak opponents. VSiN also calls 13 or more "a bit optimistic." This is the best-sourced situational read on the slate.
+2. **UTSA (home dog) vs. 4-0 Texas State.** The I-35 rivalry on ESPN2 with no travel factor. The road favorite's moneyline shows a -162 vs. -192 discrepancy between sources, which suggests money has come in on Texas State.
+3. **Montana State vs. Cal Poly.** Altitude, one time zone and a 4 PM local tip. Note that both models project a margin inside the 6.5.
+4. **Buy-game backdoor risk at UAPB +43.5 and FAMU +19.5.** Very large spreads for SWAC road teams. Travel is a clear negative for both underdogs, so these are spread angles, not upset angles.
+
+### Sources
+- [Dimers: Cal Poly vs. Montana State](https://dimers.com/cbb/news/cal-poly-vs-montana-state-prediction-11-15-2026-ac)
+- [SportBusy: Cal Poly at Montana State](https://www.sportbusy.com/games/ncaam/14463500-california-polytechnic-mustangs-at-montana-state-fighting-bobcats-2026-11-15/)
+- [Montana State 2026-27 schedule](https://msubobcats.com/sports/mens-basketball/schedule/text)
+- [Bleacher Nation: Montana State vs. Cal Poly](https://www.bleachernation.com/picks/2026/11/15/montana-state-vs-cal-poly-prediction-expert-picks-odds-stats-and-best-bets-sunday-november-15-2026/)
+- [FanDuel Research: St. John's vs. Syracuse](https://www.fanduel.com/research/st-john-s-vs-syracuse-college-basketball-predictions-odds-picks-best-bets-for-11-15-2026)
+- [VSiN: Syracuse vs. St. John's](https://vsin.com/college-basketball/syracuse-vs-st-johns-basketball-prediction-sunday-november-15-2026/)
+- [Dimers: Syracuse vs. St. John's](https://www.dimers.com/cbb/news/syracuse-vs-st-johns-prediction-11-15-2026-ac)
+- [BangTheBook: Syracuse vs. St. John's](https://bangthebook.com/syracuse-orange-vs-st-john-s-red-storm-prediction-2026-11-15/)
+- [Ticketmaster: Syracuse men's basketball](https://www.ticketmaster.com/syracuse-university-mens-basketball-tickets/artist/841529)
+- [USC 2026-27 schedule](https://usctrojans.com/sports/mens-basketball/schedule)
+- [SportBusy: Arkansas-Pine Bluff at USC](https://www.sportbusy.com/games/ncaam/14522381-arkansas-pine-bluff-golden-lions-at-usc-trojans-2026-11-15/)
+- [Dimers: All-sports best bets, Nov. 15](https://www.dimers.com/news/best-bets-11-15-2026-ac)
+- [Dimers: Men's CBB best bets, Nov. 15](https://www.dimers.com/cbb/news/mens-college-basketball-best-bets-11-15-2026-ac)
+- [Wisconsin 2026-27 schedule](https://uwbadgers.com/sports/mens-basketball/schedule)
+- [Dimers: Coastal Carolina vs. Wisconsin](https://www.dimers.com/cbb/news/coastal-carolina-vs-wisconsin-prediction-11-15-2026-ac)
+- [TV Insider: Men's college basketball TV schedule](https://www.tvinsider.com/show/mens-college-basketball/)
+- [Dimers: Texas State vs. UTSA](https://www.dimers.com/cbb/news/texas-state-vs-utsa-prediction-11-15-2026-ac)
+- [BangTheBook: Texas State vs. UTSA](https://bangthebook.com/texas-state-bobcats-vs-utsa-roadrunners-prediction-2026-11-15/)
+- [Bleacher Nation: Texas State vs. UTSA](https://www.bleachernation.com/picks/2026/11/15/texas-state-vs-utsa-prediction-spread-total-points-moneyline-picks-sunday-november-15-2026/)
+- [Yahoo Sports: TV and streaming picks, Nov. 15](https://sports.yahoo.com/articles/tv-streaming-viewing-picks-november-120007491.html)
+- [Dimers: Florida A&M vs. UTEP](https://www.dimers.com/cbb/news/florida-am-vs-utep-prediction-11-15-2026-ac)
+- [SportBusy: Florida A&M at UTEP](https://www.sportbusy.com/games/ncaam/14605108-florida-a-m-rattlers-at-utep-miners-2026-11-15/)
+- [SJSU: Spartans to face Alabama State on Sunday night](https://sjsuspartans.com/news/2026/11/14/spartans-to-face-alabama-state-on-sunday-night-at-home)
+- [Dimers: Alabama State vs. San Jose State](https://www.dimers.com/cbb/news/alabama-state-vs-san-jose-state-prediction-11-15-2026-ac)
+- [Oregon: Oregon and Pepperdine set for 2 p.m. tip (excluded game)](https://goducks.com/news/2026/11/13/mens-basketball-oregon-and-pepperdine-set-for-2-pm-tip-on-sunday)
+- [Dimers: Air Force vs. Pacific (excluded game)](https://www.dimers.com/cbb/news/air-force-vs-pacific-prediction-11-15-2026-ac)
+- [Legion Report: Chicago State tip times (excluded game)](https://legionreport.com/what-time-is-the-chicago-state-basketball-game/)
+- [Xavier non-conference schedule (Greenbrier game on Nov. 13)](https://goxavier.com/news/2026/7/22/mens-basketball-releases-its-2026-27-mens-basketball-non-conference-schedule)
+- [Big West men's basketball notebook](https://bigwest.org/news/2026/10/30/the-big-west-mens-basketball-notebook-brand-new-season-begins.aspx)
+- [SportBusy: CSU Bakersfield at North Dakota State](https://www.sportbusy.com/games/ncaam/14463497-cal-state-bakersfield-roadrunners-at-north-dakota-state-bison-2026-11-15/)
+- [UCSD: Acrisure Series matchups (contradicts UCSD-USF on Nov. 15)](https://ucsdtritons.com/news/2026/8/6/mens-basketball-matchups-game-times-announced-for-2026-acrisure-series.aspx)
+
+
+---
+
+## Game Recon: Other Leagues, Sunday, November 15, 2026
+
+Scope: every league on today's board except NFL, NBA, NHL and NCAA men's basketball, which other agents cover. **Women's sports are out of scope** (user scope change), so NWSL, NCAA WBB, women's internationals, WSL, LPGA and WTA are left out on purpose.
+
+Method: WebSearch summaries only, because WebFetch is blocked. Lines and team news come from previews published Nov 13-15 and may have moved. Conflicts between sources are flagged inline. All times are ET unless marked otherwise. For European fixtures, 20:45 CET = 2:45 pm ET.
+
+### What's playing today
+
+| League / event | Playing today? | Notes | Source |
+|---|---|---|---|
+| UEFA Nations League (men) | **YES** | League A Matchday 6: Spain-England, Belgium-Italy, France-Türkiye, Croatia-Czechia. Plus League C/D games. Germany-Netherlands and Greece-Serbia are **Monday 16th** (see conflict note). | [UEFA fixtures](https://www.uefa.com/uefanationsleague/news/02a2-1fea18abbcbc-456e846509e7-1000--2026-27-uefa-nations-league-all-the-league-phase-fixtures-a/), [UEFA MD6 preview](https://www.uefa.com/uefanationsleague/news/02ab-221287e5a66c-f9855de4b857-1000--uefa-nations-league-matchday-6-preview-spain-host-england-i/) |
+| International friendlies (men) | YES (low profile) | Andorra-Azerbaijan, Suriname-Eswatini, Iraq-Iran, Kyrgyzstan-Vietnam and others. No USMNT, Mexico, Brazil or Argentina today. | [ESPN friendlies](https://www.espn.com/soccer/schedule/_/league/fifa.friendly), [SNA weekend list](https://sportnewsafrica.com/en/news/international-friendlies-fixtures-weekend-schedule-and-kick-off-times-13-16-november-2026/) |
+| World Cup qualifiers | NO | Qualifying ended March 2026. | [Wikipedia WCQ](https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification) |
+| CONCACAF Nations League QFs | NO | First legs were Nov 13-14 (USA 6-0 Haiti, Jamaica 3-2 Mexico, Canada 3-2 at Guatemala). Second legs are Nov 17. | [Concacaf](https://www.concacaf.com/competitions/nations-league/news/jamaica-defeats-mexico-in-nations-league-quarterfinals-first-leg), [US Soccer](https://www.ussoccer.com/stories/2026/11/usmnt-vs-haiti-match-recap-highlights-concacaf-nations-league-miami-florida) |
+| AFCON 2027 qualifiers | Probably NO | CAF lists MD3 on Nov 12-14 and MD4 on Nov 17. Foot-Africa lists MD4 on Nov 15. **Conflict, unresolved.** | [CAF](https://www.cafonline.com/afcon2025/news/african-giants-face-crucial-tests-as-totalenergies-caf-afcon-pamoja-2027-qualifiers-resume-this-week/), [Foot-Africa](https://foot-africa.com/en/news/afcon-2027-qualifiers-schedule-favourites-broadcasters-everything-you-need-to-know-1361300/) |
+| EPL / La Liga / Serie A / Bundesliga / Ligue 1 | NO | FIFA window Nov 9-17. The EPL returns Nov 21. | [Premier League](https://www.premierleague.com/en/news/4689113/when-are-the-international-breaks-for-202627) |
+| Champions League | NO | No UCL matchday during the international window. | inferred from the window above |
+| MLS | NO | Wild card Nov 19, Round One from Nov 20. | [MLS key dates](https://www.mlssoccer.com/news/audi-2026-mls-cup-playoffs-key-dates-schedule-information) |
+| Liga MX | NO | Paused. Jornada 17 is Nov 20-22. The only weekend game was Querétaro-Monterrey (make-up) on **Saturday** the 14th. | [Fox Sports MX](https://www.foxsports.com.mx/2026/11/09/cuando-se-jugara-la-jornada-17-del-apertura-2026-habra-pausa-en-liga-mx-por-la-fecha-fifa/) |
+| NWSL | (yes, Gotham vs KC semi) **EXCLUDED** | Women's sports out of scope. | [Bleacher Report](https://bleacherreport.com/articles/25530729-updated-nwsl-playoff-bracket-semifinal-schedule-2026-after-quarterfinals-results) |
+| NCAA women's basketball | **EXCLUDED** | Out of scope. Not researched. | n/a |
+| College football | NO | Week 11 ended Sat Nov 14. No Sunday games found. | [ESPN CFB wk 12](https://www.espn.co.uk/college-football/schedule/_/week/12), [ESPN press](https://espnpressroom.com/press-release/three-ranked-on-ranked-games-headline-espns-week-11-slate-with-14-cfp-top-25-teams-in-action/) |
+| **CFL: 113th Grey Cup** | **YES** | Montreal vs Edmonton, Calgary, 6:00 pm ET. | [Wikipedia](https://en.wikipedia.org/wiki/113th_Grey_Cup), [Covers](https://www.covers.com/cfl/alouettes-vs-elks-prediction-picks-odds-grey-cup-nov-15-2026) |
+| **Tennis: ATP Finals (Turin)** | **YES**, Day 1 | Zverev-Jódar, Shelton-Fils, plus doubles. Sinner is out (knee). The final is Nov 22. | [Tennis Majors](https://www.tennismajors.com/atp/nitto-atp-finals-atp/atp-finals-2026-groups-schedule-format-how-to-watch-866945.html), [TechRadar](https://www.techradar.com/entertainment/tennis/atp-finals-2026-free-mens-tennis) |
+| **Golf: PGA Tour Austin Championship** | **YES**, final round | Trace Crowe -14 leads by 1. Tee times moved up for storms, and a rain delay is reported. | [Yahoo](https://sports.yahoo.com/articles/seeking-first-pga-tour-win-014342399.html), [Heavy](https://heavy.com/sports/golf/pga-tour-austin-championship-golf-delay/) |
+| **Golf: DP World Tour Championship (Dubai)** | YES, but likely **finished** before US morning | Reports say Hatton won by 5 and McIlroy took the Race to Dubai. | [GolfMagic](https://www.golfmagic.com/tour/dp-world-tour/rory-mcilroy-makes-race-dubai-history-tyrrell-hatton-storms-dp-world-tour) |
+| PGA RSM Classic | NO | Nov 19-22. | [Betsperts](https://betspertsgolf.com/golf-news/2026-rsm-classic-field-koepka-aberg-harman-headline) |
+| **Rugby union: Nations Championship** | **YES** | Scotland v Australia, Murrayfield, 10:10 am ET. Ireland-Fiji is listed Sat 14 by most sources. | [Sky Sports](https://www.skysports.com/rugby-union/news/13604775/nations-championship-fixtures-schedule-dates-key-info-as-rugbys-revolutionary-new-look-tournament-gears-up-for-finals), [Racing Post](https://www.racingpost.com/sport/rugby-union-tips/scotland-vs-australia-nations-championship-rugby-union-predictions-odds-betting-tips-aSRpW0y7m3CN/) |
+| **Cricket: ODIs** | YES, overnight (Sat night ET) | Australia v England 2nd ODI (Adelaide, ~10:30 pm ET Sat) and New Zealand v India 5th ODI (Bay Oval, ~9:00 pm ET Sat). Both likely settled by Sunday morning ET. | [SportsCafe](https://sportscafe.in/cricket/live/odi/odi-series-australia-vs-england/aus-vs-eng-7134913/match-details) |
+| NASCAR Cup | NO | The finale was Nov 8 at Homestead. | [NBC](https://www.nbclosangeles.com/news/sports/2026-nascar-schedule-dates-tracks-chicagoland-north-wilkesboro-speedway/3766881/) |
+| F1 | NO | Las Vegas GP is Nov 19-21. | [Formula1.com](https://www.formula1.com/en/latest/article/formula-1-heineken-las-vegas-grand-prix-2026.1qmWzcBwKK5hkTbYbhVC22) |
+| UFC | NO | UFC 334 (Gane vs Hokit, MSG) was **Sat Nov 14**. Next is UFC Qatar on Nov 21. | [Agent MMA](https://agentmma.com/news/88598-ufc-returns-to-madison-square-garden-for-numbered-event-on-nov-14), [Cageside Press](https://cagesidepress.com/2026/09/29/full-ufc-qatar-card-revealed-for-november-21-event/) |
+| Boxing | Unconfirmed | No reliable Sunday card found. | n/a |
+| EuroLeague | NO (as far as found) | Round 11 was Nov 11-13 and Round 12 is Nov 17-18. | [Allsportdb / Eurohoops](https://eurohoops.net/en/euroleague/1994855/euroleague-releases-full-schedule-for-the-2026-27-season) |
+| AHL | Likely yes, **unverified** | BetExplorer lists "15.11." games (Hartford-Springfield, Rockford-Manitoba, Henderson-Calgary, Ontario-Abbotsford), but the year is unconfirmed. | [BetExplorer](https://www.betexplorer.com/hockey/usa/ahl/fixtures/) |
+| KHL | Not checked | See "Not researched". | n/a |
+
+---
+
+### UEFA Nations League, League A (Matchday 6)
+
+Shared context: the league phase ends Nov 17, and the knockout/play-off draw is **Fri Nov 20**. Matchday 5 was played around Nov 12-13, so every League A team today is on roughly **2-3 days' rest**. This is the second game of a two-game window, which usually means rotation for teams already through. Club seasons resume Nov 21-22, so club-driven caution about minutes (load management) applies.
+
+**Standings conflict:** a worldfootball.net snapshot (after MD4) differs from NBC and UEFA (after MD5). The figures below use the UEFA MD6 preview: Group A1 Italy 10, France 10, Belgium 9, Türkiye 0. Group A3 Spain 15, England 12, Croatia 3, Czechia 0. One Belgium-Italy preview says the two are "level on 10", which **conflicts with UEFA's** Belgium 9.
+
+#### Spain vs England (2:45 pm ET), Riyadh Air Metropolitano, Madrid
+- **Line:** Spain 7/10, draw 14/5, England 16/5 (Sky Bet via Racing Post). Another book has Spain 1.70 and England 4.20. Opta gives Spain 59.6%, draw 21.1%, England 19.3%. Covers leans Over 2.5 (their model has it at 61%).
+- **Injuries / availability:** For Spain, **Lamine Yamal is expected back** after missing MD5 with a knee issue. Rodri and Dani Olmo are out. Nico Williams and Aymeric Laporte are doubtful. For England, Kane is expected to lead the line. Konsa and Djed Spence are being assessed after missing the Croatia win, and **Guehi and Saka are out**. Sources: Racing Post, Al Jazeera.
+- **Local notes:** SI and Al Jazeera previews. Reports frame it as "Tuchel's side chasing top spot". Spain's unbeaten run is reported as both 42 and 43 matches, so that figure is unreliable.
+- **Rest/schedule:** About 3 days since MD5 for both sides. England beat Croatia 2-1. Both clubs' seasons restart next weekend.
+- **Travel:** England flew London to Madrid, about 1,260 km, +1 hour. Spain are at home.
+- **Motivation:** **Both teams are already in the quarter-finals.** Only top spot (seeding) is at stake. Spain keep first with a draw. England need to win, and one source says any win puts them top on head-to-head. That is **unverified**: Spain won the reverse fixture 3-2 at Wembley, so a 1-0 England win levels head-to-head goal difference and the tiebreak may go further. England also have revenge for the Wembley loss and the Euro 2024 final.
+- **Weather:** Madrid in mid-November, mild and dry is typical. No specific forecast was found.
+- **Situational lean (situational, not a pick):** Spain need only a draw, and both teams are through with club football returning, so rotation risk is high for both. England have the bigger incentive. The lean is toward **England +handicap / draw-no-bet value** over Spain at -140ish. Monitor lineups, because Yamal's minutes are the swing factor.
+
+#### Belgium vs Italy (2:45 pm ET), King Baudouin Stadium, Brussels
+- **Line:** No bookmaker line found. Predicted scores range from 1-1 (Footballwhispers, Khelnow) and 2-2 (WhoScored, Sports Mole) to Italy 2-1 (Hooligan Soccer). Sportytrader's model favours Over 2.5.
+- **Injuries / availability:** **Alessandro Bastoni is suspended** for Italy, and **Frattesi is out** injured (Sports Mole, Goal). Belgium's threats are De Bruyne, De Ketelaere and Doku. No major Belgian absences were found.
+- **Local notes:** Sports Mole, Goal and WhoScored previews. Belgium are coached by Mark van Bommel.
+- **Rest/schedule:** About 3 days. Italy beat France 3-1 on Thu Nov 12. Belgium came from behind to win 2-1 in Türkiye.
+- **Travel:** Belgium flew back from Türkiye, roughly 2,000+ km and -2 hours. The exact venue of that game was not confirmed. Italy's travel is short.
+- **Motivation:** **Must-win for Belgium.** Any Belgian win sends them to the QFs, and they top the group if France also fail to win. **Italy are through with a draw**, and also go through if France lose. Italy's only Nations League loss in this edition was 2-0 to Belgium in Rome, so Belgium have the head-to-head edge.
+- **Weather:** Brussels in November, cool with possible rain. No specific forecast was found.
+- **Situational lean (situational, not a pick):** This is the classic "draw is enough for the away side" setup. Italy can sit deep without Bastoni and Belgium must chase. The lean is toward **Belgium ML / Belgium draw-no-bet** on motivation. If Italy score first, late-game state favours Overs.
+
+#### France vs Türkiye (2:45 pm ET), Bordeaux
+- **Line:** No bookmaker line found. Previews forecast France 2-0 and 3-1.
+- **Injuries / availability:** **Sources conflict.** Mbappé was hurt during the Italy loss and is described as recovered by one preview and doubtful by two. One report lists **Koundé, Saliba, Tchouaméni and Koné out**. Upamecano is absent for personal reasons in one report and starting in another. For Türkiye, **Bardakcı returns** from suspension alongside Demiral, and **Ozan Kabak is suspended**. Arda Güler, Kökçü and Enes Ünal are the key attackers. Coach is Sergen Yalçın (World Soccer Talk, Hard Tackle, Foot Africa).
+- **Local notes:** Khelnow lists Vénissieux and Monday 16th, which **conflicts** with Bordeaux on Sunday in all other sources. Bordeaux on Sunday is better supported.
+- **Rest/schedule:** About 3 days. France lost 3-1 to Italy on Thu Nov 12. Türkiye lost 2-1 at home to Belgium.
+- **Travel:** Türkiye flew to Bordeaux, roughly 2,800 km and -2 hours.
+- **Motivation:** France reach the QFs with a draw or win, and finish first with a win if Italy don't win. **Türkiye are already relegated to League B**, so for them this is a dead rubber.
+- **Weather:** Bordeaux in November, mild and possibly wet. No specific forecast was found.
+- **Situational lean (situational, not a pick):** A motivated home side faces a relegated, demoralized visitor on long travel. The lean is **France**, ideally in a handicap or team-total market rather than an expensive ML. The caveat is France's heavy absence list and Mbappé's doubt.
+
+#### Croatia vs Czechia (2:45 pm ET), Opus Arena, Osijek
+- **Line:** Croatia about 1.55 and Czechia about 5.00 (one bookmaker comparison). Predicted scores range from Croatia 1-0 to 3-1.
+- **Injuries / availability:** Croatia are without centre-backs **Josip Šutalo and Marin Pongračić**.
+- **Local notes:** WhoScored, Sportskeeda and Football Écologie previews. One of them recommends a Croatia clean sheet.
+- **Rest/schedule:** About 3 days. Croatia lost 2-1 to England. Czechia are 0-5 in this edition.
+- **Travel:** Czechia's trip is short, about 600 km in the same time zone. Croatia played away in England.
+- **Motivation:** **Relegation decider.** Croatia have 3 points and Czechia 0. A draw keeps Croatia above Czechia, and Czechia need any win. Previews say a Croatia loss means relegation to League B. The exact third-place play-off versus relegation rule was **not verified**. Croatia have lost four straight and conceded 15 goals, and their only win in this edition was 2-1 in Prague.
+- **Weather:** Osijek in November, cold and damp is typical. No specific forecast was found.
+- **Situational lean (situational, not a pick):** Croatia have home crowd and stakes, but their form and back line are poor. Czechia need a result and have little to lose. The lean is **Czechia +handicap (+1/+1.5)** rather than Croatia at 1.55.
+
+#### (Moved to Monday) Germany vs Netherlands / Greece vs Serbia
+UEFA's own fixtures page lists these on Sun Nov 15. Covers, Al Jazeera, Footballwhispers and Sportskeeda all list **Monday Nov 16**, with Germany-Netherlands at the Olympiastadion in Berlin. **Treat them as Monday** and confirm on the board. Quick notes in case they appear:
+- Germany-Netherlands: Musiala and Gnabry are out. Netherlands lead with 11 points. Germany are on 8 and are through with a win on head-to-head. Opta gives Germany 43.5%.
+- Greece-Serbia (Volos): Greece is about 1.45. Serbia are pointless and missing Vlahović, Pavlović, Kostić, Terzić and Stanković, with Živković and Dragojević suspended.
+- Switzerland-Scotland (League B, St Gallen) is also **Monday**. Switzerland are already promoted. Scotland need a win.
+
+### UEFA Nations League, Leagues C/D (compact)
+
+#### Cyprus vs Montenegro (9:00 am ET)
+- **Line:** Not found. **Rest:** about 3 days, short travel. **Motivation:** Cyprus are 2nd in their League C group per Wikipedia, so promotion or play-off position is at stake. **Lean (situational):** Cyprus have the home motivation edge. This game is only lightly researched.
+
+#### Latvia vs Armenia (9:00 am ET)
+- **Line:** Not found. **Rest/travel:** about 3 days. Armenia face a moderate trip, about 2,600 km and -1 hour. **Motivation:** Not verified. **Lean:** None. Not researched in depth.
+
+#### Belarus vs Albania (12:00 pm ET), Illovszky Rudolf Stadion, Budapest (neutral)
+- **Line:** No bookmaker line found. Foresportia's model gives Albania 44%, draw 27.5%, Belarus 28.5%.
+- **Rest/travel:** About 3 days. Both teams play at a neutral venue in Hungary. Belarus are not hosting at home (UEFA restrictions).
+- **Motivation:** **Group C1 decider for automatic promotion.** Albania lead by 2 points, so **a draw is enough for Albania** (per UEFA preview).
+- **Note:** Kickoff.co.uk says Belarus haven't scored more than 1 goal in 6 Nations League games.
+- **Lean (situational):** A neutral site removes Belarus's nominal home edge, and Albania only need a draw. The lean is **Under / Albania draw-no-bet**.
+
+#### Finland vs San Marino (12:00 pm ET)
+- **Line:** Not found. Expect a huge Finland handicap. **Motivation:** Finland are playing for goal difference and position. San Marino are the weakest UEFA side. **Lean:** Big-spot rotation risk for Finland is minimal. No edge identified.
+
+#### League D / remaining Sunday fixtures (UEFA list): Kazakhstan vs Slovakia, Estonia vs Bulgaria, Iceland vs Luxembourg, Lithuania vs Liechtenstein, Faroe Islands vs Moldova, Gibraltar vs Malta
+- Kick-off times, lines and standings were **not found**, so these are in "Not researched". Kazakhstan-Slovakia involves long travel for Slovakia, about 4,000 km and +4 to +5 hours to Astana, a travel spot worth checking. Note: UEFA's page also listed North Macedonia-Slovenia for Sunday, but NBC and Yahoo have it **Monday**.
+
+### International friendlies (men)
+
+Low liquidity, heavy rotation, and widely conflicting kick-off times between sources.
+- **Andorra vs Azerbaijan** (1:00 pm local, Encamp, per ESPN). No line or team news researched.
+- **Suriname vs Eswatini** (12:00 pm local, Den Bosch, Netherlands, per ESPN). This is a neutral site, but Suriname's diaspora base in the Netherlands makes it effectively a home game for them.
+- **Iraq vs Iran** (ESPN). Rivalry spot. Time and venue not confirmed.
+- **Kyrgyzstan vs Vietnam** (12:00 GMT, per SNA).
+- **Japan vs Paraguay**: ESPN lists it Sunday. SNA lists Japan vs Brazil Saturday and Singapore vs Paraguay Friday. **Conflict, unresolved.**
+- **New Zealand vs India**: SNA lists it 03:10 GMT Sunday and ESPN 10:10 pm Saturday. This may be the same Saturday-night ET game, and it is unclear whether it is soccer or a mis-listing of the cricket ODI.
+- **Lean:** None. This is the friendly-window rule: avoid sides, and Unders are the default in low-motivation games.
+
+---
+
+### CFL: 113th Grey Cup
+
+#### Montreal Alouettes vs Edmonton Elks (6:00 pm ET), McMahon Stadium, Calgary (neutral)
+- **Line:** Montreal -3.5 / Edmonton +3.5, ML -170 / +142 (DraftKings via Covers, as of Nov 13). theScore has Montreal -3, ML -165 / +140, **total 55.5**. FanDuel had Montreal -170 / Edmonton +140. The KPMG/CFL model gave Montreal a 52.8% title chance before the playoffs (CFL.ca). The theScore primer predicts Montreal 44-37. Covers picks the Montreal ML playable to -190.
+- **Injuries / availability:** The QBs are **Davis Alexander (MTL)**, reported fully healthy after playing through a hamstring injury in last year's Grey Cup per Covers, and **Cody Fajardo (EDM)**. Per TSN, Montreal "two starters return" and Edmonton "one change". Edmonton DT **Mustafa Johnson** (ankle) and RT **Jordan Murray** (foot) are game-time decisions. Note: the TSN snippet makes it ambiguous which team Johnson plays for. Covers lists a long Montreal injury list, including OL Braydon Noll and DB Jonathan Sutherland. Edmonton's list was cut off.
+- **Local notes:** CBC Edmonton frames it as the Elks seeking their first Grey Cup since 2015 against Montreal "aiming to finish business". theScore calls it a matchup with "makings of a classic".
+- **Rest/schedule:** Both teams have had **8 days** since the Nov 7 division finals. Montreal beat Winnipeg 33-23 and Edmonton beat BC 28-16. Rest is even.
+- **Travel:** Montreal fly about **3,000 km and 2 time zones** west, though with a week to acclimate. Edmonton's trip is about **300 km in the same time zone**, and the crowd will likely lean Alberta/Edmonton.
+- **Motivation:** Montreal were 14-4 and lost last year's Grey Cup to Saskatchewan, per CBC on a last-second deflected Hail Mary. That is a **revenge / unfinished-business** angle. Edmonton (13-5) went from 5th in the West to 1st, a "house money" underdog story with a near-home crowd.
+- **Weather:** The stadium is open-air. theScore mentions a daytime high around 12°C. Calgary has been running well above seasonal norms, but Chinooks can swing temperatures about 20°C in hours. Check ECCC before kickoff. Wind is the variable to watch for the total.
+- **Situational lean (situational, not a pick):** Montreal have the better roster and a healthy QB. Edmonton have the de facto home crowd and less travel, and the Edmonton injury list is incomplete. The lean is **Edmonton +3.5 (key number)**. If the forecast stays mild and calm, the 55.5 total has no weather edge.
+
+---
+
+### Rugby union: Nations Championship
+
+#### Scotland vs Australia (10:10 am ET), Murrayfield, Edinburgh
+- **Line:** Scotland about 4/11, Australia about 11/5 to 12/5, draw about 18/1 (Betfred, Racing Post). Handicap is Scotland -7.5 / -8 (20/21).
+- **Injuries / availability:** For Scotland, Blair Kinghorn is at fullback in place of Kyle Rowe and Darcy Graham is on the left wing. For Australia, Rob Valetini returns at 6 and Jeremy Williams is back at lock. **Isaac Henry is out** (hamstring). **Conflict:** one report has Carter Gordon at 10 over Declan Meredith, with Ben Donaldson on the bench.
+- **Local notes:** Edinburgh Daily and Brit Brief lineup reports.
+- **Rest/schedule:** Both sides had 7-8 days' rest. Scotland lost 43-21 to New Zealand, and their form is W-L-W-L. Australia lost 45-22 to England, their third straight defeat.
+- **Travel:** Australia are on a European tour, so there is no long-haul flight this week, just London to Edinburgh, about 530 km.
+- **Motivation:** This is a seeding/standing game in the November series before the Finals Weekend (Nov 27-29). Australia are on a losing streak and late in a tour.
+- **H2H:** Scotland have won 4 of the last 5. **7 of the last 9 meetings were decided by 6 points or fewer.**
+- **Weather:** Edinburgh in November, cold with likely wind and rain. No specific forecast was found.
+- **Situational lean (situational, not a pick):** Close games are the historical norm, and a -7.5 handicap is a lot to lay. The lean is **Australia +7.5/+8** on the H2H margin profile, despite Australia's poor form and tour fatigue.
+
+---
+
+### Tennis: ATP Finals, Turin (Day 1), indoor hard
+
+Groups: **McEnroe** Zverev (1), Shelton (3), Fils (6), Jódar (8). **Lendl** Alcaraz (2), Medvedev (4), Cobolli (5), Tiafoe (7). **Sinner withdrew (knee).**
+- **Doubles, about 5:30 am ET:** Heliövaara/Patten (1) vs Luz/Matos (8).
+- **Zverev vs Jódar, about 8:00 am ET:** The top seed faces the alternate-turned-qualifier (No. 8). Last Word on Sports has best bets, but no lines were captured. Situational note: round-robin openers favour the experienced player. Zverev is a two-time champion here. Jódar is a debutant, so watch for nerves.
+- **Shelton vs Fils, not before about 12:00 pm ET** (6 pm local session; the exact slot was not confirmed). Shelton is -164 and Fils +155. Shelton -2.5 games is +100, and Over 24.5 games is -130 (BetMGM). Shelton leads H2H 2-1 (2-0 indoor hard). Shelton reached the US Open final and the Paris Masters final this year. Note: reaching the Paris final means a quick turnaround into Turin and possible fatigue. Fils is 7-6 in his last 13 and making his debut here. Dimers' model likes **Fils to win the first set**.
+- **Situational note:** Shelton's form is stronger, but a deep Paris run gives him a fatigue risk. Fils's debut nerves cut the other way. There is a mild fatigue angle on **Fils first set / Over games**.
+
+### Golf
+
+#### PGA Tour: Austin Championship, Round 4 (tee times 7:00-9:01 am CT, moved up for storms)
+- **Leaders after 54 holes:** **Trace Crowe -14**, seeking his first win. Chad Ramey, Sami Välimäki and Erik van Rooyen are tied at -13. Ben Kohles and others are in the mix.
+- **Conditions:** Storms were forecast, and Heavy.com reports a **rain delay** with Crowe's lead frozen. A Monday finish is possible, so check dead-heat and Monday-finish rules for your book.
+- **Situational note:** A first-time 54-hole leader with only a 1-shot cushion, in stop-start weather, is a fade spot historically. Välimäki (2025 RSM winner) and van Rooyen are proven closers. This is the fall-series finale stretch, so FedEx Fall card retention gives the bubble players motivation.
+
+#### DP World Tour Championship, Dubai, Round 4
+- Hatton (-9) led Perez by 1 after 54 holes. Post-round reports say **Hatton shot 66 and won by 5**, and McIlroy finished solo 2nd to take his 8th Race to Dubai. This was likely complete before US morning, so it is probably not bettable.
+
+### Cricket (overnight, Sat night ET)
+- **Australia vs England, 2nd ODI** (Adelaide, about 10:30 pm ET Sat), part of the series running Nov 13-18. Situational note: this is the warm-up for a T20I series starting Nov 21 at the MCG. Not researched further.
+- **New Zealand vs India, 5th ODI** (Bay Oval, about 9:00 pm ET Sat). This is the series finale, and whether it is a dead rubber depends on the series score, which was not found.
+
+---
+
+### Biggest situational edges
+1. **Belgium vs Italy: Belgium side.** It is a must-win for Belgium. Italy are through with a draw and are missing Bastoni (suspended) and Frattesi. Belgium beat Italy 2-0 in Rome earlier in this edition. *Situational, not a pick.*
+2. **France vs Türkiye: France.** Türkiye are already relegated, travelled about 2,800 km on 3 days' rest, and have a key centre-back (Kabak) suspended. France must avoid defeat to advance. The risk is France's long injury list and Mbappé's doubt.
+3. **Spain vs England: England side / draw-no-bet.** Both are through. Spain only need a draw, while England need a win and have a revenge angle. Spain are priced like a must-win team at about -140, which inflates them.
+4. **Grey Cup: Edmonton +3.5.** Near-home crowd, 300 km of travel versus 3,000 km and 2 time zones for Montreal, and a key-number dog. Montreal's revenge motivation is real, so treat this as a modest edge.
+5. **Scotland vs Australia: Australia +7.5.** 7 of the last 9 meetings were decided by 6 points or fewer.
+6. **Croatia vs Czechia: Czechia +handicap.** Croatia are favoured despite four straight losses, 15 goals conceded and two first-choice centre-backs out.
+
+### Not researched
+- **Women's sports (excluded by user scope change):** NWSL semifinal Gotham vs Kansas City Current (3 pm ET), WSL and Women's FA Cup, NCAA women's basketball, women's internationals, LPGA, WTA.
+- **UEFA Nations League League D and remaining C games:** Kazakhstan-Slovakia, Estonia-Bulgaria, Iceland-Luxembourg, Lithuania-Liechtenstein, Faroe Islands-Moldova, Gibraltar-Malta. Latvia-Armenia and Cyprus-Montenegro are only lightly covered.
+- **Friendlies:** Andorra-Azerbaijan, Suriname-Eswatini, Iraq-Iran, Kyrgyzstan-Vietnam, Japan-Paraguay (date conflict), and the rest of the roughly 42-game SNA weekend list. Youth internationals (France U20-Denmark U20 and others) too.
+- **AHL Sunday slate:** unverified listing only. **KHL:** not checked. **Other European basketball leagues** (ACB, Lega, BSL, etc.) are not checked. Domestic basketball and hockey leagues may play during the soccer window.
+- **Boxing:** no confirmed Sunday card.
+- **AFCON qualifiers:** possible Sunday MD4 games if Foot-Africa's date is right rather than CAF's. Not covered.
+- **Cricket ODIs:** lines and series state not researched.
+- **ATP doubles:** only the fixture is listed.
+
+### Sources
+- [UEFA: 2026/27 Nations League fixtures](https://www.uefa.com/uefanationsleague/news/02a2-1fea18abbcbc-456e846509e7-1000--2026-27-uefa-nations-league-all-the-league-phase-fixtures-a/)
+- [UEFA: Matchday 6 preview](https://www.uefa.com/uefanationsleague/news/02ab-221287e5a66c-f9855de4b857-1000--uefa-nations-league-matchday-6-preview-spain-host-england-i/)
+- [UEFA: Qualification/relegation latest](https://www.uefa.com/uefanationsleague/news/02ab-2209792f2fda-6a523d4500bb-1000--nations-league-latest-on-quarter-final-qualification-prom/)
+- [NBC Sports: Nations League standings](https://www.nbcsports.com/soccer/news/uefa-nations-league-2026-27-nations-league-format-schedule-standings-scores)
+- [worldfootball.net: League A table](https://worldfootball.net/competition/co4228/uefa-nations-league-a/results-and-standings/)
+- [Racing Post: Spain vs England](https://www.racingpost.com/sport/football-tips/nations-league/spain-vs-england-betting-tips-predictions-team-news-odds-bet-builder-aJR964V4EjqF/)
+- [Al Jazeera: Spain vs England](https://www.aljazeera.com/sports/2026/11/14/spain-england-uefa-nations-league-predictions-how-to-watch-teams)
+- [Covers: Spain vs England](https://www.covers.com/soccer/spain-vs-england-prediction-picks-nov-15-2026)
+- [IBTimes: Spain vs England top spot](https://www.ibtimes.com.au/spain-england-nations-league-group-top-spot-1878605)
+- [AllFootball: Numbers Game](https://www.allfootballapp.com/articles/5950932-numbers-game-spain-england-fight-out)
+- [Sports Mole: Belgium vs Italy](https://www.sportsmole.co.uk/football/belgium/uefa-nations-league/preview/belgium-vs-italy-prediction-team-news-lineups_609039.html)
+- [Goal: Belgium v Italy](https://www.goal.com/en/lists/belgium-v-italy-where-to-watch-on-tv-and-online-channel-kick-off-time-and-line-ups/blt3cfd32af88fc333a)
+- [Al Jazeera: Italy beat France 3-1](https://www.aljazeera.com/sports/2026/11/12/italy-fight-back-to-beat-france-3-1-and-move-top-of-nations-league-group)
+- [World Soccer Talk: France vs Turkey lineups](https://worldsoccertalk.com/amp/news/france-vs-turkey-projected-lineups-for-the-2026-27-uefa-nations-league-match/)
+- [The Hard Tackle: France vs Türkiye](https://thehardtackle.com/round-up/2026/11/14/france-vs-turkiye-preview-prediction-probable-lineups-tactics-team-news-key-stats/)
+- [Khelnow: France vs Turkey](https://khelnow.com/football/france-vs-turkey-preview-uefa-nations-league-202611)
+- [WhoScored: Croatia vs Czechia](https://www.whoscored.com/articles/L5Q3OoD9JkWfXO3p3NCaVw/show/cng111-20261115-croatia-vs-czechia-prediction-1794743487)
+- [Football Écologie: Croatia v Czechia](https://www.football-ecology.org/en/football-news/croatia-v-czechia-nations-league-prediction-osijek)
+- [Al Jazeera: Germany vs Netherlands](https://www.aljazeera.com/sports/2026/11/15/germany-vs-netherlands-nations-league-preview-team-news-predictions)
+- [Covers: Germany vs Netherlands (Mon)](https://www.covers.com/soccer/germany-vs-netherlands-prediction-picks-nov-16-2026)
+- [Footballwhispers: Greece vs Serbia (Mon)](https://footballwhispers.com/blog/greece-vs-serbia-prediction-16-11-2026/)
+- [Footballwhispers: Switzerland vs Scotland (Mon)](https://footballwhispers.com/blog/switzerland-vs-scotland-prediction-16-11-2026/)
+- [Kickoff.co.uk: Belarus vs Albania](https://www.kickoff.co.uk/uefa-nations-league-predictions-stats-odds/belarus-vs-albania/)
+- [Foresportia: Belarus vs Albania](https://www.foresportia.com/en/prediction/uefa-nations-league/belarus-albania-2026-11-15/)
+- [Wikipedia: 2026-27 Nations League C](https://en.wikipedia.org/wiki/2026%E2%80%9327_UEFA_Nations_League_C)
+- [ESPN: International friendlies](https://www.espn.com/soccer/schedule/_/league/fifa.friendly)
+- [SportNewsAfrica: Friendlies 13-16 Nov](https://sportnewsafrica.com/en/news/international-friendlies-fixtures-weekend-schedule-and-kick-off-times-13-16-november-2026/)
+- [LiveSoccerTV: Nov 15 schedule](https://www.livesoccertv.com/schedules/2026-11-15/)
+- [Wikipedia: 2026 WC qualification](https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification)
+- [Concacaf: Jamaica beat Mexico](https://www.concacaf.com/competitions/nations-league/news/jamaica-defeats-mexico-in-nations-league-quarterfinals-first-leg)
+- [Concacaf: Canada beat Guatemala](https://www.concacaf.com/competitions/nations-league/news/canada-victorious-over-guatemala-in-nations-league-quarterfinals-first-leg)
+- [US Soccer: USMNT vs Haiti recap](https://www.ussoccer.com/stories/2026/11/usmnt-vs-haiti-match-recap-highlights-concacaf-nations-league-miami-florida)
+- [CAF: AFCON qualifiers resume](https://www.cafonline.com/afcon2025/news/african-giants-face-crucial-tests-as-totalenergies-caf-afcon-pamoja-2027-qualifiers-resume-this-week/)
+- [Foot-Africa: AFCON qualifiers schedule](https://foot-africa.com/en/news/afcon-2027-qualifiers-schedule-favourites-broadcasters-everything-you-need-to-know-1361300/)
+- [Premier League: International breaks 2026/27](https://www.premierleague.com/en/news/4689113/when-are-the-international-breaks-for-202627)
+- [MLS: 2026 Playoffs key dates](https://www.mlssoccer.com/news/audi-2026-mls-cup-playoffs-key-dates-schedule-information)
+- [Fox Sports MX: Liga MX Jornada 17](https://www.foxsports.com.mx/2026/11/09/cuando-se-jugara-la-jornada-17-del-apertura-2026-habra-pausa-en-liga-mx-por-la-fecha-fifa/)
+- [Bleacher Report: NWSL bracket (excluded)](https://bleacherreport.com/articles/25530729-updated-nwsl-playoff-bracket-semifinal-schedule-2026-after-quarterfinals-results)
+- [ESPN: College football week 12](https://www.espn.co.uk/college-football/schedule/_/week/12)
+- [ESPN Press Room: CFB week 11](https://espnpressroom.com/press-release/three-ranked-on-ranked-games-headline-espns-week-11-slate-with-14-cfp-top-25-teams-in-action/)
+- [Wikipedia: 113th Grey Cup](https://en.wikipedia.org/wiki/113th_Grey_Cup)
+- [Covers: Alouettes vs Elks](https://www.covers.com/cfl/alouettes-vs-elks-prediction-picks-odds-grey-cup-nov-15-2026)
+- [theScore: Grey Cup primer](https://www.thescore.com/cfl/news/3470948/113-th-grey-cup-primer-als-vs-elks-has-makings-of-classic)
+- [TSN: Grey Cup rosters set](https://www.tsn.ca/cfl/article/rosters-set-for-113th-grey-cup-two-starters-return-for-alouettes-elks-make-one-change/)
+- [CBC Edmonton: Elks vs Alouettes](https://www.cbc.ca/news/canada/edmonton/edmonton-elks-montreal-alouettes-cfl-grey-cup-2026-9.7422330)
+- [Daily Hive: Grey Cup odds](https://dailyhive.com/vancouver/who-favoured-win-grey-cup-oddsmakers)
+- [CFL.ca: KPMG playoff probability](https://cfl.ca/article/kpmg-playoff-probability-who-is-projected-to-meet-in-the-113th-grey-cup)
+- [CFL Playoffs: Schedule and scores](https://cflplayoffs.com/schedule/)
+- [Visit Calgary: Grey Cup](https://www.visitcalgary.com/cenovus-energy-2026-grey-cup-festival-and-113th-grey-cup)
+- [Curiocity: Calgary group chat Nov 10](https://curiocity.com/the-calgary-group-chat-nov-10/amp/)
+- [Racing Post: Scotland vs Australia](https://www.racingpost.com/sport/rugby-union-tips/scotland-vs-australia-nations-championship-rugby-union-predictions-odds-betting-tips-aSRpW0y7m3CN/)
+- [Betfred: Scotland vs Australia](https://insights.betfred.com/rugby-union/scotland-vs-australia-prediction-betting-tips-sunday-15-november-2026/)
+- [Edinburgh Daily: Scotland vs Australia lineups](https://edinburghdaily.co.uk/sports/scotland-vs-australia-rugby-guide-lineups-edinburgh-2026/)
+- [Sky Sports: Nations Championship fixtures](https://www.skysports.com/rugby-union/news/13604775/nations-championship-fixtures-schedule-dates-key-info-as-rugbys-revolutionary-new-look-tournament-gears-up-for-finals)
+- [ESPN: Nations Championship explained](https://www.espn.com/rugby/story/_/id/49076874/what-nations-championship-rugby-newest-competition-explained-fixtures-format-how-watch)
+- [Tennis Majors: ATP Finals 2026 groups](https://www.tennismajors.com/atp/nitto-atp-finals-atp/atp-finals-2026-groups-schedule-format-how-to-watch-866945.html)
+- [TechRadar: ATP Finals Day 1](https://www.techradar.com/entertainment/tennis/atp-finals-2026-free-mens-tennis)
+- [Sportskeeda: Shelton vs Fils](https://www.sportskeeda.com/tennis/ben-shelton-vs-arthur-fils-preview-head-to-head-odds-prediction-betting-tips-atp-finals-2026-cc1b0daf)
+- [Dimers: Shelton vs Fils](https://www.dimers.com/tennis/news/ben-shelton-vs-arthur-fils-tennis-prediction-atp-world-tour-finals-2026-ac)
+- [Last Word on Sports: Zverev vs Jodar](https://lastwordonsports.com/tennis/2026/11/14/atp-finals-best-bets-zverev-jodar/)
+- [Yahoo: Crowe leads Austin Championship](https://sports.yahoo.com/articles/seeking-first-pga-tour-win-014342399.html)
+- [Yahoo: Austin final round start time shift](https://sports.yahoo.com/articles/pga-tour-shifts-austin-championship-004612066.html)
+- [Heavy: Austin Championship delay](https://heavy.com/sports/golf/pga-tour-austin-championship-golf-delay/)
+- [GolfMagic: Hatton wins DP World Tour Championship](https://www.golfmagic.com/tour/dp-world-tour/rory-mcilroy-makes-race-dubai-history-tyrrell-hatton-storms-dp-world-tour)
+- [Gulf News: Hatton 54-hole lead](https://gulfnews.com/sport/hatton-takes-one-shot-lead-into-final-round-of-dp-world-tour-championship-1.500747512)
+- [Betsperts: RSM Classic field](https://betspertsgolf.com/golf-news/2026-rsm-classic-field-koepka-aberg-harman-headline)
+- [SportsCafe: Aus v Eng ODI](https://sportscafe.in/cricket/live/odi/odi-series-australia-vs-england/aus-vs-eng-7134913/match-details)
+- [NBC LA: 2026 NASCAR schedule](https://www.nbclosangeles.com/news/sports/2026-nascar-schedule-dates-tracks-chicagoland-north-wilkesboro-speedway/3766881/)
+- [Formula1.com: Las Vegas GP 2026](https://www.formula1.com/en/latest/article/formula-1-heineken-las-vegas-grand-prix-2026.1qmWzcBwKK5hkTbYbhVC22)
+- [Agent MMA: UFC MSG Nov 14](https://agentmma.com/news/88598-ufc-returns-to-madison-square-garden-for-numbered-event-on-nov-14)
+- [Cageside Press: UFC Qatar Nov 21](https://cagesidepress.com/2026/09/29/full-ufc-qatar-card-revealed-for-november-21-event/)
+- [Eurohoops: EuroLeague 2026-27 schedule](https://eurohoops.net/en/euroleague/1994855/euroleague-releases-full-schedule-for-the-2026-27-season)
+- [BetExplorer: AHL fixtures](https://www.betexplorer.com/hockey/usa/ahl/fixtures/)
 
 
 ---
