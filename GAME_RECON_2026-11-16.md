@@ -15,7 +15,7 @@ A situational handicapping sheet for the PC Claude agent. For each game it cover
 **What's on today:**
 - **NFL (1):** Chargers @ Ravens
 - **NBA (8)**
-- **NHL (2 confirmed, possibly more):** NHL.com and DailyFaceoff were unreachable.
+- **NHL (2):** confirmed by a second pass; the 5-game "Nov 16" list is Sunday's slate. See the **NHL Update** section, which replaces the original NHL entries where they conflict.
 - **NCAA men's basketball:** about 22 games confirmed. One roundup counts 33, so a gap-fill is running.
 - **Soccer (23):** UEFA Nations League, a Concacaf Nations League quarterfinal, AFCON qualifiers and friendlies.
 
@@ -33,8 +33,8 @@ A situational handicapping sheet for the PC Claude agent. For each game it cover
 | NBA | PHI @ BKN (7:30) | BKN / Under, if Embiid sits | PHI hosted Indiana Sunday (back-to-back), and Embiid is uncertain. |
 | NBA | POR @ MIN (8:00) | POR +2.5 | Anthony Edwards is out (knee), and POR is 6-1 on the road. |
 | NBA | ORL @ BOS (7:00) | ORL + points / Under | BOS hosted Dallas Sunday (back-to-back). Banchero is out for ORL. |
-| NHL | VAN @ UTA (9:30) | UTA / Over | VAN is on the 2nd night of a back-to-back after playing at Vegas, is about 3-15-1, allows the most goals in the league, and Demko is on IR. *Utah goalie Vejmelka has an .868 save percentage.* |
-| NHL | MTL @ NYR (7:30) | Soft MTL | MTL is hot (10-game point streak through Nov 7). The lean is void if Shesterkin is confirmed. |
+| NHL | VAN @ UTA (9:30) | UTA -1.5 / Over 6.5 | VAN is on the 2nd night of a back-to-back, but **beat Vegas 6-3 Sunday** (snapping 7 straight losses), now 4-17-1. Demko is on IR, and Tolopilo may debut (unconfirmed). UTA has lost 5 straight; Vejmelka is .870 and 1-5 in his last 6 starts. UTA ML -340 is too steep, so the lean is the puck line (about -130) or the Over. |
+| NHL | MTL @ NYR (7:30) | NYR (low conviction) | **Updated:** Shesterkin is on season-ending IR, so Garand or Korpisalo starts. MTL lost Saturday (point streak over) with 1 day of rest and is missing Kreider, Demidov, Matheson and Montembeault. NYR has 2 days of rest and has won 5 of 6. Odds are near even, total 6.5.
 | NCAAB | WKU @ Tulsa | WKU +4.5 | Revenge for an 82-81 loss. *Dimers likes Tulsa.* |
 | NCAAB | Alcorn St @ Maryland (6:00) | Alcorn +34.5 | Buy game, with a backdoor-cover angle. |
 | NCAAB | Montana @ Kansas St (8:00) | K-State | Bounce-back after its opening loss to South Dakota State. |
@@ -1014,3 +1014,167 @@ For all AFCON games: rest is ~3-4 days and the reverse fixture was ~3 days ago. 
 
 ---
 
+## NHL Update: Monday Nov 16, 2026
+
+Research method: WebSearch summaries only (WebFetch blocked). About 38 searches. Nothing here comes from a confirmed morning-skate lineup unless it says so. **No starting goalie is confirmed for either game as of this research.**
+
+### Confirmed slate
+
+**Two games, no others found.** Several listings agree on the same two games and show nothing else: Legion Report's schedule, a Monday newspaper time schedule, an EssentiallySports/tonyspicks props board ("Rangers-Canadiens and Mammoth-Canucks board"), and a search that named exactly these two as Monday's games. The five-game list on Squawka and Rotowire (EDM@PHI, FLA@DAL, CGY@ANA, VAN@VGK, NSH@SJ) is **Sunday Nov 15's slate**, not today's. It matches the back-to-back teams listed in the brief.
+
+| Game | Time (ET) | Venue | TV (per listings) | ML | Puck line | Total |
+|---|---|---|---|---|---|---|
+| Montréal @ NY Rangers | 7:30 PM | Madison Square Garden | TNT / HBO Max (US), SN+ / TVAS (CAN) | ~pick'em: NYR -112 / MTL -110 (Bleacher Nation); another preview has MTL -115 road fav | not found | 6.5 (Bleacher Nation, CBS: o6.5 +110) |
+| Vancouver @ Utah | 9:30 PM | Delta Center, SLC | ESPN+ / Utah16 / SN+ | UTA -300 to -360 / VAN +270 to +285 (DK: UTA -340 / VAN +270) | UTA -1.5 -125 to -135 / VAN +1.5 +114 to +120 (books not named) | 6.5 (o -105 to -112) |
+
+**Time conflicts:**
+- MTL@NYR: most listings say 7:30. The 7:00 figure comes from the Action Network page, which is from a prior season (see below).
+- VAN@UTA: one ESPN page says 9:00. Most sources say 9:30.
+
+**The Action Network "Nov 16" page (Rangers -190 / Canadiens +165, total 5.5, 7 p.m.) is from a PRIOR SEASON. Do not use it.**
+- It describes "the 9-3-3 Rangers hosting the 4-11-2 Canadiens." Current records are NYR 12-8-1 and MTL 12-4-4.
+- Its start time (7 p.m.) conflicts with the current 7:30 listings.
+- A Montréal @ NY Rangers game was also played on **11/16/2021** (DocSports prediction page). That season is the most likely origin of the page. The exact season is inferred, not stated on the page.
+
+---
+
+#### Montréal Canadiens @ New York Rangers (7:30 PM ET)
+
+- **Records:** MTL 12-4-4 and NYR 12-8-1 (Bleacher Nation, Bettors Insider, NHL.com recap). SportBusy shows 9-3-3 / 8-7-1, which is stale.
+- **Odds:** Close to a pick'em, and sources disagree on the favorite:
+  - Bleacher Nation (Nov 15): NYR -112 / MTL -110, total 6.5.
+  - CBS Sports odds: total 6.5, over +110.
+  - Another betting preview: MTL -115 road favorite.
+  - BetMGM's model gives MTL a 54% win probability.
+  - **Puck line prices: not found.**
+- **Goalies (none confirmed):**
+  - MTL: **Jacob Fowler projected** (TheRx). Jakub Dobes started Saturday's 4-1 loss (23 saves), which supports a Fowler start. Sportsnaut/PuckPedia instead projects Dobes. **Conflict.** Sam Montembeault (LBI) is on IR. He has begun practicing, but his estimated return is Nov 21 (ESPN, InsideTheRink) or around Nov 16 (THW). **Conflict.**
+  - NYR: **Dylan Garand or Joonas Korpisalo.** Garand is 7-7-1, 2.37 GAA, .910 (CBS). He has appeared in 12 straight games, and coach Mike Sullivan reportedly wants to split the net (THW, lineups.com). Korpisalo was activated from IR on Nov 7 (ProHockeyRumors) and stopped 25 in a 4-3 win in his return (THW). Garand started the Nov 13 game, so Korpisalo is plausible tonight, but no source projects him by name.
+- **Key injuries:**
+  - MTL: Chris Kreider is out 6-8 weeks (LBI). He was hurt Thursday in Boston on a collision with Michael Eyssimont.
+  - MTL: Ivan Demidov is out (reported fractured ankle, or LBI per Fox; sources differ) and is not on the trip.
+  - MTL: Mike Matheson (LBI) is out and not travelling. His return estimate is Nov 21 (ESPN) or Dec 5 (InsideTheRink). **Conflict.**
+  - MTL: Josh Anderson is on IR (undisclosed). Montembeault is on IR (see above). D David Reinbacher was recalled from Laval for the trip.
+  - NYR: **Igor Shesterkin moved to season-ending IR on Nov 15** (knee/lower-body, injured Oct 9). The Rangers have been without him all season, so this is not new to the market.
+- **Lines and notes:**
+  - InsideTheRink projects MTL's top line as Caufield-Suzuki-Slafkovsky and its top pair as Hutson-Dobson. Rotowire's odds page shows Kreider and Demidov in the lineup, which is stale.
+  - NHL.com says this is the first of three "Original 6 Series" games and marks the 100th anniversary of the teams' first meeting.
+  - **No morning-skate report was found** for either team.
+- **Rest and last result:**
+  - MTL lost 4-1 at home to Colorado on **Sat Nov 14** (NHL.com, ESPN). That ended a 12-game point streak, and Colorado won without MacKinnon and Makar. MTL has 1 day of rest.
+  - NYR beat the Canucks 5-1 in Vancouver on **Fri Nov 13** (NHL.com). Glenn Gawdin scored his first two NHL goals, and Garand made 27 saves. NYR has 2 days of rest, has won 5 of 6, and went 3-1-0 on its 4-game road trip.
+- **Travel:**
+  - MTL: a short Montréal-to-NYC hop. This is the opener of a 3-game road trip (THW).
+  - NYR: home after the trip. They flew Vancouver to New York over the weekend, and the extra rest day offsets the travel.
+- **Motivation:**
+  - MTL wants to bounce back from its first regulation loss in a month. One preview says MTL has won 6 straight road games (single source, unverified).
+  - NYR is on its first game home off a good trip, and the anniversary is a "rivalry night" angle.
+  - Per one preview, NYR has won 6 of the last 8 head-to-head meetings.
+- **Special teams:** One preview cites the NYR penalty kill at 89.1% against the MTL power play at 13.3%. This is a single source.
+- **Situational lean (situational, NOT a pick): NYR.**
+  - NYR has the extra rest day, is at home after a successful trip, and is on hot form.
+  - MTL is on a 1-day turnaround off a flat loss. It is missing Kreider, Demidov, Matheson, Anderson and its No. 1 goalie, and is likely starting its third goalie (Fowler).
+  - Low conviction: the price is near a coin flip and the starters are unconfirmed.
+
+#### Vancouver Canucks @ Utah Mammoth (9:30 PM ET)
+
+- **Records:** VAN 4-17-1 after Sunday's win. Many previews still show 3-17-1, which is from before Sunday. UTA is 10-8-3 (10-8-2 in one source; **conflict**). UTA is 4-2-2 at home.
+- **Odds:**
+  - Moneyline: UTA -300 to -360 / VAN +270 to +285. DraftKings shows UTA -340 / VAN +270.
+  - Puck line: UTA -1.5 at -125 to -135 / VAN +1.5 at +114 to +120.
+  - Total: 6.5 (over -105 to -112).
+  - Sources: Bleacher Nation, BettingNews, Bettors Insider, BangTheBook, TheRx.
+- **Goalies (none confirmed):**
+  - VAN: **Nikita Tolopilo expected** to make his NHL season debut. Canucks Army and THW both say he was recalled from Abbotsford for the Utah game; he was 7-2-4 with a 2.52 GAA in the AHL. Leevi Merilainen made 34 saves Sunday in Vegas, so he is unlikely to go on the back-to-back. One preview lists Kevin Lankinen, who is winless since opening night, and Fubo implies Merilainen. **Conflict, unconfirmed.** A Canucks Army "Tolopilo starts vs. Mammoth" article in search results is from **April 4, 2026**, not today.
+  - UTA: **Karel Vejmelka projected** (DocSports and others). This is not confirmed by a morning skate. ESPN lists his season save percentage at **.870** (13 GP, 6-6). The brief's .868 is close; Fox and TheRx have .872 at earlier dates. **Minor conflict, likely timing.** He is 1-5-0 with a 4.39 GAA and .833 over his last 6 starts. He allowed 5 goals on 21 shots Saturday, and coach Tourigny publicly criticized him (Yahoo, KSL). Backup is Jaxson Stauber; no source suggests he starts.
+- **Key injuries:**
+  - VAN: Thatcher Demko (hip) is on IR. Henrik Sedin hopes he is back before Christmas, with an estimated return of Dec 21.
+  - VAN: D Guillaume Brisebois is on IR (retroactive to Nov 9). F Mackenzie MacEachern is on IR (InsideTheRink).
+  - VAN: Filip Chytil was activated from IR on Friday and scored twice Sunday.
+  - UTA: Dylan Guenther (UBI) is on IR for 2-4 weeks.
+  - UTA: Logan Cooley (UBI) is day-to-day. One report projected a return today. **Status unconfirmed.**
+  - UTA: Nick Schmaltz (LBI, left the game vs. Vegas) is listed "out" by InsideTheRink and day-to-day in the Nov 14 NHL.com preview. **Conflict.**
+  - UTA: D John Marino and D Nate Schmidt are out. Marino is nearing contact practice per Tourigny.
+- **Lines and notes:**
+  - At the Vegas morning skate, Canucks Army reported that Lekkerimäki and Boeser swapped lines.
+  - **No morning-skate report for tonight was found** for either team.
+- **Rest and last result:**
+  - **VAN won 6-3 at Vegas on Sun Nov 15.** The brief's "presumably lost" is **wrong**. Per Yahoo/CP, the Globe and Mail and NHL.com, the win snapped a 7-game skid. Chytil and Linus Karlsson scored 2 each, and Pettersson and O'Connor scored 1 each. This is VAN's first win since Oct 27, per THN; AP-style previews saying "no win since opening night" refer to Lankinen. **VAN is on the 2nd night of a back-to-back.**
+  - UTA lost 6-5 in a shootout to San Jose at home on Sat Nov 14 (Deseret, KSL). That was its 5th straight loss (0-3-2). It also lost 1-0 in a shootout at St. Louis on Nov 12 and 5-3 to Vegas. UTA has 1 day of rest.
+- **Travel:** VAN made a short Las Vegas-to-Salt Lake City flight overnight. This is game 2 of a road trip, and Seattle is next on Thursday. UTA is at home.
+- **Motivation:** One preview frames this as a "do or die" atmosphere. VAN is trying to build off a skid-snapping win. UTA is desperate to end a 5-game slide amid goalie debate.
+- **Special teams:** One preview claims the UTA power play is at 34.7% and the VAN penalty kill at 62.7%. These are **single-source and unverified**, and a 62.7% PK would be extreme.
+- **Situational lean (situational, NOT a pick): Utah side and over 6.5.**
+  - Utah has the rest edge against a team on a back-to-back, plays at home, and faces a likely season-debut AHL call-up in net.
+  - Vejmelka's .870 makes the over angle stronger.
+  - The -340 ML is a steep price. The situational case points more toward UTA -1.5 or the over than the moneyline.
+  - Risk: Utah's 5-game skid and missing forwards (Guenther, possibly Cooley and Schmaltz).
+
+---
+
+### Biggest situational edges
+
+1. **VAN on the back-to-back with a likely third-string goalie (Tolopilo) at UTA.** This is the clearest rest and goalie mismatch on the slate. It is tempered by Vejmelka's .870, Utah's 5-game losing streak and its injuries. The over 6.5 is the cleaner situational fit than UTA -340.
+2. **NYR rest and form edge over a depleted MTL.** NYR has 2 days of rest, has won 5 of 6 and is home. MTL is on 1 day of rest off a loss, missing Kreider, Demidov, Matheson, Anderson and Montembeault, with Fowler projected. The market is near a pick'em, so this is a modest edge.
+3. **Discard the stale Action Network line** (NYR -190 / total 5.5). It is from a prior season, most likely 2021. The current market is around pick'em with a 6.5 total.
+
+**Open items to re-check before puck drop:**
+- All four starting goalies.
+- Cooley's and Schmaltz's status.
+- MTL-NYR puck-line prices.
+
+### Sources
+
+- [Legion Report schedule](https://legionreport.com/?p=25303)
+- [tonyspicks Nov 16 props board](https://www.tonyspicks.com/2026/11/16/nhl-player-props-steven-duncan-11-16-26/)
+- [Squawka starting goalies (Sunday slate)](https://www.squawka.com/ca/nhl/starting-goalies/)
+- [Action Network Rangers vs Canadiens "November 16" (prior season)](https://www.actionnetwork.com/nhl/nhl-odds-preview-prediction-rangers-vs-canadiens-november-16)
+- [DocSports MTL vs NYR 11/16/2021](https://www.docsports.com/free-picks/nhl-hockey/2021/montreal-canadiens-vs-new-york-rangers-prediction-11-16-2021-nhl-pick-tips-and-odds.html)
+- [Bleacher Nation Rangers vs Canadiens odds](https://www.bleachernation.com/picks/2026/11/15/rangers-vs-canadiens-how-to-watch-odds-picks-predictions/)
+- [CBS Sports NHL odds](https://www.cbssports.com/nhl/odds/)
+- [BetMGM win probability model](https://sports.betmgm.com/en/blog/nhl/rangers-vs-canadiens-prediction-nhl-win-probability-model-nov-16-bm31/)
+- [Bettors Insider MTL-NYR](https://bettorsinsider.com/sports-betting/2026/11/16/canadiens-vs-rangers-prediction-msg-special-teams-edge/)
+- [TheRx MTL-NYR](https://www.therx.com/nhl/canadiens-rangers-prediction-november-16-2026/55517/)
+- [Lineups.com MTL-NYR](https://www.lineups.com/articles/canadiens-rangers-nhl-picks-predictions-odds-for-monday-november-16-2026/)
+- [InsideTheRink MTL@NYR lines](https://insidetherink.com/nhl-game-preview-montreal-canadiens-at-new-york-rangers-with-line-combinations-11-16-2026/)
+- [Sportsnaut Canadiens lines](https://sportsnaut.com/nhl/montreal-canadiens/lines)
+- [Rotowire MTL-NYR odds page](https://www.rotowire.com/betting/nhl/game/rangers-vs-canadiens-odds-2026-11-16-2999028)
+- [NHL.com nationally televised games, week of Nov 16](https://www.nhl.com/news/nhl-nationally-televised-games-for-week-of-november-16-2026)
+- [NHL.com Avalanche at Canadiens recap Nov 14, 2026](https://www.nhl.com/news/colorado-avalanche-montreal-canadiens-game-recap-november-14-2026)
+- [ESPN Avalanche 4-1 Canadiens](https://www.espn.com/nhl/recap?gameId=401892711)
+- [Yahoo: Canadiens fail to avoid trap, lose 4-1](https://sports.yahoo.com/articles/canadiens-fail-avoid-trap-lose-120008684.html)
+- [THW Canadiens Week Ahead](https://thehockeywriters.com/canadiens-week-ahead-schedule-storylines-injury-woes-mount-road-trip-and-more/)
+- [Yardbarker: Anderson IR, Reinbacher recalled](https://www.yardbarker.com/nhl/articles/canadiens_injury_updates_josh_anderson_on_ir_reinbacher_called_up/s1_17468_44565771)
+- [ESPN Canadiens injuries](https://www.espn.com/nhl/team/injuries/_/name/mtl/montreal-canadiens)
+- [NHL.com Rangers at Canucks recap Nov 13, 2026](https://www.nhl.com/news/new-york-rangers-vancouver-canucks-game-recap-november-13-2026)
+- [CBS: Garand strong in win](https://www.cbssports.com/fantasy/hockey/news/rangers-dylan-garand-strong-performance-in-win/)
+- [ProHockeyRumors: Rangers activate Korpisalo](https://www.prohockeyrumors.com/2026/11/rangers-to-activate-joonas-korpisalo-assign-james-reimer.html)
+- [THW Rangers Week Ahead (Korpisalo returns)](https://thehockeywriters.com/rangers-week-ahead-schedule-storylines-winning-streak-korpisalo-returns-kartye-shines-and-more/)
+- [Daily Faceoff: Shesterkin season-ending IR](https://www.dailyfaceoff.com/news/igor-shesterkin-new-york-rangers-place-season-ending-injured-reserve)
+- [ESPN: Shesterkin out for season](https://www.espn.com/nhl/story/_/id/50148688/rangers-igor-shesterkin-year-right-knee-injury)
+- [Yahoo: Chytil, Karlsson score twice as Canucks beat Vegas](https://sports.yahoo.com/articles/chytil-karlsson-score-twice-canucks-045426017.html)
+- [Globe and Mail: Canucks end skid with 6-3 win](https://www.theglobeandmail.com/sports/hockey/article-vancouver-canucks-end-losing-streak-with-6-3-win-over-vegas-golden/)
+- [NHL.com Canucks: 6-3 win over Vegas](https://www.nhl.com/canucks/news/canucks-go-all-in-for-6-3-win-over-vegas-golden-knights)
+- [THN: 3 standouts, Canucks 6 Golden Knights 3](https://thehockeynews.com/nhl/vancouver-canucks/game-day/3-standouts-from-game-22-canucks-6-golden-knights-3)
+- [Canucks Army: Tolopilo recall and goaltending plans](https://canucksarmy.com/news/what-vancouver-canucks-recall-nikita-tolopilo-indicate-goaltending-plans)
+- [THN: Canucks call up Tolopilo](https://thehockeynews.com/nhl/vancouver-canucks/latest-news/canucks-call-goaltender-nikita-tolopilo-up-from-the-ahl)
+- [Canucks Army morning skate at Vegas](https://canucksarmy.com/news/scenes-morning-skate-lekkerimaki-boeser-swap-lines-vancouver-canucks-start-road-trip-vegas-golden-knights)
+- [Canucks Army April 4, 2026 Tolopilo lineup note (old)](https://canucksarmy.com/news/vancouver-canucks-lineup-notes-tolopilo-starts-kane-mancini-draw-in-douglas-e-pettersson-d-utah-mammoth)
+- [NHL.com Canucks at Golden Knights projected lineups](https://nhl.com/news/vancouver-canucks-vegas-golden-knights-game-preview-november-15-2026)
+- [ABC News/AP: Vancouver visits Utah](https://abcnews.com/Sports/wireStory/vancouver-visits-utah-after-chytils-2-goal-game-138171407)
+- [InsideTheRink VAN@UTA lines](https://insidetherink.com/nhl-game-preview-vancouver-canucks-at-utah-mammoth-with-line-combinations-11-16-2026/)
+- [Bleacher Nation Mammoth vs Canucks](https://www.bleachernation.com/picks/2026/11/16/mammoth-vs-canucks-nhl-best-bets-odds-prediction-and-pick-nov-16/)
+- [BettingNews VAN-UTA](https://www.bettingnews.com/nhl/matchup/2026-11-16-vancouver_canucks-utah_mammoth-n-1/)
+- [Bettors Insider VAN-UTA](https://bettorsinsider.com/sports-betting/2026/11/16/canucks-vs-mammoth-prediction-utah-power-play-edge/)
+- [BangTheBook VAN-UTA](https://bangthebook.com/vancouver-canucks-vs-utah-mammoth-prediction-2026-11-16/)
+- [TheRx VAN-UTA](https://www.therx.com/nhl/canucks-mammoth-prediction-november-16-2026/55519/)
+- [DocSports VAN-UTA](https://www.docsports.com/free-picks/nhl-hockey/2026/vancouver-canucks-vs-utah-mammoth-prediction-11-16-2026-nhl-picks-best-bets-odds.html)
+- [Fubo: Mammoth vs Canucks how to watch](https://www.fubo.tv/news/nhl/utah-mammoth-vs-vancouver-canucks-where-to-watch-stream-info-tv-channel-and-live-updates-november-16-2026/)
+- [Deseret: Mammoth lose 6-5 SO to Sharks](https://www.deseret.com/sports/2026/11/15/utah-mammoth-lose-6-5-in-shootout-to-san-jose-sharks/)
+- [KSL: Mammoth need answers in net](https://sports.ksl.com/nhl/utah-mammoth/utah-mammoth-lose-in-shootout-to-sharks/578980)
+- [ESPN Vejmelka player page](https://www.espn.com/nhl/player/_/id/3942065/karel-vejmelka)
+- [Yahoo: Mammoth searching for answers](https://sports.yahoo.com/articles/feel-bad-him-mammoth-searching-072111465.html)
+- [ProHockeyRumors: Guenther, Cooley out](https://www.prohockeyrumors.com/2026/11/mammoths-dylan-guenther-logan-cooley-out.html)
+- [NHL.com Sharks at Mammoth projected lineups Nov 14](https://nhl.com/news/san-jose-sharks-utah-mammoth-game-preview-november-14-2026)
+- [Hockey-Reference Mammoth injuries](https://www.hockey-reference.com/teams/UTA/2027_injuries.html)
+- [CBS Sports Canucks injuries](https://www.cbssports.com/nhl/teams/van/vancouver-canucks/injuries/)
