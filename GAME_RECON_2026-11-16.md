@@ -44,7 +44,7 @@ A situational handicapping sheet for the PC Claude agent. For each game it cover
 
 **Conflicts to note:**
 - **Florida A&M @ UTEP:** yesterday's sheet listed it Sunday 8 PM ET. Today's research lists it Monday 2 PM ET (Dimers only). Check which day it's played.
-- **Ravens "0-8 ATS at home":** this note from yesterday's sheet is **unverified**. No source supports it.
+- **Ravens "failed to cover 8 straight home games":** this note from yesterday's sheet is **unverified**. No source supports it.
 
 ---
 
