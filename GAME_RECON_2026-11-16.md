@@ -16,7 +16,7 @@ A situational handicapping sheet for the PC Claude agent. For each game it cover
 - **NFL (1):** Chargers @ Ravens
 - **NBA (8)**
 - **NHL (2):** confirmed by a second pass; the 5-game "Nov 16" list is Sunday's slate. See the **NHL Update** section, which replaces the original NHL entries where they conflict.
-- **NCAA men's basketball:** about 22 games confirmed. One roundup counts 33, so a gap-fill is running.
+- **NCAA men's basketball (28 found):** two sources count 33, so about 5 are still missing. Unverified candidates: Chicago St @ UIC, FGCU @ FAU, Defiance @ Miami (OH), Columbia (SC) @ West Georgia. See the **CBB Gap-Fill** section at the end for the full sorted table.
 - **Soccer (23):** UEFA Nations League, a Concacaf Nations League quarterfinal, AFCON qualifiers and friendlies.
 
 **College football:** none today. The MAC starts Tue Nov 17: Ball St @ Ohio, EMU @ WMU, Miami (OH) @ Kent St. Wed Nov 18 has Akron @ UMass, BGSU @ Toledo (date disputed, may be Fri Nov 20) and CMU @ Buffalo.
@@ -35,15 +35,19 @@ A situational handicapping sheet for the PC Claude agent. For each game it cover
 | NBA | ORL @ BOS (7:00) | ORL + points / Under | BOS hosted Dallas Sunday (back-to-back). Banchero is out for ORL. |
 | NHL | VAN @ UTA (9:30) | UTA -1.5 / Over 6.5 | VAN is on the 2nd night of a back-to-back, but **beat Vegas 6-3 Sunday** (snapping 7 straight losses), now 4-17-1. Demko is on IR, and Tolopilo may debut (unconfirmed). UTA has lost 5 straight; Vejmelka is .870 and 1-5 in his last 6 starts. UTA ML -340 is too steep, so the lean is the puck line (about -130) or the Over. |
 | NHL | MTL @ NYR (7:30) | NYR (low conviction) | **Updated:** Shesterkin is on season-ending IR, so Garand or Korpisalo starts. MTL lost Saturday (point streak over) with 1 day of rest and is missing Kreider, Demidov, Matheson and Montembeault. NYR has 2 days of rest and has won 5 of 6. Odds are near even, total 6.5.
-| NCAAB | WKU @ Tulsa | WKU +4.5 | Revenge for an 82-81 loss. *Dimers likes Tulsa.* |
+| NCAAB | WKU @ Tulsa (7:00) | WKU +4.5 | Revenge for an 82-81 loss. *Dimers likes Tulsa.* |
 | NCAAB | Alcorn St @ Maryland (6:00) | Alcorn +34.5 | Buy game, with a backdoor-cover angle. |
 | NCAAB | Montana @ Kansas St (8:00) | K-State | Bounce-back after its opening loss to South Dakota State. |
+| NCAAB | Prairie View @ Ohio St (6:30) | Ohio St (1st half) | PV is on its 3rd road game in 7 days (after SMU and Vanderbilt), with 2 days of rest. |
+| NCAAB | The Citadel @ Clemson (7:00) | Clemson | The Citadel has had about 14 days off and has played only once. Rust. |
+| NCAAB | Central Ark @ Oklahoma St (8:00) / SE La @ Texas A&M (8:30) | Dogs (CArk +22.5) | OSU and A&M played each other Thursday, so both are in letdown spots. |
+| NCAAB | St. Thomas @ LIU (7:00) | LIU +1.5 | St. Thomas travels east from Central time. Dimers agrees. |
 | Soccer | Germany vs Netherlands (2:45) | Germany | Germany likely need a win to go through. NED are already through and coming off a 7-0, so expect rotation. |
 | Soccer | Switzerland vs Scotland (2:45) | Scotland | A dead rubber for SUI, reportedly already promoted. |
 | Soccer | Canada vs Guatemala (7 or 8 PM, Toronto) | Canada | Leads 3-2 on aggregate, with home, cold and travel edges. *Davies left the 1st leg injured at 5'.* |
 
 **Conflicts to note:**
-- **Florida A&M @ UTEP:** yesterday's sheet listed it Sunday 8 PM ET. Today's research lists it Monday 2 PM ET (Dimers only). Check which day it's played.
+- **Florida A&M @ UTEP:** two schedule sites say it was Sunday at 8 PM ET. Dimers posted Monday 2 PM odds overnight, which may mean it was moved. Look for a Sunday final score before betting.
 - **Ravens "failed to cover 8 straight home games":** this note from yesterday's sheet is **unverified**. No source supports it.
 
 ---
@@ -1178,3 +1182,291 @@ Research method: WebSearch summaries only (WebFetch blocked). About 38 searches.
 - [NHL.com Sharks at Mammoth projected lineups Nov 14](https://nhl.com/news/san-jose-sharks-utah-mammoth-game-preview-november-14-2026)
 - [Hockey-Reference Mammoth injuries](https://www.hockey-reference.com/teams/UTA/2027_injuries.html)
 - [CBS Sports Canucks injuries](https://www.cbssports.com/nhl/teams/van/vancouver-canucks/injuries/)
+## CBB Gap-Fill: Monday Nov 16, 2026
+
+Scope: NCAA D-I men's games on Monday Nov 16, 2026, ET. Research ran on about 75 web searches using summaries only, because WebFetch was blocked. Most listings came from aggregators: SportBusy, Legion Report, Sports Media Watch (SMW) and Dimers. Some of them carry stale records. A "?" means a single source or a conflict.
+
+**Count: 28 games confirmed for Monday** (including FAMU@UTEP, which is disputed). That is 7 short of YouWager's 33, so **the slate is NOT complete**. SMW also says "Monday, November 16: 33 games". Only part of SMW's list surfaced, and several entries in that part turned out to be Wednesday 11/18 games.
+
+### Full slate (sorted by ET tip)
+
+| ET | Away @ Home | Line | TV | Status |
+|---|---|---|---|---|
+| 2:00 PM? | Florida A&M @ UTEP | UTEP -18.5 (Dimers) | — | **DATE CONFLICT**, see below |
+| 6:00 | Alcorn St @ Maryland | — | BTN | old |
+| 6:00 | Iona @ UMBC | UMBC +1.5 (Dimers) | ESPN+ | old |
+| 6:30 | **Prairie View A&M @ Ohio State** | PV +33.5 (Dimers, per sheet) | — | **NEW** |
+| 7:00 | Grambling @ Kentucky | UK -29.5 (Fox listing) | SECN+ | old |
+| 7:00 | Virginia-Lynchburg @ NC Central | — | MEAC Net | old (non-D1 visitor) |
+| 7:00 | WKU @ Tulsa | Tulsa -4.5 (-148), ML -286 | ESPNU | filled |
+| 7:00 | St. Thomas @ LIU | LIU +1.5 (+102) | — | filled |
+| 7:00 | The Citadel @ Clemson | no line found | ACCN | filled |
+| 7:00 | Jacksonville @ Georgia | no line found | SECN | filled |
+| 7:00 | Eastern Kentucky @ Kent State | no line found | ESPN+ | filled |
+| 7:00 | **Richmond @ Virginia Tech** | no line found | ACCNX | **NEW** |
+| 7:00 | Florida Memorial @ Stetson | n/a (non-D1) | ESPN+ | filled (opponent identified) |
+| 7:00 | DeSales @ Penn | n/a (non-D1) | ESPN+ | filled (opponent identified) |
+| 7:30 | Tarleton St @ Drake | — | ESPN+ | old (SMW confirms 7:30) |
+| 7:30 | **Midway @ SE Missouri St** | n/a (non-D1) | ESPN+ | **NEW** |
+| 8:00 | Montana @ Kansas St | — | ESPN+ | old (7:01 CT per K-State) |
+| 8:00 | Columbia @ Northwestern | — | — | old |
+| 8:00 | Abilene Christian @ Missouri St | no line found | ESPN+ | filled |
+| 8:00 | Calumet @ Valparaiso | n/a (non-D1) | ESPN+ | filled (opponent identified) |
+| 8:00 | **Western Illinois @ Minnesota** | WIU +35.5 (Dimers, per sheet) | — | **NEW** |
+| 8:00 | **SIU Edwardsville @ North Dakota** | no line found | — | **NEW** |
+| 8:00 | **Central Arkansas @ Oklahoma St** | OSU -22.5 (+120) | ESPN+ | **NEW** |
+| 8:30 | **SE Louisiana @ Texas A&M** | no line found | — | **NEW** |
+| 9:30 | East Texas A&M @ Oregon St | no line found | — | filled |
+| 10:00 | Portland St @ Saint Mary's | — | — | old |
+| 10:00 | Long Beach St @ UCLA | — | BTN | old |
+| 10:00 | Texas Southern @ UC San Diego | no line found | — | filled |
+
+#### Confirmed NOT Monday (don't add)
+These came up in searches but fall on other dates:
+- **Sunday 11/15:** Coastal Carolina @ Wisconsin
+- **Wednesday 11/11:** Colgate @ St. John's; Marquette @ Michigan
+- **Wednesday 11/18:**
+  - UL Monroe @ LSU (one source says 11/17)
+  - Fresno St @ San Jose St
+  - Brown @ Holy Cross
+  - Binghamton @ Lafayette
+  - Utica @ Colgate
+- **Thursday 11/19:** Georgia Southern @ Houston Christian
+
+SMW lists Chicago St @ UIC, FGCU @ FAU, Defiance @ Miami (OH) and Columbia (SC) @ West Georgia in the same 7:00 block. That block also holds Wednesday games, so these four are **unverified** and not counted.
+
+---
+
+### New or filled games
+
+#### Florida A&M @ UTEP (2:00 PM ET?), date conflict
+- **Conflict:** SportBusy and Legion Report list **Sunday 11/15 at 8:00 PM ET** (6 PM MT at the Don Haskins Center), which matches yesterday's sheet. Dimers has a Nov 16 page that says "Monday 2:00 PM ET" and was posted 12:31 AM ET Monday with live odds of UTEP -18.5. Dimers would be unlikely to post odds on a game that had already finished, so a reschedule to a Monday matinee is plausible. Neither date is confirmed. **Check the Sunday final before betting.**
+- **Line:** UTEP -18.5; the Dimers model has UTEP 80-60 with a 96.4% win chance. The article contradicts itself on which side the pick is.
+- **Rest:** UTEP's next game is at New Mexico St on Thu 11/19. If this game is Monday, UTEP has a short turnaround into a rivalry road game.
+- **Lean (situational):** no lean until the date is confirmed.
+
+#### Prairie View A&M @ Ohio State (6:30 ET)
+- **Line:** PV +33.5 (Dimers, per sheet). This answers the unresolved line: the opponent is Ohio State at Value City Arena.
+- **Records:** PV was 2-2 after a 98-63 loss at SMU on 11/10 (Legion Report). Its result at Vanderbilt on 11/13 was not found. Ohio State beat Youngstown St (11/6) and Marshall 84-74 (11/9); no other results were found.
+- **Injuries:** no coverage found.
+- **Rest:** PV has 2 days of rest (at Vanderbilt Fri 11/13). This is **PV's 3rd road game in 7 days**: SMU, then Vanderbilt, then OSU.
+- **Travel:** Houston area (CT) to Nashville (CT) to Columbus (ET).
+- **Motivation:** pure buy game; SWAC road paycheck swing.
+- **Lean (situational):** fatigue and travel point toward OSU. A first-half OSU line is cleaner than laying 33.5 in a garbage-time cover game.
+
+#### WKU @ Tulsa (7:00 ET, ESPNU)
+- **Line:** Tulsa -4.5 (-148 at BetRivers), Tulsa ML -286. This is Dimers' top-edge play of the day: 64.8% win probability, 5.1% edge.
+- **Records:** Tulsa is "unbeaten" (Busting Brackets). WKU is 2-1 per Legion Report (W 83-58 vs Morehead St 11/2, W vs Kentucky Wesleyan 11/5). The tracker has conflicting entries for 11/5, and SportBusy shows 1-0 for both teams.
+- **Injuries:** no coverage found.
+- **Rest:** unknown for both teams.
+- **Travel:** Bowling Green (CT) to Tulsa (CT), with no time-zone change.
+- **Motivation:** **revenge spot for WKU.** Tulsa won 82-81 at WKU on Miles Barnstable's buzzer-beater (12/19/2025), its 6th straight win in the series.
+- **Lean (situational):** revenge plus a short number favors WKU +4.5. This runs against the Dimers model, so treat it as a conflict.
+
+#### St. Thomas @ LIU (7:00 ET)
+- **Line:** LIU +1.5 (+102), which implies St. Thomas is about -1.5. Dimers' all-sports headline play has 57.7% probability and an 8.2% edge.
+- **Records:** no coverage found.
+- **Injuries:** no coverage found.
+- **Rest:** no coverage found.
+- **Travel:** St. Paul (CT) to Brooklyn (ET), a long Northeast road trip for the Tommies.
+- **Motivation:** neutral mid-major non-conference game.
+- **Lean (situational):** home dog with the travel edge, so LIU +1.5. The model agrees.
+
+#### The Citadel @ Clemson (7:00 ET, ACCN)
+- **Line:** no line found.
+- **Records:** Citadel 0-1, Clemson 1-0 (SportBusy, possibly stale).
+- **Injuries:** no coverage found.
+- **Rest:** **The Citadel has about 14 days off.** Its schedule release lists this as its 2nd regular-season game, after opening at Loyola Chicago on 11/2. Clemson's rest is unknown.
+- **Travel:** Charleston to Clemson, in-state, about 3.5 hours by bus.
+- **Motivation:** in-state buy game. Clemson had won 17 straight in the series at the last meeting found.
+- **Lean (situational):** a rusty, thin-sample visitor lean Clemson. Very little 2026 data is available, so size accordingly.
+
+#### Jacksonville @ Georgia (7:00 ET, SECN)
+- **Line:** no line found.
+- **Records:** Jacksonville 2-1 (W vs Trinity Baptist, L at Florida). Georgia 3-0 (Legion Report).
+- **Injuries:** no coverage found.
+- **Rest:** no coverage found.
+- **Travel:** Jacksonville to Athens (ET), a short trip.
+- **Motivation:** buy game. This is Jacksonville's 2nd SEC road game, after Florida. Georgia won the 2024 meeting 102-56.
+- **Lean (situational):** none strong. Jacksonville could be fading after the Florida trip.
+
+#### Eastern Kentucky @ Kent State (7:00 ET, ESPN+)
+- **Line:** no line found. Kent State was -9.5 in last year's meeting.
+- **Records:** no 2026 coverage found. Kent State played at Louisiana Tech (11/2), Roberts Wesleyan (11/6) and UNC Wilmington (11/11); no results were found. EKU is in its first United Athletic Conference (UAC) season.
+- **Injuries:** no coverage found.
+- **Rest:** Kent State has 5 days since UNCW on 11/11; EKU's rest is unknown.
+- **Travel:** Richmond, KY to Kent, OH (ET).
+- **Motivation:** **rematch.** Kent State beat EKU 93-78 on 11/18/2025, the first-ever meeting. That makes this a mild revenge spot for EKU.
+- **Lean (situational):** mild lean EKU plus the points, if the line is around 9 or more.
+
+#### Richmond @ Virginia Tech (7:00 ET, ACCNX), NEW
+- **Line:** no line found.
+- **Records:** Richmond 2-0 to start (W 100-77 vs UNC Asheville, W 107-46 vs Southern Virginia). It then played at Temple on 11/8 and at Southern Illinois on 11/12; no results were found. Virginia Tech's record was not found; Field Level Media previewed a game against Mount St. Mary's.
+- **Injuries:** no coverage found.
+- **Rest:** Richmond has 4 days of rest. This is **Richmond's 3rd straight road game** (Temple, SIU, then VT).
+- **Travel:** Richmond to Blacksburg, about 3.5 hours, in-state (ET).
+- **Motivation:** in-state A-10 vs ACC game, added late as a "mid-November" schedule filler, with some bragging-rights juice.
+- **Lean (situational):** road fatigue favors Virginia Tech. This lean is weak without a number.
+
+#### Florida Memorial @ Stetson (7:00 ET), non-D1 opponent
+- **Opponent:** Florida Memorial (NAIA). This is **Stetson's home opener** at the Edmunds Center (BVM Sports, Legion Report).
+- **Rest:** Stetson played at West Virginia (11/6) and at Howard (11/12), so it has 4 days of rest.
+- **Motivation:** after this, Stetson plays at Louisville (11/19) and at USF (11/24).
+- **Lean (situational):** usually off-board. If it is listed, the home-opener energy favors Stetson.
+
+#### DeSales @ Penn (7:00 ET, ESPN+), non-D1 opponent
+- **Opponent:** DeSales (D-III), per SMW.
+- **Other data:** nothing else found.
+- **Lean (situational):** usually off-board.
+
+#### Midway @ SE Missouri State (7:30 ET, ESPN+), NEW, non-D1 opponent
+- **Records:** Midway (NAIA) is 0-2.
+- **Rest:** SEMO played at Middle Tennessee on Fri 11/13, so it has 2 days of rest.
+- **Lean (situational):** usually off-board.
+
+#### Abilene Christian @ Missouri State (8:00 ET, ESPN+)
+- **Line:** no line found.
+- **Records:** Missouri St 3-0, ACU 1-1 (Legion Report). SportBusy's 0-1 vs 0-0 is stale.
+- **Injuries:** no coverage found.
+- **Rest:** no coverage found.
+- **Travel:** Abilene, TX to Springfield, MO (both CT).
+- **Motivation:** neutral. Missouri St beat ACU 87-69 at the 2023 Paradise Jam.
+- **Lean (situational):** a 3-0 home team in form; mild lean Missouri St.
+
+#### Calumet @ Valparaiso (8:00 ET, ESPN+), non-D1 opponent
+- **Opponent:** Calumet College of St. Joseph (NAIA), per SMW.
+- **Rest:** Valpo's last known game was at South Dakota St (11/11), so it has 5 days of rest. Its next games are against Troy and Southern Miss in Pensacola on 11/21-22.
+- **Lean (situational):** usually off-board.
+
+#### Western Illinois @ Minnesota (8:00 ET), NEW
+- **Line:** WIU +35.5 (Dimers, per sheet). This answers the unresolved line: the opponent is Minnesota at Williams Arena (SportBusy; gophersports lists 7:00 CT).
+- **Records:** WIU lost at Valparaiso 80-58 (11/2). It also had Houston Christian (11/7), Simpson (11/9) and possibly Cal St Bakersfield (11/12); sources conflict. Minnesota beat North Dakota 85-50 on 11/2.
+- **Injuries:** no coverage found.
+- **Rest:** WIU has about 3 days of rest if the Bakersfield game on 11/12 happened.
+- **Travel:** Macomb to Minneapolis (CT), about 6.5 hours by bus.
+- **Motivation:** buy game. WIU also plays at Indiana on 12/3 and at Iowa later on a buy-heavy non-conference slate.
+- **Lean (situational):** none. A 35.5-point spread is a pace and bench-depth handicap, not a situational one.
+
+#### SIU Edwardsville @ North Dakota (8:00 ET), NEW
+- **Line:** no line found.
+- **Records:** no reliable 2026 data. North Dakota lost 85-50 at Minnesota on 11/2.
+- **Injuries:** no coverage found.
+- **Rest:** **North Dakota has 2 days of rest**, after hosting Montana on Sat 11/14. SIUE's rest is unknown.
+- **Travel:** Edwardsville, IL to Grand Forks (CT), a long trip.
+- **Motivation:** neutral (OVC vs Summit). North Dakota hosts Mayville St on 11/19.
+- **Lean (situational):** no lean.
+
+#### Central Arkansas @ Oklahoma State (8:00 ET, ESPN+), NEW
+- **Line:** OSU -22.5 (+120 at BetRivers). Dimers gives it 48% probability and a 2.5% edge.
+- **Records:** no 2026 data found.
+- **Injuries:** no coverage found.
+- **Rest:** OSU played Texas A&M on Thu 11/12 (result not found), so it has 4 days of rest.
+- **Travel:** Conway, AR to Stillwater (CT), regional.
+- **Motivation:** **letdown spot for OSU** after a high-profile SEC non-conference game. It is a buy game.
+- **Lean (situational):** letdown favors UCA +22.5. This is the opposite side from the Dimers lean.
+
+#### SE Louisiana @ Texas A&M (8:30 ET), NEW
+- **Line:** no line found. Dimers named it among its top Monday model plays, but the side was not visible in the summary.
+- **Records:** shown as 0-0 (stale). Texas A&M opened against Alabama St on 11/3.
+- **Injuries:** no coverage found.
+- **Rest:** A&M played Oklahoma St on Thu 11/12, so it has 4 days of rest.
+- **Travel:** Hammond, LA to College Station (CT).
+- **Motivation:** **letdown spot for A&M** after Oklahoma St. It is a buy game.
+- **Lean (situational):** letdown favors SE Louisiana plus the points.
+
+#### East Texas A&M @ Oregon State (9:30 ET)
+- **Line:** no line found.
+- **Records:** Oregon St 3-0 (beat Eastern Washington 94-84 on 11/9). ETAMU 2-0 (Legion Report).
+- **Injuries:** no coverage found.
+- **Rest:** Oregon St has about 7 days of rest if 11/9 was its last game.
+- **Travel:** **Commerce, TX (CT) to Corvallis (PT)**, a 2-hour time-zone shift and a long trip.
+- **Motivation:** buy game.
+- **Lean (situational):** a rested home team against a cross-country traveler favors Oregon St.
+
+#### Texas Southern @ UC San Diego (10:00 ET)
+- **Line:** no line found.
+- **Records:** TSU 0-1, UCSD 1-0 (SportBusy, possibly stale).
+- **Injuries:** no coverage found.
+- **Rest:** no coverage found.
+- **Travel:** **Houston (CT) to San Diego (PT)**, with a 7:00 PM local tip.
+- **Motivation:** SWAC money-game road trip.
+- **Lean (situational):** travel favors UCSD.
+
+---
+
+### Biggest situational edges
+These are situational reads, not picks.
+1. **Prairie View @ Ohio State:** 3rd road game in 7 days on 2 days of rest, after trips to SMU and Vanderbilt. Fatigue lean is OSU, best expressed as a first-half line.
+2. **The Citadel @ Clemson:** the Citadel is coming off roughly a 14-day layoff with one game played. Lean Clemson.
+3. **WKU @ Tulsa (+4.5):** revenge for last December's 82-81 buzzer-beater, and a short number. Lean WKU. This conflicts with Dimers' top play on Tulsa -4.5.
+4. **Texas A&M and Oklahoma State, both after their 11/12 meeting:** both are possible letdown spots against SE Louisiana and Central Arkansas (OSU -22.5). Lean the dogs.
+5. **St. Thomas @ LIU:** Central-to-Eastern travel for the favorite, and the model agrees. Lean LIU +1.5.
+6. **East Texas A&M @ Oregon St and Texas Southern @ UCSD:** two-time-zone westbound trips for late tips. Lean the home teams.
+7. **EKU @ Kent State:** EKU gets a revenge rematch from last year's 93-78 loss. Lean EKU plus the points.
+
+### Still unconfirmed
+- **Slate completeness:** 28 Monday games are found against YouWager's 33. About **5-7 games are still missing**. Candidates to check:
+  - the remaining SMW 7:00 ESPN+ block: Chicago St @ UIC, FGCU @ FAU, Defiance @ Miami (OH), Columbia (SC) @ West Georgia
+  - any 9:00-11:00 PM West Coast games (Big West, WCC, Big Sky, Mountain West)
+- **FAMU @ UTEP:** Sunday 8 PM ET or Monday 2 PM ET.
+- **Tarleton St @ Drake:** 7:30 per SMW, which matches the sheet's "7:30?". It is still single-source.
+- **Eastern Kentucky @ Kent State:** the date and site come from Kent State-side and ticketing listings only. EKU's pages don't show the game.
+- **Results that would sharpen rest and motivation reads:** Oklahoma St vs Texas A&M (11/12), Prairie View @ Vanderbilt (11/13), Montana @ North Dakota (11/14), Richmond @ Temple and @ Southern Illinois.
+- **Injuries:** no injury coverage was found for any game.
+- **Lines:** no lines found for Clemson, Georgia, Kent State, Virginia Tech, Missouri St, North Dakota, Texas A&M, Oregon St or UCSD.
+
+### Sources
+- [Dimers: Monday CBB best bets 11/16/2026](https://www.dimers.com/cbb/news/mens-college-basketball-best-bets-11-16-2026-ac)
+- [Dimers: All-sports best bets 11/16/2026 (St. Thomas vs LIU)](https://www.dimers.com/news/best-bets-11-16-2026-ac)
+- [Dimers: Florida A&M vs UTEP 11/16/2026](https://www.dimers.com/cbb/news/florida-am-vs-utep-prediction-11-16-2026-ac)
+- [Dimers: Iona vs UMBC 11/16/2026](https://www.dimers.com/cbb/news/iona-vs-umbc-prediction-11-16-2026-ac)
+- [Sports Media Watch: Men's CBB TV schedule](https://www.sportsmediawatch.com/tv-schedules/college-sports/college-basketball-tv-schedule-men/)
+- [Busting Brackets: Monday Nov 16 schedule](https://bustingbrackets.com/college-basketball-schedule-for-monday-kentucky-ucla-headline-november-16-action-basketball)
+- [Fox Sports CBB schedule (Kentucky -29.5)](https://www.foxsports.com/college-basketball/schedule)
+- [SportBusy: Prairie View @ Ohio State 11/16](https://www.sportbusy.com/games/ncaam/14463508-prairie-view-a-m-panthers-at-ohio-state-buckeyes-2026-11-16/)
+- [SportBusy: Western Illinois @ Minnesota 11/16](https://www.sportbusy.com/games/ncaam/14463509-western-illinois-leathernecks-at-minnesota-golden-gophers-2026-11-16/)
+- [SportBusy: SIUE @ North Dakota 11/16](https://www.sportbusy.com/games/ncaam/14522391-southern-illinois-edwardsville-cougars-at-north-dakota-fighting-hawks-2026-11-16/)
+- [SportBusy: WKU @ Tulsa 11/16](https://www.sportbusy.com/games/ncaam/14522390-western-kentucky-hilltoppers-at-tulsa-golden-hurricane-2026-11-16/)
+- [SportBusy: The Citadel @ Clemson 11/16](https://www.sportbusy.com/games/ncaam/14463504-the-citadel-bulldogs-at-clemson-tigers-2026-11-16/)
+- [SportBusy: Abilene Christian @ Missouri St 11/16](https://www.sportbusy.com/games/ncaam/14463505-abilene-christian-wildcats-at-missouri-state-bears-2026-11-16/)
+- [SportBusy: Richmond @ Virginia Tech 11/16](https://www.sportbusy.com/games/ncaam/14463511-richmond-spiders-at-virginia-tech-hokies-2026-11-16/)
+- [SportBusy: SE Louisiana @ Texas A&M 11/16](https://www.sportbusy.com/games/ncaam/14463501-southeastern-louisiana-lions-at-texas-a-m-aggies-2026-11-16/)
+- [SportBusy: Texas Southern @ UC San Diego 11/16](https://www.sportbusy.com/games/ncaam/14463515-texas-southern-tigers-at-uc-san-diego-tritons-2026-11-16/)
+- [SportBusy: Portland St @ Saint Mary's 11/16](https://www.sportbusy.com/games/ncaam/14463507-portland-state-vikings-at-saint-mary-s-gaels-2026-11-16/)
+- [SportBusy: FAMU @ UTEP 11/15](https://www.sportbusy.com/games/ncaam/14605108-florida-a-m-rattlers-at-utep-miners-2026-11-15/)
+- [SportBusy: Coastal Carolina @ Wisconsin 11/15](https://www.sportbusy.com/games/ncaam/14463481-coastal-carolina-chanticleers-at-wisconsin-badgers-2026-11-15/)
+- [SportBusy: Georgia Southern @ Houston Christian 11/19](https://www.sportbusy.com/games/ncaam/14463655-georgia-southern-eagles-at-houston-christian-huskies-2026-11-19/)
+- [SportBusy: Fresno St @ San Jose St 11/18](https://www.sportbusy.com/games/ncaam/14463654-fresno-state-bulldogs-at-san-jose-state-spartans-2026-11-18/)
+- [SportBusy: Brown @ Holy Cross 11/18](https://www.sportbusy.com/games/ncaam/14463639-brown-bears-at-holy-cross-crusaders-2026-11-18/)
+- [SportBusy: Binghamton @ Lafayette 11/18](https://www.sportbusy.com/games/ncaam/14463640-binghamton-bearcats-at-lafayette-leopards-2026-11-18/)
+- [SportBusy: Montana @ North Dakota 11/14](https://www.sportbusy.com/games/ncaam/14478257-montana-grizzlies-at-north-dakota-fighting-hawks-2026-11-14/)
+- [SportBusy: Prairie View @ Vanderbilt 11/13](https://www.sportbusy.com/games/ncaam/14478251-prairie-view-a-m-panthers-at-vanderbilt-commodores-2026-11-13/)
+- [Legion Report: Ohio State basketball](https://legionreport.com/ohio-state-basketball/)
+- [Legion Report: Prairie View next game](https://legionreport.com/prairie-view-am-basketball-next-game/)
+- [Legion Report: Oregon State score/schedule](https://legionreport.com/oregon-state-basketball-score/)
+- [Legion Report: Missouri State score/schedule](https://legionreport.com/missouri-state-basketball-score/)
+- [Legion Report: Jacksonville score/schedule](https://legionreport.com/jacksonville-basketball-score/)
+- [Legion Report: Stetson score/schedule](https://legionreport.com/stetson-basketball-score/)
+- [Legion Report: SEMO next game](https://legionreport.com/southeast-missouri-state-basketball-next-game/)
+- [Legion Report: UTEP next game](https://legionreport.com/utep-basketball-next-game/)
+- [Legion Report: WKU score/schedule](https://legionreport.com/western-kentucky-basketball-score/)
+- [Legion Report: SIUE basketball](https://legionreport.com/siu-edwardsville-basketball/)
+- [BVM Sports: Stetson 2026-27 schedule](https://bvmsports.com/2026/09/10/stetson-mens-basketball-unveils-2026-27-schedule-featuring-six-power-four-matchups/)
+- [BVM Sports: Western Illinois 2026-27 schedule](https://bvmsports.com/2026/10/23/western-illinois-basketball-unveils-2026-27-schedule/)
+- [Live 5: The Citadel 2026-27 schedule](https://www.live5news.com/2026/09/17/citadel-announces-complete-2026-27-basketball-schedule/)
+- [Oklahoma State nonconference schedule](https://okstate.com/news/2026/8/14/cowboy-basketball-unveils-14-game-nonconference-schedule)
+- [K-State: vs Montana preview](https://www.kstatesports.com/news/2026/11/15/mens-basketball-k-state-returns-to-court-monday-night-vs-montana)
+- [Gophers 2026-27 schedule](https://gophersports.com/sports/mens-basketball/schedule)
+- [fantasydata: St. Thomas 2026-27 schedule](https://fantasydata.com/ncaa-basketball/st-thomas-mn-tommies-schedule)
+- [fantasydata: Richmond 2026-27 schedule](https://fantasydata.com/ncaa-basketball/richmond-spiders-schedule)
+- [fantasydata: North Dakota 2026-27 schedule](https://fantasydata.com/ncaa-basketball/north-dakota-fighting-hawks-schedule)
+- [SeatGeek: EKU schedule](https://seatgeek.com/eastern-kentucky-colonels-mens-basketball-tickets/schedule)
+- [Valpo nonconference schedule](https://valpoathletics.com/news/2026/8/27/mens-basketball-valpo-mens-basketball-announces-nonconference-schedule.aspx)
+- [CBS: Tulsa 82-81 over WKU (Dec 2025)](https://www.cbssports.com/college-basketball/news/rileys-18-barnstables-game-winner-lead-tulsa-over-western-kentucky-82-81)
+- [CBS: Kent State 93-78 over EKU (Nov 2025)](https://www.cbssports.com/college-basketball/gametracker/playbyplay/NCAAB_20251118_EKY@KENTST)
+- [Yahoo: Oklahoma State vs Texas A&M, Nov 12](https://sports.yahoo.com/articles/oklahoma-state-vs-texas-m-130117778.html)
+- [Yahoo: Maryland vs Alcorn St preview](https://sports.yahoo.com/articles/maryland-men-basketball-vs-alcorn-114000338.html)
+- [Tech Lunch Pail: VT adds Richmond](https://techlunchpail.com/blog/virginia-tech-finalizes-non-conference-schedule-by-adding-richmond-in-mid-november)
+- [LSU schedule announcement (ULM 11/18)](https://lsusports.net/news/2026/07/27/lsu-announces-2026-27-mens-basketball-schedule)
+- [Marquette 2026-27 non-conference (Michigan 11/11)](https://gomarquette.com/news/2026/7/9/mens-basketball-mubb-announces-2026-27-non-conference-schedule)
+- [FanDuel: St. John's vs Colgate 11/11/2026](https://fanduel.com/research/st-john-s-vs-colgate-college-basketball-predictions-odds-picks-best-bets-for-11-11-2026)
